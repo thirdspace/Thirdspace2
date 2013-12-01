@@ -3,7 +3,12 @@
 	style.css
 
 */
-
+/*---------------------------------
+    REUSABLE
+-----------------------------------*/
+.fade {
+    opacity: .8;
+}
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/
@@ -45,7 +50,7 @@ body{
 margin:0;
 padding:0 0 0 0;
 color:#000;
-background:#efefef url(css/img/gray_jean.png);
+background:#ffffff;
 font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
 text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
@@ -72,27 +77,53 @@ top:0;
 left:0;
 background:#fff;
 }
+.navbar ul li {
+    display: inline;
+}
+.navbar ul li a {
+    color: #000;
+    line-height: 1em;
+    font-size: .5em;
+    margin: 0.2em;
+    padding: 0;
+    font-family: 'primelight';
 
+}
 	#link-top{
 	display:none;
 	}
-
+/* CONTENT */
+.content {
+    float: right;
+    background: #fff !important;
+}
+.content p {
+    font-size: 12pt;
+    padding: 1.5em;;
+    line-height: 1.4em;
+    text-align: left;
+}
 /* NAV BAR*/
 .navbar{
 position:fixed;
-top:0;
-left:0;
-width: 100%;
-background:#000;
+top:110px;
+left:0px;;
+background:#fff !important;
 color:#fff;
 z-index:1000;
+margin-left: 1.5em;
+padding: 0;
+opacity: .8;
+border-radius: 20px 0px 0px 20px;
+-moz-border-radius: 20px 0px 0px 20px;
+-webkit-border-radius: 20px 0px 0px 20px;
 }
 
 	.navbar #logo{
-	position:absolute;
+	position: block;
 	top:0;
 	right:0;
-	padding:0.5em 1em;
+	padding:0.25em .25em;
 	font-size: 1.7em;
 	color:#efefef;
 	text-decoration:none;
@@ -104,9 +135,13 @@ z-index:1000;
 
 
 	.navbar ul{
-	display:inline-block;
-	margin:0;
-	padding:0;
+    display: block;
+    font-size: 4em;
+    letter-spacing: 0.03em;
+    line-height: 0;
+    margin: 0;
+    padding: 0;
+    width: 180px;
 	}
 
 		.navbar li{
@@ -116,14 +151,13 @@ z-index:1000;
 		display:inline-block;
 		}
 
-		.navbar li a{
+		.navbar li a {
 		display:inline-block;
 		color:#efefef;
-		padding:1em 1.3em;
 		text-decoration:none;
 		text-transform: uppercase;
 		line-height:100%;
-		font-size: 1.2em;
+		font-size: 2em;
 		}
 
 .callout{
@@ -153,3 +187,26 @@ border:5px solid #ddd;
 margin:30px 0;
 display:block;
 }
+
+@font-face {
+    font-family: 'primelight';
+    src: url('fonts/prime_light-webfont.eot');
+    src: url('fonts/prime_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prime_light-webfont.woff') format('woff'),
+         url('fonts/prime_light-webfont.ttf') format('truetype'),
+         url('fonts/prime_light-webfont.svg#primelight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'primeregular';
+    src: url('fonts/prime_regular-webfont.eot');
+    src: url('fonts/prime_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/prime_regular-webfont.woff') format('woff'),
+         url('fonts/prime_regular-webfont.ttf') format('truetype'),
+         url('fonts/prime_regular-webfont.svg#primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
