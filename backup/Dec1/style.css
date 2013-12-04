@@ -12,6 +12,7 @@
 .hidden {
     display: none;
 }
+.long
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/
@@ -79,25 +80,17 @@ top:0;
 left:0;
 background:#fff;
 }
-.nav
-
-ul li {
+.navbar ul li {
     display: inline;
 }
 .navbar ul li a {
     color: #000;
-    line-height: .4em;
-    margin: 0;
+    line-height: 1em;
+    font-size: .5em;
+    margin: 0.2em;
     padding: 0;
-    padding: 10px 20px;
     font-family: 'primelight';
-}
-.navbar ul li a:active {
-    background: #E9BA00;
-    color: #fff;
-}
-.navbar ul li a:hover {
-    background: #cccccc;
+
 }
 /* NAV BAR*/
 
@@ -136,10 +129,10 @@ border-radius: 20px 0px 0px 20px;
 
 .navbar ul{
     display: block;
-    font-size: 4.4em;
+    font-size: 4em;
     letter-spacing: 0.03em;
-    line-height: 0.1em;
-    margin: -10px 0 10px;
+    line-height: 0;
+    margin: 0;
     padding: 0;
     width: 180px;
 	}
@@ -154,8 +147,8 @@ border-radius: 20px 0px 0px 20px;
 		color:#efefef;
 		text-decoration:none;
 		text-transform: uppercase;
-		font-size: 25pt;
-        line-height: 0.25em;
+		line-height:100%;
+		font-size: 2em;
     }
 	#link-top{
 	display:none;
@@ -163,24 +156,15 @@ border-radius: 20px 0px 0px 20px;
 /* CONTENT */
 .introbox {
 }
-.bar {
-    min-height: 264px;
-}
 .box {
+    background: #fff;
     width: 100%;
     height: 100%;
-}
-.content_nobg {
- float: right;
-    padding: 1em;
-    margin-right: 15px !important;
-	margin-top: 30px !important;
-    position: relative;
 }
 .content {
     float: right;
     background: #fff;
-    padding: 1em;
+    padding: 2.3em;
     margin-right: 15px !important;
 	margin-top: 30px !important;
     position: relative;
@@ -189,7 +173,6 @@ border-radius: 20px 0px 0px 20px;
     font-size: 1em;
     line-height: 1.4em;
     text-align: left;
-    color: #5f5f5f;
 }
 #about {
     margin-top: 100px !important;
@@ -235,9 +218,6 @@ and (max-width : 769px) {
 	}
     .navbar ul {
         display: inline;
-        margin-top: -20px;
-        letter-spacing: 0.03em;
-        line-height: 0.03em;
     }
 .navbar #logo {
     width: 200px;
@@ -250,7 +230,6 @@ and (max-width : 769px) {
        font-size: .3em;
         letter-spacing: .03em;
         margin-bottom: 20px;
-     padding: 10px 5px;
  
     }
 }
@@ -261,16 +240,17 @@ and (max-width : 769px) {
 	font-size: 4em;
 	line-height: 1.3em;
 	color: #e9ba00;
-    margin-bottom: 20px;
-    margin-top: -40px;    
+    margin-top: -50px;
+    padding-bottom: 15px;
 }
 .introstrong {
 	font-family: 'primelight';
 	color: #7c6783;
 }
 .social {
-	height: 30px;
+	height: 35px;
 	padding-left: 0;
+    padding-top: 15px;
 }
 .socialcontainer {
 	float: left;
@@ -316,24 +296,18 @@ and (min-width : 1207px) {
 	}
 }
 @media only screen 
-and (min-width : 758px) and (max-width : 1224px) {
+and (max-width : 1144px) {
 	#introheading {
-         margin-bottom: 32px;
-	}
-}
-@media only screen 
-and (min-width : 1226px) {
-	#introheading {
-         margin-bottom: 32px;
+		font-size: 3em;
 	}
 }
 /* ABOUT PAGE */
 #stephen {
-   height: 265px;
-    left: 0;
     position: absolute;
-    top: 0;
-    width: 265px;
+    top: 20px;
+    left: 20px;
+    width: 340px;
+    height: 340px;
 }
 p.ptitle {
     font-family: 'primeregular';
@@ -343,199 +317,31 @@ p.ptitle {
     margin-top: -5px;
     color: #E9BA00;
 }
-/* SKILLS BOX */
-#skills {
-    height: 150px;
-    width: 510px;
-    position: relative;
-}
 #skills .icon {
-    background: none repeat scroll 0 0 #CCCCCC;
-    border-radius: 80px;
-    float: left;
-    font-family: 'primelight';
-    height: 150px;
-    margin: 5px 10px;
     text-align: center;
-    width: 150px;
-    padding: 10px;
-    position: absolute;
-    top: 0;
-    z-index: 9000;
-}
-#skills .icon:hover {
-    background: none !important;
-    border: 4px solid #ffffff;
-    opacity: .8;
-    color: #ffffff;
-}
-.descbox {
-    height: 180px;
-    position: absolute;
-    top: -15px;
-    width: 185px;
-    opacity: 0.9;
-    z-index: 4000;
-}
-.printbtn {
-    left: -14px;
-}
-.webbtn {
-    left: -56px;
-      height: 180px;
-    position: absolute;
-    top: -15px;
-    width: 185px;
-    opacity: 0.9;
-    z-index: 4000;
-}
-.marketbtn {
-    left: -180px;
-}
-.printdesc, .webdesc, .marketdesc {
-    top: 180px;
-    height: 170px;
-    width: 540px;
-    position: absolute;
-    left: 0;
-    background: #6B5373;
-    color: #fff;
-    display: none;
-}
-.printdesc li, .webdesc li, .marketdesc li {
-    padding: 10px 15px 10px 10px;
-}
-.printdesc ul, .webdesc ul, .marketdesc ul {
-     float: left;
-    margin-top: 25px;
-    margin-left: 30px;
-}
-.webdesc {
-
-}
-.descbox {
-    width: 525px;
-}
-.descbox ul {
+    background: #ccc;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    width: 80px;
+    height: 80px;
     font-family: 'primelight';
-    font-size: 1.2em;
 }
-.purple {
-    background-color: #742dab;
-}
-.white {
-    color: #ffffff !important;
-}
-.icon1 {
-   left: 0;
-    padding: 10em;
-}
-.icon2 {
-    left: 170px;
-}
-.icon3 {
-    left: 340px;
-}
-.icon1 p {
-   left: 0;
-}
-.icon2 p {
-    left: 170px;
-}
-.icon3 p {
-    left: 340px;
-}
-#skills p {
-    color: #6B5373;
-    font-family: 'primeregular';
-    font-size: 1.15em;
-    font-style: italic;
-    line-height: 1em;
-    padding: 10px 5px;
-    text-align: center;
-    z-index: 6000;
-    margin-top: 70px;
-    
-}
-.icon-print {
-    color: #6b5373;
-}
-.icon-print:hover {
-    color: #ffffff;
-}
-.icon-laptop {
-    color: #6b5373;
-}
-.icon-laptop:hover {
-    color: #ffffff;
-}
-.icon-lightbulb {
-    color: #6b5373;
-}
-.icon-lightbulb:hover {
-    color: #ffffff;
-}
-.icon-print:before, .icon-laptop:before, .icon-lightbulb:before {
-    font-size: 55px;
-    padding-top: 10px;
-    margin-top: 0px;
-    padding: 10px;
-    display: inline-block;
-    position: absolute;
-    left: 25%;
-    z-index: 5000;
-}
-.icon-lightbulb:before {
-    left: 33% !important;
-}
-.selected-box {
-    background-color: #6b5373;
-    content: "";
-    height: 180px;
-    left: -14px;
-    position: absolute;
-    top: -13px;
-    width: 185px;
-     opacity: 0.9;
-    z-index: 0;
-    display: none;
-}
-.selected-box-center {
-    background-color: #6b5373;
-    content: "";
-    height: 180px;
-    left: 168px;
-    position: absolute;
-    top: -13px;
-    width: 172px;
-     opacity: 0.9;
-    z-index: 0;
-    display: none;
-}
-.selected-box-right {
-    background-color: #6b5373;
-    content: "";
-    height: 180px;
-    left: 340px;
-    position: absolute;
-    top: -13px;
-    width: 172px;
-     opacity: 0.9;
-    z-index: 0;
-    display: none;
+.icon-print:before {
+    font-size: 40px;
+    margin-top: 10px;
 }
 #skills ul li {
     display: none;
 }
 #aboutbox1 {
- margin-left: 270px;
+ margin-left: 355px;
 margin-top: -35px;
 }
 #aboutbox1 h1 {
     line-height: 1.1em;
     font-size: 3em;
     color: #7C6783;
-    margin-top: 35px;
 }
 @font-face {
     font-family: 'primelight';

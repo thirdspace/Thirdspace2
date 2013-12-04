@@ -31,6 +31,18 @@
        });
    });
 </script>
+    
+      <script>
+		   /*Background Swap*/
+		   		$( document ).ready(function() {
+					$( ".social" ).on( "mouseenter", function() {
+						 $(".socialtext") .toggle("fast");
+					});
+                    $( ".social" ).on( "mouseleave", function() {
+						 $(".socialtext") .toggle("slow");
+					});
+				});
+		   </script>
 
 </head>
 <body>
@@ -42,7 +54,7 @@
         <div class="navbar col_3 visible column">
             <img src="images/logo.png" id="logo" alt="ThirdSpace" /></a><!--End Logobox-->
    			
-        <img class="hidden" src="images/menu.png" />
+          <div class="icon-reorder"></div>
         
             <ul>
 				<li><a href="#box2">About</a></li>
@@ -53,49 +65,183 @@
 			</ul>
             </div><!--End navbar-->
         
-          <div class="content col_9 visible column fade">
+          <div class="content col_9 bar visible column long fade">
              
               <div id="box1" class="wrapperbox">
 		
 			<div class="spacer" style="margin-top: 50px"></div>
 			
 			<div class="introbox box">
-				<p id="introheading">Creating <span class="introstrong">Web</span> &amp; <span class="introstrong">Print Media</span><br /> for the Digital Generation</p>
+				<p id="introheading">Creating <span class="introstrong">Web</span> &amp; <span class="introstrong">Print Media</span> for the Digital Generation</p>
 				<div class="social">
-					<div class="socialcontainer"><a href="mailto:stephen.peaslee@gmail.com"><img src="images/email.png" height="32" width="32" alt="email me" />email</a></div>
-					<div class="socialcontainer"><a href="skype:siddhartha108"><img src="images/skype.png" height="32" width="32" alt="skype me" />skype</a></div>
-					<div class="socialcontainer"><a href="th.linkedin.com/pub/stephen-peaslee/27/ab9/762"><img src="images/linkedin.png" height="32" width="32" alt="linked in" />linkedin</a></div>
-					<div class="socialcontainer"><a href="https://twitter.com/stephenpeas"><img src="images/twitter.png" height="32" width="32" alt="twitter" />twitter</a></div>
-					<div class="socialcontainer"><a href="http://forrst.me/third_space"><img src="images/forrst.png" height="32" width="32" alt="forrst" />forrst</a></div>
-					<div class="socialcontainer"><a href="http://www.behance.net/stephenpeaslee"><img src="images/behance.png" height="32" width="32" alt="behance" />behance</a></div>
+					<div class="socialcontainer"><a href="mailto:stephen.peaslee@gmail.com"><img src="images/email.png" height="40" width="40" alt="email me" /><span class="socialtext">email</span></a></div>
+					<div class="socialcontainer"><a href="skype:siddhartha108"><img src="images/skype.png" height="40" width="40" alt="skype me" /><span class="socialtext">skype</span></a></div>
+					<div class="socialcontainer"><a href="th.linkedin.com/pub/stephen-peaslee/27/ab9/762"><img src="images/linkedin.png" height="40" width="40" alt="linked in" /><span class="socialtext">linkedin</span></a></div>
+					<div class="socialcontainer"><a href="https://twitter.com/stephenpeas"><img src="images/twitter.png" height="40" width="40" alt="twitter" /><span class="socialtext">twitter</span></a></div>
+					<div class="socialcontainer"><a href="http://forrst.me/third_space"><img src="images/forrst.png" height="40" width="40" alt="forrst" /><span class="socialtext">forrst</span></a></div>
+					<div class="socialcontainer"><a href="http://www.behance.net/stephenpeaslee"><img src="images/behance.png" height="40" width="40" alt="behance" /><span class="socialtext">behance</span></a></div>
 				</div><!--End Social-->
 			</div><!--End Box-->
 			
 		</div><!--End Box1-->
 		
-       <div class="spacer" style="margin-top: 50px"></div>  
         </div><!--End Content-->
-          
-    <div class="content col_9 visible column fade">
-              
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-             
-            
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            
-            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>  
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            
-            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-             
-            
-            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-            
-            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>  
+
+    <div id="about" class="content col_9 bar visible column fade">
+         <div class="box">
+				<img id="stephen" src="images/stephen.jpg" alt="Stephen Peaslee" class="fade-in one" />
+				
+				<div id="aboutbox1" class="fade-in one">
+				
+					<h1>Stephen Peaslee</h1>
+					<p class="ptitle">Designer &amp; Front-end Developer</p>
+					
+					<!--Introduction-->
+					<div id="introductionbox">
+						<p>I'm a designer from Redmond, Washington, devoting my life to building brands, creating immersive and innovative media experiences, and adding to my customer's bottom line.</p>
+						<p>With every project I take on, I strive for esthetic excellence, thoughtful targeted marketing, and a consistent look and feel across all mediums both online and off.</p>
+						<p>I've been designing professionally for six years now, with experience in:</p>
+					</div><!--End 650 Width Misc Div-->
+										
+					<!--What I Do-->
+
+				</div><!--End aboutbox1-->
+						
+				
+					
+			</div><!--End Box-->
             
           </div><!--End Content-->
+    
+     <script>
+		   /*Background Swap*/
+		   		$( document ).ready(function() {
+					$( ".printbtn" ).on( "mouseenter", function() {
+						 $(".selected-box").fadeIn("slow");
+                         $(".printtext").addClass("white");
+                        $(".icon-print").addClass("white");
+                        $(".printdesc").slideToggle("slow");
+					});
+                    $( ".printbtn" ).on( "mouseleave", function() {
+                         $(".printdesc").slideToggle("slow");
+                         $(".printtext").removeClass("white");
+                         $(".icon-print").removeClass("white");
+                         $(".selected-box").fadeOut("slow");
+                    }); 
+                    
+                  
+                    $( ".webbtn" ).on( "mouseenter", function() {
+				        $(".selected-box-center").fadeIn("slow");
+                         $(".webtext").addClass("white");
+                        $(".icon-laptop").addClass("white");
+                        $(".webdesc").slideToggle("slow");
+					});
+                    $( ".webbtn" ).on( "mouseleave", function() {
+                         $(".webdesc").slideToggle("slow");
+                         $(".webtext").removeClass("white");
+                         $(".icon-laptop").removeClass("white");
+                        $(".selected-box-center").fadeOut("slow");
+                    });    
+                        
+                    
+                    
+                    $( ".marketbtn" ).on( "mouseenter", function() {
+                         $(".selected-box-right").fadeIn("slow");
+                         $(".markettext").addClass("white");
+                        $(".icon-lightbulb").addClass("white");
+                        $(".marketdesc").slideToggle("slow");
+                   });
+                     $( ".marketbtn" ).on( "mouseleave", function() {
+                         $(".marketdesc").slideToggle("slow");
+                         $(".markettext").removeClass("white");
+                         $(".icon-lightbulb").removeClass("white");
+                        $(".selected-box-right").fadeOut("slow");
+                    });    
+                
+                  	
+				});
+		   </script>
+    
+    <div class="content_nobg" style="opacity: .8;">					
+                        <div id="skills" class="skillbtn">
+                            
+                        <div class="selected-box"></div>
+                        <div class="selected-box-center"></div>
+                        <div class="selected-box-right"></div>
+
+                            
+                        <div class="icon1 icon printbtn">
+                        <div class="icon-print"></div>
+                         <p class="printtext">Print Design</p>
+                          
+                        </div><!--Icon1-->
+        
+                           <div class="icon2 icon webbtn">
+                                <div class="icon-laptop"></div>
+                                <p class="webtext">Web<br /></>Development</p>
+                            </div><!--Icon2-->
+                            
+                       <div class="icon3 icon marketbtn">
+                       <div class="icon-lightbulb nudge"></div>
+                        <p class="markettext">Marketing</p>
+                           </div>
+                        </div><!--Icon3-->
+            			
+                        <div class="printdesc descbox">
+                            <ul>
+                                  <li>Print Collateral</li>
+                                  <li>Pre-press</li>
+                                  <li>Publications</li>
+                             </ul>
+                             <ul>
+                                <li>Signs &amp; Banners</li>
+                                 <li>Billboards</li>
+                                  <li>Tradeshows</li>
+                              </ul>
+                              <ul>
+                                <li>Packaging</li>
+                                <li>Photo Editing</li>
+                                <li>Illustration</li>
+                            </ul>
+                        </div><!--End printdesc-->
+                        <div class="webdesc descbox">
+                             <ul>
+                                  <li>Visual Mockups</li>
+                                  <li>HTML5 / CSS3</li>
+                                  <li>JS &amp; jQuery</li>
+                            </ul>
+                            <ul>
+                                 <li>Responsive Design</li>
+                                 <li>User Experience</li>
+                                 <li>Content Architecture</li>
+                            </ul>
+                            <ul>
+                                 <li>Wordpress</li>
+                                 <li>App UXI</li>
+                            </ul>
+                        </div><!--End Webdesc-->
+                        <div class="marketdesc descbox">
+                            <ul>
+                                  <li>Social Campaigns</li>
+                                  <li>Social Branding</li>
+                                  <li>Email Newsletters</li>
+                            </ul>
+                            <ul>
+                                 <li>Display Ads</li>
+                                 <li>Interactive Ads</li>
+                                 <li>Content Creation</li>
+                            </ul>
+                            <ul>
+                                 <li>On-Site SEO</li>
+                                 <li>Advertorials</li>
+                            </ul>
+                        </div><!--End Marketdesc-->
+    
+						</div><!--End Navigatin_horiz-->
+						
+					</div><!--End Skills-->
+				</div>
+    
 	</div><!--End col_12-->
 </div> <!-- End Grid -->
 </body>
