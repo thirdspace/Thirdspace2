@@ -133,6 +133,11 @@ border-radius: 20px 0px 0px 20px;
 .navbar span{
 	color:#86dc00;
 	}
+span.pnavtitle  {
+    color: #999;
+    font-family: 'primelight';
+    margin-left: 20px;
+}
 
 .navbar ul{
     display: block;
@@ -160,6 +165,52 @@ border-radius: 20px 0px 0px 20px;
 	#link-top{
 	display:none;
 	}
+.navbar ul.portfolionav {
+    margin-top: 10px;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    display: none;
+}
+.navbar ul.portfolionav li a {
+    font-size: 12pt;
+    padding-left: 40px;
+    line-height: .3em;
+    float: left;
+}
+.navbar ul.portfolionav li:first-child {
+    padding-bottom: 10px;
+}
+.portfolio {
+    margin-left: 26%;
+    width: 70%;
+}
+.portfolionav .icon-lightbulb:before {
+    left: 8px;
+}
+.pnavtitle {
+    color: #ccc;
+    font-size: 12pt;
+}
+.portfolionav .icon-print:before, .portfolionav .icon-refresh:before, .portfolionav .icon-laptop:before, .portfolionav .icon-lightbulb:before {
+    clear: both;
+    left: 0;
+    color: #bababa;
+    font-size: 25pt;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
+.portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before, .portfolionav .icon-laptop-menu:before, .portfolionav .icon-lightbulb-menu:before {
+    clear: both;
+    left: 0;
+    color: #bababa;
+    font-size: 17pt;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+}
 /* CONTENT */
 .introbox {
 }
@@ -171,7 +222,7 @@ border-radius: 20px 0px 0px 20px;
     height: 100%;
 }
 .content_nobg {
- float: right;
+    float: right;
     padding: 1em;
     margin-right: 15px !important;
 	margin-top: 30px !important;
@@ -457,22 +508,22 @@ p.ptitle {
     margin-top: 70px;
     
 }
-.icon-print {
+.icon-print, .icon-print-menu {
     color: #6b5373;
 }
-.icon-print:hover {
+.icon-print:hover, .icon-print-menu:hover {
     color: #ffffff;
 }
-.icon-laptop {
+.icon-laptop, .icon-laptop-menu {
     color: #6b5373;
 }
-.icon-laptop:hover {
+.icon-laptop:hover, .icon-laptop-menu {
     color: #ffffff;
 }
-.icon-lightbulb {
+.icon-lightbulb, .icon-lightbulb-menu {
     color: #6b5373;
 }
-.icon-lightbulb:hover {
+.icon-lightbulb:hover, .icon-lightbulb-menu:hover {
     color: #ffffff;
 }
 .icon-print:before, .icon-laptop:before, .icon-lightbulb:before {
@@ -483,6 +534,38 @@ p.ptitle {
     display: inline-block;
     position: absolute;
     left: 25%;
+    z-index: 5000;
+}
+.icon-refresh-menu:before {
+    content: '';
+    color: #999;
+    background-position: 10px 10px;
+}
+.icon-print-menu:before {
+    content: '';
+    color: #999;
+    background-position: 10px 10px;
+}
+.icon-laptop-menu:before {
+    content: '';
+    color: #999;
+    background-position: 10px 10px;
+}
+.icon-lightbulb-menu:before {
+    content: '';
+    color: #999;
+    left: 5px !important;
+    background-position: 20px 10px;
+}
+
+.icon-refresh-menu:before, .icon-print-menu:before, .icon-laptop-menu:before, .icon-lightbulb-menu:before {
+    font-size: 15px;
+    padding-top: 10px;
+    margin-top: 0px;
+    padding: 10px;
+    left: 0;
+    display: inline-block;
+    position: absolute;
     z-index: 5000;
 }
 .icon-lightbulb:before {
@@ -536,6 +619,46 @@ margin-top: -35px;
     font-size: 3em;
     color: #7C6783;
     margin-top: 35px;
+}
+/* Availability Box */
+.availabilitybox {
+    background: #fff;
+    color: #fff;
+    width: 360px;
+    height: 120px;
+    padding: 10px;
+    margin-right: 90px;
+    position: absolute;
+    left: -400px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+}
+.avlabels {
+    float: left;
+    font-family: 'primelight';
+    color: #999;
+    clear: both;
+    font-size: 13pt;
+    padding: 5px;
+    list-style: none;
+}
+.avfields {
+    float: right;
+    color: #999;
+    clear: both:
+    padding: 5px;
+    list-style: none;
+}
+.avfields a {
+    text-decoration: none;
+    border: 2px solid #E9BA00;
+    padding: 3px;
+    font-size: 10pt;
+    color: #E9BA00;
+     border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
 }
 @font-face {
     font-family: 'primelight';

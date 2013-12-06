@@ -26,6 +26,7 @@
 .grid{
 max-width:1220px;
 margin:0 auto;
+height: 4000px;/*TAKE THIS OUT*/
 padding:0 2em;
 }
 

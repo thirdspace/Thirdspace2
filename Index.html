@@ -10,15 +10,19 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
-    	<link rel="stylesheet" type="text/css" href="css/kickstart-grid.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/kickstart-grid.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="all" />
+
 	
 	<!-- Javascript -->
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/kickstart.js"></script>
+    <script type="text/javascript" src="js/waypoints.js"></script>
       <!-- Load Scroll --><script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
       <!-- Load Easing --><script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
       <!-- Load ScrollTo --><script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
-    
+      <!-- Load Flex Slider Plugin --><script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+   
 <!-- LOCAL SCROLL -->    
 
 <script type="text/javascript">
@@ -32,6 +36,8 @@
    });
 </script>
     
+    
+    
       <script>
 		   /*Background Swap*/
 		   		$( document ).ready(function() {
@@ -42,10 +48,15 @@
 						 $(".socialtext") .toggle("slow");
 					});
 				});
+          
+          $(document).ready(function(){
+              $('#about').waypoint(function{
+                  $(".portfolionav") .fadeIn("fast");
+  });
 		   </script>
 
 </head>
-<body>
+<body class="loading">
     
 <img src="images/bg7.jpg" class="fade-in two" style="position: absolute; top: 0px; left: 0px; z-index: -5; width: 100%;" alt="Thirdspace" />
     
@@ -57,12 +68,21 @@
           <div class="icon-reorder"></div>
         
             <ul>
-				<li><a href="#box2">About</a></li>
+				<li><a href="#about">About</a></li>
 				<li><a href="#box3">Portfolio</a></li>
 				<li><a href="#box4">Blog</a></li>
 				<li><a href="#box5">Resume</a></li>
 				<li><a href="#box6">Contact</a></li>
 			</ul>
+        
+            <ul class="portfolionav">
+                <li><span class="pnavtitle">Browse Work</span></li>
+                <li class="icon-refresh-menu"><a href="#">Recent</a></li>
+                <li class="icon-print-menu"><a href="#">Print</a></li>
+                <li class="icon-laptop-menu"><a href="#">Web</a></li>
+                <li class="icon-lightbulb-menu"><a href="#">Marketing</a></li>
+            </ul>
+            
             </div><!--End navbar-->
         
           <div class="content col_9 bar visible column long fade">
@@ -98,9 +118,12 @@
 					
 					<!--Introduction-->
 					<div id="introductionbox">
-						<p>I'm a designer from Redmond, Washington, devoting my life to building brands, creating immersive and innovative media experiences, and adding to my customer's bottom line.</p>
-						<p>With every project I take on, I strive for esthetic excellence, thoughtful targeted marketing, and a consistent look and feel across all mediums both online and off.</p>
-						<p>I've been designing professionally for six years now, with experience in:</p>
+                        
+                        <p>I'm a media designer Redmond, Washington creating beautiful solutions on and off the web since '06.  </p>
+						<p>I have a wide variety of skills from production, to creative visual design, to front end web work which helps me to build media and campaigns seamlessly without needing many hand offs for different mediums. I write clean extensible code for a world where people no longer browse the web just on their desktop computers.</p>
+                        
+                         <p>With every project or campaign I try to keep a very user centered approach driven by data.</p>
+                        
 					</div><!--End 650 Width Misc Div-->
 										
 					<!--What I Do-->
@@ -162,85 +185,146 @@
 				});
 		   </script>
     
-    <div class="content_nobg" style="opacity: .8;">					
-                        <div id="skills" class="skillbtn">
-                            
-                        <div class="selected-box"></div>
-                        <div class="selected-box-center"></div>
-                        <div class="selected-box-right"></div>
-
-                            
-                        <div class="icon1 icon printbtn">
-                        <div class="icon-print"></div>
-                         <p class="printtext">Print Design</p>
-                          
-                        </div><!--Icon1-->
+    <div class="content_nobg" style="opacity: .8;">	
         
-                           <div class="icon2 icon webbtn">
-                                <div class="icon-laptop"></div>
-                                <p class="webtext">Web<br /></>Development</p>
-                            </div><!--Icon2-->
-                            
-                       <div class="icon3 icon marketbtn">
-                       <div class="icon-lightbulb nudge"></div>
-                        <p class="markettext">Marketing</p>
-                           </div>
-                        </div><!--Icon3-->
-            			
-                        <div class="printdesc descbox">
-                            <ul>
-                                  <li>Print Collateral</li>
-                                  <li>Pre-press</li>
-                                  <li>Publications</li>
-                             </ul>
-                             <ul>
-                                <li>Signs &amp; Banners</li>
-                                 <li>Billboards</li>
-                                  <li>Tradeshows</li>
-                              </ul>
-                              <ul>
-                                <li>Packaging</li>
-                                <li>Photo Editing</li>
-                                <li>Illustration</li>
-                            </ul>
-                        </div><!--End printdesc-->
-                        <div class="webdesc descbox">
-                             <ul>
-                                  <li>Visual Mockups</li>
-                                  <li>HTML5 / CSS3</li>
-                                  <li>JS &amp; jQuery</li>
-                            </ul>
-                            <ul>
-                                 <li>Responsive Design</li>
-                                 <li>User Experience</li>
-                                 <li>Content Architecture</li>
-                            </ul>
-                            <ul>
-                                 <li>Wordpress</li>
-                                 <li>App UXI</li>
-                            </ul>
-                        </div><!--End Webdesc-->
-                        <div class="marketdesc descbox">
-                            <ul>
-                                  <li>Social Campaigns</li>
-                                  <li>Social Branding</li>
-                                  <li>Email Newsletters</li>
-                            </ul>
-                            <ul>
-                                 <li>Display Ads</li>
-                                 <li>Interactive Ads</li>
-                                 <li>Content Creation</li>
-                            </ul>
-                            <ul>
-                                 <li>On-Site SEO</li>
-                                 <li>Advertorials</li>
-                            </ul>
-                        </div><!--End Marketdesc-->
+     <div class="availabilitybox">
+        
+        <ul class="avlabels">
+            <li>Availability:</li>
+            <li>Current Work:</li>
+            <li>Seeking:</li>
+        </ul> 
+            
+         <ul class="avfields">
+            <li>Limited <sub>(until Jan 10 )</sub></li>
+            <li>Tovolo, <sub>Innovative Kitchenware</sub></li>
+            <li><a href="#">Freelance</a> <a href="#">Fulltime</a></li>
+        </ul>   
+            
+        </div><!--End AvailabilityBox-->
+        
+        
+
+        <div id="skills" class="skillbtn">
+            
+        <div class="selected-box"></div>
+        <div class="selected-box-center"></div>
+        <div class="selected-box-right"></div>
+
+            
+        <div class="icon1 icon printbtn">
+        <div class="icon-print"></div>
+         <p class="printtext">Print Design</p>
+          
+        </div><!--Icon1-->
+
+           <div class="icon2 icon webbtn">
+                <div class="icon-laptop"></div>
+                <p class="webtext">Web<br /></>Development</p>
+            </div><!--Icon2-->
+            
+       <div class="icon3 icon marketbtn">
+       <div class="icon-lightbulb nudge"></div>
+        <p class="markettext">Marketing</p>
+           </div>
+        </div><!--Icon3-->
+        
+        <div class="printdesc descbox">
+            <ul>
+                  <li>Print Collateral</li>
+                  <li>Pre-press</li>
+                  <li>Publications</li>
+             </ul>
+             <ul>
+                <li>Signs &amp; Banners</li>
+                 <li>Billboards</li>
+                  <li>Tradeshows</li>
+              </ul>
+              <ul>
+                <li>Packaging</li>
+                <li>Photo Editing</li>
+                <li>Illustration</li>
+            </ul>
+        </div><!--End printdesc-->
+        <div class="webdesc descbox">
+             <ul>
+                  <li>Visual Mockups</li>
+                  <li>HTML5 / CSS3</li>
+                  <li>JS &amp; jQuery</li>
+            </ul>
+            <ul>
+                 <li>Responsive Design</li>
+                 <li>User Experience</li>
+                 <li>Content Architecture</li>
+            </ul>
+            <ul>
+                 <li>Wordpress</li>
+                 <li>App UXI</li>
+            </ul>
+        </div><!--End Webdesc-->
+        <div class="marketdesc descbox">
+            <ul>
+                  <li>Social Campaigns</li>
+                  <li>Social Branding</li>
+                  <li>Email Newsletters</li>
+            </ul>
+            <ul>
+                 <li>Display Ads</li>
+                 <li>Interactive Ads</li>
+                 <li>Content Creation</li>
+            </ul>
+            <ul>
+                 <li>On-Site SEO</li>
+                 <li>Advertorials</li>
+            </ul>
+        </div><!--End Marketdesc-->
+
+        </div><!--End Navigatin_horiz-->
+        
+    </div><!--End Skills-->
     
-						</div><!--End Navigatin_horiz-->
-						
-					</div><!--End Skills-->
-				</div>
+    <div class="portfolio">
+        
+       
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+          
+         <!-- FlexSlider -->
+  <script defer src="../jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+        
+    </div><!--End Portfolio-->
+    
+</div><!--End Content-nobg-->
     
 	</div><!--End col_12-->
 </div> <!-- End Grid -->
