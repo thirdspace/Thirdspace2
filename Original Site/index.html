@@ -1,0 +1,807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Load jQuery -->
+    <script type="text/javascript" src="assets/scripts/js/jquery-1.8.2.min.js"></script>
+    <!-- Load ScrollTo --><script type="text/javascript" src="assets/scripts/js/jquery.scrollTo-1.4.3.1-min.js"></script>
+       <!-- Load navidropdown --><script type="text/javascript" src="assets/scripts/js/jquery.naviDropDown.1.0.js"></script>
+     <!-- Load Scroll --><script type="text/javascript" src="assets/scripts/js/jquery.localscroll-min.js"></script>
+      <!-- Load Easing --><script type="text/javascript" src="assets/scripts/js/jquery.easing.1.3.js"></script>
+      <!-- Load Hover Intent --><script type="text/javascript" src="assets/scripts/js/jquery.hoverIntent.minified.js"></script>
+      <!-- Load Tooltips --><script type="text/javascript" src="assets/scripts/js/tooltips.js"></script>
+      <link rel="stylesheet" href="jqtransformplugin/jqtransform.css" type="text/css" media="all" />
+      <link type="text/css" rel="stylesheet" href="assets/scripts/css/form.css?v3.0.3749"/>
+      <link href="assets/scripts/css/calendarview.css?v3.0.3749" rel="stylesheet" type="text/css" />
+      <link type="text/css" rel="stylesheet" href="assets/scripts/css/styles/pastel.css?3.0.3749" />
+      <link rel="stylesheet" href="assets/scripts/css/jquery.fancybox.css" type="text/css" media="screen" />
+	  <link rel="stylesheet" href="assets/scripts/css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	  <link href="http://max.jotfor.ms/min/g=formCss?3.1.682" rel="stylesheet" type="text/css" />
+	  <link type="text/css" rel="stylesheet" href="assets/css/form.css" />
+	  
+      <script type="text/javascript" src="jqtransformplugin/jquery.jqtransform.js" ></script>
+      <script src="assets/scripts/js/protoplus.js?v=3.0.3749" type="text/javascript"></script>
+      <script src="assets/scripts/js/protoplus-ui.js?v=3.0.3749" type="text/javascript"></script>
+      <script src="assets/scripts/js/jotform.js?v=3.0.3749" type="text/javascript"></script>
+      <script src="assets/scripts/js/calendarview.js?v=3.0.3749" type="text/javascript"></script>
+      <script type="text/javascript" src="assets/scripts/js/jquery.fancybox.js"></script>
+      <script type="text/javascript" src="assets/scripts/js/jquery.fancybox.pack.js?v=2.1.1"></script>
+      <script type="text/javascript" src="assets/scripts/js/jquery.fancybox-buttons.js?v=1.0.4"></script>
+      <script type="text/javascript" src="assets/scripts/js/jquery.fancybox-media.js?v=1.0.4"></script>
+	 
+      
+         <link href="style.css" type="text/css" rel="stylesheet" />
+         <link rel='stylesheet' href='assets/scripts/css/style.css' />
+         <link rel='stylesheet' href='assets/scripts/css/tooltips.css' />
+         
+                 
+    <title>ThirdSpace Media</title>
+		    <!-- javascript that will initiate jQuery and the LocalScroll plugin -->
+		 
+		    <script type="text/javascript">
+	       $(document).ready(function()
+	       {
+	           // Scroll the whole document
+	           $('body').localScroll({
+	              target:'body'
+	              
+	           });
+	       });
+	       </script>
+	      
+
+	       
+	       <script type="text/javascript">
+	       	$(document).ready(function() {
+	       		$(".fancybox").fancybox();
+	       	});
+	       </script>
+	       
+	       
+	  	       <script type="text/javascript">
+	       $(function(){
+	           $('#navigation_horiz').naviDropDown({
+	               dropDownWidth: 'max'
+	           });
+	       });
+	       </script>
+	       
+	       <script type="text/javascript">
+	      	$(function() {
+	       		$("a[title]").tooltips();
+	       	});
+	       </script>
+	       
+	       <script type="text/javascript">
+	       	$(function(){
+	       		$('form').jqTransform({imgPath:'jqtransformplugin/img/'});
+	       	});
+	       </script>
+	       
+	   
+	       <script type="text/javascript">
+	          JotForm.init(function(){
+	             $('input_9').hint('ex: myname@example.com');
+	          });
+	       </script>
+	       
+	       <script type="text/javascript">
+	       function showPopup(url) {
+	       newwindow=window.open(url,'name','height=300,width=300,top=200,left=300,resizable');
+	       if (window.focus) {newwindow.focus()}
+	       }
+	       </script>
+	       
+	
+</head>
+<body>
+
+<div id="wrapper">
+
+	<div id="container">
+	
+    	<img src="images/bg7.jpg" class="fade-in two" style="position: absolute; top: 0px; left: 0px; z-index: -5; width: 100%;" alt="Thirdspace" />
+		
+		<div id="sidenav">
+			<a href="#top"><img src="images/logo5.png" id="logo" alt="ThirdSpace" /></a><!--End Logobox-->
+   			<ul>
+				<li><a href="#box2">About</a></li>
+				<li><a href="#box3">Portfolio</a></li>
+				<li><a href="#box4">Blog</a></li>
+				<li><a href="#box5">Resume</a></li>
+				<li><a href="#box6">Contact</a></li>
+			</ul>
+		</div><!--End sidenav-->
+		
+	<div id="content">	
+
+		<div id="box1" class="wrapperbox">
+		
+			<div class="spacer" style="margin-top: 50px"></div>
+			
+			<div class="box">
+				<p id="introheading">Creating <span class="introstrong">Web</span> &amp; <span class="introstrong">Print Media</span><br /> for the Digital Generation</p>
+				<div class="social">
+					<div class="socialcontainer"><a href="mailto:stephen.peaslee@gmail.com"><img src="images/email.png" height="32" width="32" alt="email me" />email</a></div>
+					<div class="socialcontainer"><a href="skype:siddhartha108"><img src="images/skype.png" height="32" width="32" alt="skype me" />skype</a></div>
+					<div class="socialcontainer"><a href="th.linkedin.com/pub/stephen-peaslee/27/ab9/762"><img src="images/linkedin.png" height="32" width="32" alt="linked in" />linkedin</a></div>
+					<div class="socialcontainer"><a href="https://twitter.com/stephenpeas"><img src="images/twitter.png" height="32" width="32" alt="twitter" />twitter</a></div>
+					<div class="socialcontainer"><a href="http://forrst.me/third_space"><img src="images/forrst.png" height="32" width="32" alt="forrst" />forrst</a></div>
+					<div class="socialcontainer"><a href="http://www.behance.net/stephenpeaslee"><img src="images/behance.png" height="32" width="32" alt="behance" />behance</a></div>
+				</div><!--End Social-->
+			</div><!--End Box-->
+			
+		</div><!--End Box1-->
+		
+		<div class="largespacer2"></div>
+		
+		<div id="box2" tabindex="-1" class="boxWrapper"><div class="spacer"></div>
+			
+			<div class="box">
+				<img id="stephen" src="images/stephen3.png" alt="Stephen Peaslee" class="fade-in one" />
+				
+				<div id="aboutbox1" class="fade-in one">
+				
+					<h1>Stephen Peaslee</h1>
+					<p class="ptitle">Designer and Front-end Developer</p>
+					
+					<!--Introduction-->
+					<div id="introductionbox">
+						<p>I'm a designer from Redmond, Washington, devoting my life to building brands, creating immersive and innovative media experiences, and adding to my customer's bottom line.</p>
+						<p>With every project I take on, I strive for esthetic excellence, thoughtful targeted marketing, and a consistent look and feel across all mediums both online and off.</p>
+						<p>I've been designing professionally for six years now, with experience in:</p>
+					</div><!--End 650 Width Misc Div-->
+										
+					<!--What I Do-->
+					<div id="skills">
+						
+						<div id="navigation_horiz" style="margin-left: 10px;">
+							<ul>
+						    	<li>
+						    	<a id="marketinginfo" class="navlink" href="#">Marketing</a>
+						        	
+						        	<div class="dropdown" id="dropdown_one">            
+							          <p><a href="#casestudies">See Examples</a></p>
+							          <p>Email Marketing</p>
+							          <p>Web Advertising</p>
+							          <p>Social Networking</p>
+						        	</div><!-- .dropdown_menu -->  
+						    	</li>
+						    	<li><img class="buttondiv" src="images/buttondiv.png" height="47" width="2" alt="divider" /></li>
+						    	<li>
+						    	<a id="printinfo" class="navlink" href="#">Print Design</a>
+						        	
+						        	<div class="dropdown" id="dropdown_two">            
+							          <p><a href="#print">See Examples</a></p>
+							          <p>Printed Collateral</p>
+							          <p>Publications</p>
+							          <p>Billboards</p>
+							          <p>Signs and Banners</p>
+						        	</div><!-- .dropdown_menu -->  
+						    	</li>
+						    	<li><img class="buttondiv" src="images/buttondiv.png" height="47" width="2" style="margin-left:-40px;" alt="divider" /></li>
+						    	<li>
+						    	<a id="webinfo" class="navlink" href="#">Web Development</a>
+						        	
+						        	<div class="dropdown" id="dropdown_three">            
+							          <p><a href="#web">See Examples</a></p>
+							          <p>Websites</p>
+							          <p>Interface Development</p>
+							          <p>Email Marketing</p>
+							          <p>Mobile Formatted Sites</p>
+							          <p>Responsive Design</p>
+						        	</div><!-- .dropdown_menu -->  
+						    	</li>
+						    </ul>
+						</div><!--End Navigatin_horiz-->
+						
+					</div><!--End Skills-->
+				
+				</div><!--End aboutbox1-->
+						
+				<div id="workflow">
+					<h1>Standard Project Flow<span class="subhead">&nbsp; &nbsp;[Mouse over for Description]</span></h1>
+					<a id="c1" class="c" title="I'd love to hear about your project in person, over the phone, or by skype. I can answer any questions you might have and provide a quote."><span class="number">1</span><br />Consultation</a>
+					<a id="c2" class="c" title="I'll provide visual samples for your project and you can choose between options and styles and designate the changes you would like."><span class="number">2</span><br />Concepts</a>
+					<a id="c3" class="c" title="Once we've decided upon a style and general layout, more accurate versions will be created. In the case of websites, a coded example or in the case of print, pre-press work."><span class="number">3</span><br />Creation</a>
+					<a id="c4" class="c" title="Your project is in it's final stages. You receive a sample of the finished project before print or launch, so that you can approve or make final changes." style="text-align: center;"><span class="number">4</span><br />Changes</a>
+					<a id="c5" class="c" title="With your approval, I'll finalize your project and provide you all of the source files, as well as a detailed invoice matching the quote we discussed in step 1."><span class="number">5</span><br />Completion</a>
+				</div><!--End Workflow-->
+					
+			</div><!--End Box-->
+		</div><!--End Box2-->
+		
+		<div class="largespacer"></div>
+		
+		<div id="box3" tabindex="-1" class="boxWrapper">
+			
+			<div class="spacer"></div>
+						
+			<div class="box" style="margin-left: 10px;">
+								
+				<h1 class="portfolioheader">Portfolio</h1>
+				
+				<div class="smallpanelbox">
+					<a href="#casestudies"><div id="smallpanel1" class="smallpanel"><p class="portfoliolink">Case Studies</p></div></a><!--End Small Panel-->
+					<a href="#print"><div id="smallpanel2" class="smallpanel"><p class="portfoliolink">Print Work</p></div></a><!--End Small Panel-->
+					<a href="#web"><div id="smallpanel3" class="smallpanel"><p class="portfoliolink">Web Work</p></div></a><!--End Small Panel-->
+				</div><!--End Subheadbox-->
+				
+				<div class="subheadbox"><h1 class="portfoliosubheader">Recent</h1></div><!--End Subheadbox-->
+								
+				<div class="workex">
+					<img src="images/portfolio/awdemail.png" alt="AWD Responsive Email" />
+					<div class="descbox">
+						<h4 class="workextitle">Asia Web Direct<br /> Responsive Email Design</h4>
+						<p class="exdesc">Designed a new responsive email template to promote hotel offers in South East Asia. New design is modular for easy creation of new newsletters, set up for results tracking, and cross promotion of marketing channels. </p>
+						<a  href="images/portfolio/awd_responsive_mobileview.jpg" class="fancybox readmore">Mobile Example</a>
+						<a href="images/portfolio/awd_responsive_desktopview.jpg" class="fancybox readmore"  style="margin-left: 20px;">Desktop Example</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+									
+				<div class="workex">
+					<img src="images/portfolio/awdipad.png" alt="AWD iPad Web Design" />
+					<div class="descbox">
+						<h4 class="workextitle">Asia Web Direct<br /> iPad web design</h4>
+						<p class="exdesc">Worked with a developer to design an iPad formatted version of the site to allow for easier browsing of hotels to optimize the existing photo view with added gesture capabilities &amp; mobile friendly filters.</p>
+						<a class="fancybox readmore"  href="images/portfolio/awdipad1.jpg">See Example</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+			
+				<div class="workex">
+					<img src="images/portfolio/wheelerdealer.png" alt="WheelerDealer Alloy Marketplace" />
+					<div class="descbox">
+						<h4 class="workextitle">WheelerDealer<br /> Alloy Marketplace</h4>
+						<p class="exdesc">Worked on a dev team and helped with usability &amp; CSS3 for interface elements and production work for car/wheel images.<br /> <br /><b>**Unreleased**</b></p>
+						<a class="fancybox readmore" >Example Coming Soon</a>
+					<!--<a class="fancybox readmore"  href="images/portfolio/wheelerdealer2.jpg" style="margin-left: 20px;">See Ex. 2</a>
+					<a class="fancybox readmore"  href="images/portfolio/wheelerdealer3.jpg" style="margin-left: 20px;">See Ex. 3</a>-->
+					</div>
+				</div> 
+			
+				<div class="workex">
+					<img src="images/portfolio/escapehunt_flyer.png" alt="Escape Hunt bilingual flyer" />
+					<div class="descbox">
+						<h4 class="workextitle">Escape Hunt<br /> Bilingual Flyer</h4>
+						<p class="exdesc">Created a print flyer branded to the company website utilizing a coupon code. One side of flyer contains English language, and the other Thai.</p>
+						<a class="fancybox readmore"  href="images/portfolio/escapehunt_flyer1.jpg">See Example</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+					
+				<!--<div class="workex">
+					<img src="images/portfolio/latestaysemail.png" alt="Latestays Responsive Email" />
+					<div class="descbox">
+						<h4 class="workextitle">Latestays<br />Responsive Email Design</h4>
+						<p class="exdesc">Designed a new responsive email template to promote Asia hotel offers to a primarily Thai audience. New design is modular for easy creation of new newsletters, set up for results tracking, and cross promotion of marketing channels.</p>
+						<a class="fancybox readmore"  href="images/portfolio/latestaysemail1.jpg">See Example</a>
+					</div>
+				</div>-->
+					
+					
+				<div class="workex">
+					<img src="images/portfolio/weddinginvite.png" alt="Themed Wedding Invite" />
+					<div class="descbox">
+						<h4 class="workextitle">Themed Wedding Invite</h4>
+						<p class="exdesc">For this project, I created a wedding invite and insert set for an overseas Australian wedding in Thailand. Design is styled like a real Aussie passport with textures pulled from scans and printed in comparable size. Color and design elements combine both the Australian design as well as Thai.</p>
+						<a class="fancybox readmore"  href="images/portfolio/weddinginvite2.jpg">See Example</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+					
+				<div class="workex">
+					<img src="images/portfolio/eldorado.png" alt="Eldorado Winery Mobile Page" />
+					<div class="descbox">
+						<h4 class="workextitle">Eldorado Winery<br /> Mobile web page</h4>
+						<p class="exdesc">Eldorado Winery had an existing website and needed a mobile page created to match it for a better experience on tablet or phone.</p>
+	
+						<a class="fancybox readmore"  href="images/portfolio/eldorado_mobile.jpg">Mobile Example</a>
+						<a class="readmore"  href="http://eldoradowines.org" style="margin-left: 20px;" target="_blank">Eldorado Homepage</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+					
+				<div class="workex">
+					<img src="images/portfolio/latestays_fbpromo.png" alt="Latestays Fangate" />
+					<div class="descbox">
+						<h4 class="workextitle">Latestays Fangate</h4>
+						<p class="exdesc">Created an HTML fangate page for to allow a full branded experience within Facebook to allow fans of the page access to special hotel offers and and prize giveaways. This promo is laid out in Thai for use on the Latestays Thailand page.</p>
+						<a class="fancybox readmore"  href="images/portfolio/latestays_fbpromo1.jpg">See Example</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+					
+				<div class="workex">
+					<img src="images/portfolio/wildfireemail.png" alt="Asia Web Direct Google Wildfire Campaign" />
+					<div class="descbox">
+						<h4 class="workextitle">Google Wildfire Campaign</h4>
+						<p class="exdesc">Created a Wildfire giveaway campaign for a 6 night stay at a villa for 5 and promoted through social channels, banners and email marketing. Used 'refer a friend' mechanic to get shares. Project created branding exposure on social, as well as email collection for EDM campaign.</p>
+						<a class="fancybox readmore"  href="images/portfolio/wildfireemail1.jpg">Email Creative 1</a>
+						<a class="fancybox readmore"  href="images/portfolio/wildfireemail2.jpg" style="margin-left: 20px;">Email Creative 2</a>
+					</div><!--End DescBox-->
+				</div><!--Work Example-->
+					
+			<div class="portfoliospacer"></div><!--End Resume Spacer-->
+			
+			<!--<div class="workex">
+					<img src="images/portfolio/nextstepthailand.png" alt="Next Step Thailand" />
+					<div class="descbox">
+					<h4 class="workextitle">Next Step Thailand</h4>
+					<p class="exdesc">I'm currently redesigning the website for this Eco-tourism company. I'm using their bright and vivid photos of past trips from their tours as the focal point for the website, to generate emotion and excitement for their services, while allowing easy access to info and booking.</p>
+					<a class="fancybox readmore"  href="images/portfolio/nextstepthailand1.jpg">Read More</a>
+					</div>
+			</div>End Work Example-->
+															
+			<a name="print"></a>
+			<div class="subheadbox">
+				<h1 class="portfoliosubheader">Print Work</h1>
+			</div><!--End Subheadbox-->
+			
+			<div class="workex">
+				<img src="images/portfolio/simplot.png" alt="Simplot projects" />
+				<div class="descbox">
+					<h4 class="workextitle">Simplot Newsletters<br /> and Print Projects</h4>
+					<p class="exdesc2">Simplot is one of the largest privately held food and agribusiness companies in the nation. I've regularly design ads and newsletters on their focus in plant nutrition, turf and horticulture products.</p>
+					<a class="fancybox readmore"  href="images/portfolio/simplot1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+						
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/dreammediaad.png" alt="Dream Media Ad" />
+				<div class="descbox">
+					<h4 class="workextitle">Dream Magazine Ad</h4>
+					<p class="exdesc">This was a single page ad for two brief hotel reviews. I designed this to layout to showcase the interiors while matching the modern stye of the high end luxury magazine that it was to be printed in.</p>
+					<a class="fancybox readmore" href="images/portfolio/dreammediaad1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/innovativemedia.png" alt="Innovative Media press kit "/>
+				<div class="descbox">
+					<h4 class="workextitle">Innovative Media</h4>
+					<p class="exdesc">I created this tri-fold pr kit for IM out of California. We used uv coating for the map and patterns in the design, and an embossing for the icon. Custom cut color shift stationary kit + business card holder.</p>
+					<a class="fancybox readmore"  href="images/portfolio/innovativemedia1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+				
+			<div class="workex">
+				<img src="images/portfolio/drugfreeidaho.png" alt="Drug Free Idaho Board" />
+				<div class="descbox">
+					<h4 class="workextitle">Drug Free Idaho<br /> Presentation Boards</h4>
+					<p class="exdesc">Project for a Boise Non-profit DFI, in assn. with the city of Boise, St. Lukes, and AMA. Educational presentation piece designed to educate parents on the risks of prescription drugs. Accompanying handouts with info.</p>
+					<a class="fancybox readmore"  href="images/portfolio/drugfreeidahoboard1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/sunfan.png" alt="Sunfan Product Packaging" />
+				<div class="descbox">
+					<h4 class="workextitle">Sunfan Package</h4>
+					<p class="exdesc">This was a packaging design I put together for a new energy efficient ceiling fan that was to be sold at Costco stores in the US. I designed within brand guidelines and worked with printers to ensure proper specifications.</p>
+					<a class="fancybox readmore" href="images/portfolio/sunfan1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/campperkins.png" alt="Camp Perkins newsletters" />
+				<div class="descbox">
+					<h4 class="workextitle">Camp Perkins Lutheran<br />Camp</h4>
+					<p class="exdesc">I regularly design a quarterly newsletter and annual for this Lutheran Christian camp. Throughout these publications I use photography from recent events and retreats to inspire camp participations by appealing to children and parents alike.</p>
+					<a class="fancybox readmore" href="images/portfolio/campperkins1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex">
+				<img src="images/portfolio/ranchocordova.png" alt="Rancho Cordova set" />
+				<div class="descbox">
+					<h4 class="workextitle">Rancho Cordova, CA</h4>
+					<p class="exdesc">I designed this press kit for a branding proposal to the city of Rancho Cordova California. Created design, basic brand styling, and print collateral.</p>
+					<a class="fancybox readmore nudgedown" href="images/portfolio/ranchocordova1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+					
+			<div class="workex">
+				<img src="images/portfolio/boisebaroque.png" alt="Boise Baroque Orchestra brochure" /> 
+				<div class="descbox">
+					<h4 class="workextitle">Boise Baroque Orchestra</h4>
+					<p class="exdesc">Branding, website and print advertising for a Boise based Baroque Orchestra. Helped set up online ticket sales and publish newspaper &amp; digital ads.</p>
+					<a class="fancybox readmore nudgedown" href="images/portfolio/boisebaroque1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			
+			<a name="web"></a>
+			<div class="subheadbox">
+				<h1 class="portfoliosubheader">Web Work</h1>
+			</div><!--End Subheadbox-->
+			
+			<div class="workex">
+				<img src="images/portfolio/sierravintners.png" alt="Sierra Vintners Website" />
+				<div class="descbox">
+					<h4 class="workextitle">Sierra Vintners Winery</h4>
+					<p class="exdesc">This site design was for a Californian winery. This site was created to draw visitors to the winery, showcase events and tastings, and  offer informations and offerings. Site was designed by myself, and developed by Risingline.</p>
+					<a class="readmore" href="http://sierravintners.com/" target="_blank">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="portfoliospacer"></div><!--End Resume Spacer-->
+			
+			<div class="workex">
+				<img src="images/portfolio/drsads.png" alt="Debt Reduction Display Ads" />
+				<div class="descbox">
+					<h4 class="workextitle">Debt Reduction Services<br /> Display Ads</h4>
+					<p class="exdesc">Designed 30+ ad creatives for Flash (animation and expanding) and static banner display advertising with locally and nationally targeted campaigns.</p>
+					<a class="fancybox readmore"  href="images/portfolio/flash/drs_flashex1.html" target="_blank">Flash Example 1</a>
+					<a class="fancybox readmore"  href="images/portfolio/flash/drs_flashex2.html" target="_blank" style="margin-left: 20px;">Flash Example 2</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="portfoliospacer"></div><!--End Resume Spacer-->
+			
+			<div class="workex">
+				<img src="images/portfolio/sunglo.png" alt="SunGlo Website" />
+				<div class="descbox">
+					<h4 class="workextitle">Sun Glo Cleaning</h4>
+					<p class="exdesc">Finalizing the site for Sun Glo Cleaning. Updating to a new look with CMS access for easy admin changes, and a clear and logical navigation system.</p>
+					<a class="fancybox readmore nudgedown"  href="images/portfolio/sunglo1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+					
+			<div class="portfoliospacer"></div><!--End Resume Spacer-->
+
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/onfile.png" alt="Medical OnFile landing page" />
+				<div class="descbox">
+					<h4 class="workextitle">Medical Onfile</h4>
+					<p class="exdesc">This is a minisite was for Medical Onfile in association with Nurses Service Organization. This was a persuasive sales minisite, with audio/visual testimonials reaching various demographics, as well as a sales letter with call to action and purchase links at the end.</p>
+					<a class="fancybox readmore" href="images/portfolio/onfile1.jpg">See Example</a>	
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/lysibishopnews.png" alt="Lysi Bishop Email Newsletter" />
+				<div class="descbox">
+					<h4 class="workextitle">Lysi Bishop Email</h4>
+					<p class="exdesc">This is a newsletter template I designed to update subscribers on the latest news, events and house tours. I custom coded the template with the Mailchimp proprietary tags to allow admin staff to create newsletters WYSIWYG style without breaking the code. </p>
+					<a class="fancybox readmore" href="images/portfolio/lysibishopnews1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex">
+				<img src="images/portfolio/awdad.png" alt="Asia Web Direct Display Ads" />
+				<div class="descbox">
+					<h4 class="workextitle">Asia Web Direct<br />Display Ads</h4>
+					<p class="exdesc">Designed 30+ Flash and banner display ads for local and internationally targeted web ad campaigns to promote hotels. Ads were targeted to cultural travel habits and served by IP and site related to users travel interest. </p>
+					<a class="fancybox readmore"  href="images/portfolio/flash/awd_myad.html" target="_blank">Flash Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+						
+			<div class="portfoliospacer"></div><!--End Resume Spacer-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/astahealth.png" alt="Astahealth Sales Page" />
+				<div class="descbox">
+					<h4 class="workextitle">Astahealth Landing Page</h4>
+					<p class="exdesc">This project was a sales page for a health product. I used Javascript and jQuery to create a single page design with slider and transitions to allow for multiple persuasive sales slides without having to click or scroll too far. On last slide user can set up purchase before external card processing.</p>
+					<a class="readmore" href="http://peaslee.virstorhosting.com/astahealth2/index.html" target="_blank" style="margin-top: -9px;">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/forribbonssake.png" alt="For Ribbons Sake website" />
+				<div class="descbox">
+					<h4 class="workextitle">For Ribbon's Sake</h4>
+					<p class="exdesc">For Ribbon's Sake is a not-for-profit company selling jewelry for the support of cancer research. I set up this site to allow for easy browsing and quality display of their products, as well as integration with Paypal for shopping cart functionality and online purchasing.</p>
+					<a class="readmore" href="http://www.forribbonssake.com" target="_blank">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex">
+				<img src="images/portfolio/lutherheights.png" alt="Luther Heights Website" />
+				<div class="descbox">
+					<h4 class="workextitle">Luther Heights Website</h4>
+					<p class="exdesc">Here's a church website I designed for a Lutheran summer camp. This site was designed on CMS Made Simple content management system so that the church could easily run their own content updates for recent events and publish camp photos.</p>
+					<a class="fancybox readmore" href="images/portfolio/lutherheights1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/drs1.png" alt="Debt Reduction Services Website" />
+				<div class="descbox">
+					<h4 class="workextitle">Debt Reduction Services<br />Website</h4>
+					<p class="exdesc">Worked with a developer to design a larger 30+ page site for a non-profit. Have been helping with design and new pages/interface additions since launch.</p>
+					<a class="fancybox readmore" href="images/portfolio/debtreduction_website.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/awdnews.png" alt="Asia Web Direct email newsletter" />
+				<div class="descbox">
+					<h4 class="workextitle">Asia Web Direct Email</h4>
+					<p class="exdesc">This email newsletter was created to offer weekly specials on specific destinations. Secondary content and alternative destination buttons were created below to capture viewers not interested in the featured destinations.</p>
+					<a class="fancybox readmore" href="images/portfolio/awdnews1.jpg">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/tenkarasensei.png" alt="Tenkara Sensei Website" />
+				<div class="descbox">
+					<h4 class="workextitle">Tenkara Sensei</h4>
+					<p class="exdesc">Tenkara Sensei is a guide and instructor in the ancient Japanese art of Tenkara fly fishing. I designed his site using the rich imagery from his trips, utilizing both the background space and body to immerse the user in the lush landscapes and serene environment of the fishing experience.</p>
+					<a class="readmore" href="http://peaslee.virstorhosting.com/ts/index.html" target="_blank" style="margin-top: -4px;">Read More</a>
+				</div>
+			</div> <!--Work Example-->
+			
+			<a name="casestudies"></a>
+			<div class="subheadbox">
+				<h1 class="portfoliosubheader">Case Studies</h1>
+			</div><!--End Subheadbox-->
+		
+		
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/drs1.png" alt="Debt Reduction Services Case Study" />
+				<div class="descbox">
+					<h4 class="workextitle">Debt Reduction Services</h4>
+					<p class="exdesc"><span class="contentnotice">Case Study Coming Soon.</span> DRS is a non-profit credit counseling company with 10 locations across the US. I've been acting as the brand manager, interface developer, and designer over the past 2 years, and helped redesign their website, print materials, and helped launch several web marketing campaigns.</p>
+					<a class="readmore" href="http://www.debtreductionservices.org" target="_blank" style="margin-top: -10px;">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/lysibishop.png" alt="Lysi Bishop Case Study" />
+				<div class="descbox">
+					<h4 class="workextitle">Lysi Bishop Real Estate</h4>
+					<p class="exdesc"><span class="contentnotice">Case Study Coming Soon.</span> Lysi Bishop is a full service residential real estate team under Keller Williams employing a staff of nearly 20. I created branded collateral, print design pieces, and aided in branding and web marketing. Click the link below for a Wordpress blog design I put together for the company.</p>
+					<a class="readmore" href="http://www.lysiblog.com" target="_blank" style="margin-top: -10px;">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+			<div class="workex" style="padding-bottom: 10px;">
+				<img src="images/portfolio/bookabox.png" alt="Book a Box Case Study" />
+				<div class="descbox">
+					<h4 class="workextitle">Book-a-Box</h4>
+					<p class="exdesc"><span class="contentnotice">Case Study Coming Soon.</span> Book-a-Box is a eco-friendly box company that rents and sells both boxes and moving supplies, with programs to help conserve materials. I designed their logo, brand, van designs, website, signs, print materials, and many other items working through a project manager. </p>
+				      <a class="fancybox readmore" href="images/portfolio/bookabox1.jpg" style="margin-top: -8px;">See Example</a>
+				</div><!--End DescBox-->
+			</div><!--Work Example-->
+			
+		</div><!--End Box-->
+						
+	</div><!--End Box3-->
+		
+	<div class="largespacer"></div> 
+		  
+	<div id="box4" tabindex="-1" class="boxWrapper">
+	<div class="spacer"></div>
+					
+		<div class="box blogbox">
+			<div style="padding: 10px; margin-top: -30px; margin-left: 15px;">
+				<h1 class="blogheader">Blog Coming Soon!</h1>
+				<p style="margin-top: 10px; width: 660px; color: #494949;">Coming soon to this part of the page: recent design trends and inspiration, projects of interest and travel posts.</p>
+			</div><!--End Shadow class box-->
+		</div><!--End Box-->
+			
+	</div><!--End Box4-->
+		
+	<div class="largespacer"></div>
+
+	<div id="box5" tabindex="-1" class="boxWrapper">
+		
+		<div class="spacer"></div>
+				
+		<div class="box">
+			
+			<a href="http://peaslee.virstorhosting.com/thirdspace/files/stephenpeaslee_resume.pdf" target="_blank" /><div class="download_btn">Download Resume</div></a><!--End Download Button-->
+			
+			<h1 class="resumeheader">Work Experience</h1>
+					
+			<div class="joblisting"><!--Start Joblisting Wotif Group-->
+				<div class="jobinfo">
+					<p class="companyname">Wotif Group</p><br /><p class="companytitle">Asia Pacific Online Travel Brands</p>
+					<p class="jobtitle">Web Marketing &amp; UXI</p>
+					<p class="jobdates">2012 - Current</p>				
+					<ul class="resume">
+						<li>Worked on a team Designing for online travel brands in SE Asia.</li>
+						<li>Worked on email marketing, social networking, banner ad, mobile promotions &amp; other web marketing.</li>
+						<li>Worked on website, app and mobile designs, interfaces and updates.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/wotif.jpg" alt="Wotif Group" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Risingline Team-->
+			<div class="joblisting">
+				<div class="jobinfo">
+					<p class="companyname">RisingLine</p><br /><p class="companytitle">Web Design, Development &amp; Branding</p>
+					<p class="jobtitle">Graphic Designer &amp; UXI</p>
+					<p class="jobdates">2009 - 2012</p>				
+					<ul class="resume">
+						<li>Worked remotely on web, UXI, print and identity projects for US clients.</li>
+						<li>Conducted meetings, organized workflow, and collaborated online.</li>
+					</ul>
+					<br />
+					<br />
+				</div><!--End Job Info-->
+				<img src="images/resume/risingline.jpg" alt="Risingline" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Lysi Bishop Team-->
+			<div class="joblisting">
+				<div class="jobinfo">
+					<p class="companyname">Keller Williams Real Estate</p><br /><p class="companytitle">Under the Lysi Bishop Team</p>
+					<p class="jobtitle">Media &amp Marketing</p>		
+					<p class="jobdates">2011 - 2012</p>	
+					<ul class="resume">
+						<li>Provided design, web &amp; marketing support for high end real estate.</li>
+						<li>Team is ranked #7 for KW internationally by volume, &amp; #1 regionally.</li>
+						<li>Provided weekly publishing, print design, email marketing, social networking, video production, photo editing and copy writing.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/lysibishop.jpg" alt="Lysi Bishop" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Visual Lounge-->
+				<div class="joblisting">
+					<div class="jobinfo" style="padding-bottom: 25px;">
+						<p class="companyname">Visual Lounge</p><br /><p class="companytitle">Design &amp; Marketing</p>
+						<p class="jobtitle">Graphic Design &amp; Interface Developer</p>		
+						<p class="jobdates">2008 - 2009</p>	
+						<ul class="resume">
+							<li>Worked directly with companies to develop logos &amp; brands.</li>
+							<li>Designed print materials, banners, trade show exhibits &amp; logos.</li>
+							<li>Offered graphics and interface assistance to web developers.</li>
+						</ul>
+					</div><!--End Job Info-->
+					<img src="images/resume/visuallounge.jpg" alt="Visual Lounge" />
+				</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Steve Simon-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 15px;">
+					<p class="companyname">Steve Simon Media</p><br /><p class="companytitle">Media and Marketing</p>
+					<p class="jobtitle">Graphic Designer</p>		
+					<p class="jobdates">2008</p>	
+					<ul class="resume">
+						<li>Offered graphic design support on a team building Chinese Social networking site.</li>
+						<li>Created print &amp; web advertisements for local companies.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/stevesimon.jpg" alt="Steve Simon" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Selequity-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 15px;">
+					<p class="companyname">SelEquity Graphics</p><br /><p class="companytitle"></p>
+					<p class="jobtitle">Graphic Designer</p>		
+					<p class="jobdates">2007-2008</p>	
+					<ul class="resume">
+						<li>Worked on a team providing print design, printing services, and publishing for primarily real estate companies.</li>
+						<li>Performed in-house design including pre-press, printing and cutting.</li>
+						<li>Worked on a team with director publishing weekly ads and quarterly publications</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/selequity.jpg" alt="Selequity" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Visual String-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 45px;">
+					<p class="companyname">Visual String</p><br /><p class="companytitle"></p>
+					<p class="jobtitle">Web Intern</p>		
+					<p class="jobdates">2006-2007</p>	
+					<ul class="resume">
+						<li>Performed CSS/HTML updates and fixes on corporate sites.</li>
+						<li>Created interface designs for developers.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/visualstring.jpg" alt="Visual String" />
+			</div><!--End Job Listing-->
+		
+			<div class="resumespacer"></div>
+		
+		</div><!--End Box-->
+									
+    </div><!--End Box5-->
+		
+	<div class="largespacer"></div>
+	
+		
+	<div id="box6" tabindex="-1" class="boxWrapper">
+		<div class="spacer"></div>
+		
+		<div class="box">		
+			<form class="jotform-form" action="http://submit.jotform.me/submit/23081083809453/" method="post" name="form_23081083809453" id="23081083809453" accept-charset="utf-8">
+		  	<input type="hidden" name="formID" value="23081083809453" />
+		  	
+		  	<div class="form-all" style="width: 700px; margin-left: 20px;">
+			  <ul class="form-section">
+			      <li id="cid_8" class="form-input-wide">
+			        <div class="form-header-group" style="background-color: #7C6783; width: 700px; margin-left: 0px;">
+			          <h2 id="header_8" class="form-header">Get a quote!</h2>
+			        </div><!--End Form-header-group-->
+			      </li>
+			      <li class="form-line" id="id_1">
+			        <label class="form-label-left" id="label_1" for="input_1"> Name </label>
+			        <div id="cid_1" class="form-input">
+				          <input type="text" class="form-textbox" id="input_1" name="q1_name" size="20" />
+			        </div><!--End Cid_1-->
+			      </li>
+			      <li class="form-line" id="id_9">
+			        <label class="form-label-left" id="label_9" for="input_9"> E-mail </label>
+			        <div id="cid_9" class="form-input">
+			          <input type="email" class="form-textbox validate[Email]" id="input_9" name="q9_email9" size="30" />
+			        </div><!--End Id-9-->
+			      </li>
+			      <li class="form-line" id="id_10">
+			        <label class="form-label-left" id="label_10" for="input_10"> Phone Number </label>
+			        <div id="cid_10" class="form-input"><span class="form-sub-label-container"><input class="form-textbox" type="tel" name="q10_phoneNumber10[area]" id="input_10_area" size="3">
+					    <label class="form-sub-label" for="input_10_area" id="sublabel_area"> Area Code </label></span><span class="form-sub-label-container"><input class="form-textbox" type="tel" name="q10_phoneNumber10[phone]" id="input_10_phone" size="8">
+			            <label class="form-sub-label" for="input_10_phone" id="sublabel_phone"> Phone Number </label></span>
+			        </div><!--End Cid_10-->
+				  </li>
+			      <li class="form-line" id="id_6">
+			        <label class="form-label-left" id="label_6" for="input_6"> Skype </label>
+			        <div id="cid_6" class="form-input">
+			          <input type="text" class="form-textbox" id="input_6" name="q6_skype6" size="20" />
+			        </div><!--End Label_6-->
+			      </li>
+			      <li class="form-line" id="id_7">
+			        <label class="form-label-left" id="label_7" for="input_7"> About your project </label>
+			        <div id="cid_7" class="form-input">
+			          <textarea id="input_7" class="form-textarea" name="q7_aboutYour" cols="40" rows="6"></textarea>
+			        </div><!--End Cid_7-->
+			      </li>
+			      <li class="form-line" id="id_4">
+			        <label class="form-label-left" id="label_4" for="input_4"> How would you like me to contact you </label>
+			        <div id="cid_4" class="form-input">
+			          <select class="form-dropdown" style="width:150px" id="input_4" name="q4_howWould">
+			            <option>  </option>
+			            <option value="Option 1"> Phone </option>
+			            <option value="Option 2"> Email </option>
+			            <option value="Option 3"> Skype </option>
+			          </select>
+			        </div><!--End Cid_4-->
+			      </li>
+			      <li class="form-line" id="id_2">
+			        <div id="cid_2" class="form-input-wide">
+				          <div style="margin-left:156px" class="form-buttons-wrapper">
+				            <button id="input_2" type="submit" class="form-submit-button">Submit</button>
+				          </div><!--End Form buttons wrapper-->
+			        </div><!--End Cid_2-->
+			      </li>
+			      <li style="display:none">Should be Empty:
+				      <input type="text" name="website" value="" />
+			      </li>
+		   	  </ul>
+		  	</div><!--End Form All-->
+		  	<input type="hidden" id="simple_spc" name="simple_spc" value="23081083809453" />
+					  
+	  		<script type="text/javascript">
+		  	document.getElementById("si" + "mple" + "_spc").value = "23081083809453-23081083809453";
+		  	</script>
+		  	
+		  	</form>
+		  
+	  	</div><!--End Box-->		
+		
+	</div><!--End Box6-->
+		
+	<div class="largespacer"></div>
+		
+</div><!--End Content-->
+</div><!--End Container-->
+</div><!--End Wrapper-->
+</body>
+</html>

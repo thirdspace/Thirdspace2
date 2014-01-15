@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- META -->
+    <title>HTML KickStart Elements</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="" />
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" /> 
+    <link rel="stylesheet" type="text/css" href="css/kickstart-grid.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/flexslider.css" media="all" />
+    <link rel="stylesheet" href="/css/jquery.fancybox.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/css/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/kickstart.js"></script>
+    <script type="text/javascript" src="js/waypoints.js"></script>
+      <!-- Load Scroll --><script type="text/javascript" src="js/jquery.localscroll-min.js"></script>
+      <!-- Load Easing --><script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+      <!-- Load ScrollTo --><script type="text/javascript" src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+      <!-- Load Flex Slider Plugin --><script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+     <script type="text/javascript" src="/js/jquery.fancybox.js"></script>
+     <script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.1"></script>
+     <script type="text/javascript" src="/js/jquery.fancybox-buttons.js?v=1.0.4"></script>
+     <script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.4"></script>
+     
+	 
+<!-- LOCAL SCROLL -->    
+
+<script type="text/javascript">
+   $(document).ready(function()
+   {
+       // Scroll the whole document
+       $('body').localScroll({
+          target:'body'
+       });
+       
+   $(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 700;             // set to whatever you want it to be
+
+    if(y_scroll_pos > scroll_pos_test) {
+        $(".portfolionav").fadeIn("fast");
+    }
+        if(y_scroll_pos < scroll_pos_test) {
+        $(".portfolionav").fadeOut("fast");
+    }
+       
+   });
+   
+   });
+</script>
+    
+    
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".fancybox").fancybox();
+});
+</script>   
+    
+    
+      <script>
+		   /*Background Swap*/
+		   		$( document ).ready(function() {
+					$( ".social" ).on( "mouseenter", function() {
+						 $(".socialtext") .toggle("fast");
+					});
+                    $( ".social" ).on( "mouseleave", function() {
+						 $(".socialtext") .toggle("slow");
+					});
+				});
+          
+          $(document).ready(function(){
+              $('#about').waypoint(function{
+                  $(".portfolionav") .fadeIn("fast");
+  });
+		   </script>
+
+</head>
+<body class="loading">
+    
+<img src="images/bg7.jpg" class="fade-in two" style="position: absolute; top: 0px; left: 0px; z-index: -5; width: 100%;" alt="Thirdspace" />
+    
+<div class="grid flex">
+	<div class="col_12" style="margin-top:100px;">
+        <div class="navbar col_3 visible column">
+            <img src="images/logo.png" id="logo" alt="ThirdSpace" /></a><!--End Logobox-->
+   			
+          <div class="icon-reorder"></div>
+        
+            <ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#resume">Resume</a></li>
+                <li><a href="#blog">Blog</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+        
+            <ul class="portfolionav">
+                <li><span class="pnavtitle">Browse Work</span></li>
+                <li class="icon-refresh-menu"><a href="#recent">Recent</a></li>
+                <li class="icon-print-menu"><a href="#print">Print</a></li>
+                <li class="icon-laptop-menu"><a href="#web">Web</a></li>
+                <li class="icon-lightbulb-menu"><a href="#marketing">Marketing</a></li>
+            </ul>
+            
+            </div><!--End navbar-->
+        
+          <div class="content col_9 bar visible column long fade">
+             
+              <div id="box1" class="wrapperbox">
+		
+			<div class="spacer" style="margin-top: 50px"></div>
+			
+			<div class="introbox box">
+				<p id="introheading">Creating <span class="introstrong">Web</span> &amp; <span class="introstrong">Print Media</span> for the Digital Generation</p>
+				<div class="social">
+					<div class="socialcontainer"><a href="mailto:stephen.peaslee@gmail.com"><img src="images/email.png" height="40" width="40" alt="email me" /><span class="socialtext">email</span></a></div>
+					<div class="socialcontainer"><a href="skype:siddhartha108"><img src="images/skype.png" height="40" width="40" alt="skype me" /><span class="socialtext">skype</span></a></div>
+					<div class="socialcontainer"><a href="th.linkedin.com/pub/stephen-peaslee/27/ab9/762"><img src="images/linkedin.png" height="40" width="40" alt="linked in" /><span class="socialtext">linkedin</span></a></div>
+					<div class="socialcontainer"><a href="https://twitter.com/stephenpeas"><img src="images/twitter.png" height="40" width="40" alt="twitter" /><span class="socialtext">twitter</span></a></div>
+					<div class="socialcontainer"><a href="http://forrst.me/third_space"><img src="images/forrst.png" height="40" width="40" alt="forrst" /><span class="socialtext">forrst</span></a></div>
+					<div class="socialcontainer"><a href="http://www.behance.net/stephenpeaslee"><img src="images/behance.png" height="40" width="40" alt="behance" /><span class="socialtext">behance</span></a></div>
+				</div><!--End Social-->
+			</div><!--End Box-->
+			
+		</div><!--End Box1-->
+		
+        </div><!--End Content-->
+
+    <div id="about" class="content col_9 bar visible column fade">
+         <div class="box">
+				<img id="stephen" src="images/stephen.jpg" alt="Stephen Peaslee" class="fade-in one" />
+				
+				<div id="aboutbox1" class="fade-in one">
+				
+					<h1>Stephen Peaslee</h1>
+					<p class="ptitle">Designer &amp; Front-end Developer</p>
+					
+					<!--Introduction-->
+					<div id="introductionbox">
+                        
+                    <p>I'm a media designer Redmond, Washington creating beautiful solutions on and off the web since '06.  </p>
+                    <p>I have a wide variety of skills from production, to creative visual design, to front end web work which helps me to build media and campaigns seamlessly without needing many hand offs for different mediums. I write clean extensible code for a world where people no longer browse the web just on their desktop computers.</p>
+                        
+                    <p>With every project or campaign I try to keep a very user centered approach driven by data.</p>
+                    
+					</div><!--End 650 Width Misc Div-->
+										
+					<!--What I Do-->
+
+				</div><!--End aboutbox1-->
+						
+				
+					
+			</div><!--End Box-->
+            
+          </div><!--End Content-->
+    
+     <script>
+		   /*Background Swap*/
+		   		$( document ).ready(function() {
+					$( ".printbtn" ).on( "mouseenter", function() {
+						 $(".selected-box").fadeIn("slow");
+                         $(".printtext").addClass("white");
+                        $(".icon-print").addClass("white");
+                        $(".printdesc").slideToggle("slow");
+					});
+                    $( ".printbtn" ).on( "mouseleave", function() {
+                         $(".printdesc").slideToggle("slow");
+                         $(".printtext").removeClass("white");
+                         $(".icon-print").removeClass("white");
+                         $(".selected-box").fadeOut("slow");
+                    }); 
+                    
+                  
+                    $( ".webbtn" ).on( "mouseenter", function() {
+				        $(".selected-box-center").fadeIn("slow");
+                         $(".webtext").addClass("white");
+                        $(".icon-laptop").addClass("white");
+                        $(".webdesc").slideToggle("slow");
+					});
+                    $( ".webbtn" ).on( "mouseleave", function() {
+                         $(".webdesc").slideToggle("slow");
+                         $(".webtext").removeClass("white");
+                         $(".icon-laptop").removeClass("white");
+                        $(".selected-box-center").fadeOut("slow");
+                    });    
+                        
+                    
+                    
+                    $( ".marketbtn" ).on( "mouseenter", function() {
+                         $(".selected-box-right").fadeIn("slow");
+                         $(".markettext").addClass("white");
+                        $(".icon-lightbulb").addClass("white");
+                        $(".marketdesc").slideToggle("slow");
+                   });
+                     $( ".marketbtn" ).on( "mouseleave", function() {
+                         $(".marketdesc").slideToggle("slow");
+                         $(".markettext").removeClass("white");
+                         $(".icon-lightbulb").removeClass("white");
+                        $(".selected-box-right").fadeOut("slow");
+                    });    
+                
+                  	
+				});
+		   </script>
+    
+    <div class="content_nobg" style="opacity: .8;">	
+        
+     <div class="availabilitybox">
+        
+        <ul class="avlabels"  style="padding-top: 15px; padding-left: 20px;">
+            <li>Availability:</li>
+           <!-- <li>Current Work:</li>-->
+            <li>Seeking:</li>
+        </ul> 
+            
+         <ul class="avfields" style="padding-top: 15px;">
+            <li>Full<sub></sub></li>
+           <!-- <li>Tovolo, <sub>Innovative Kitchenware</sub></li>-->
+            <li><a href="#">Freelance</a> <a href="#">Fulltime</a></li>
+        </ul>   
+            
+        </div><!--End AvailabilityBox-->
+        
+        
+
+        <div id="skills" class="skillbtn">
+            
+        <div class="selected-box"></div>
+        <div class="selected-box-center"></div>
+        <div class="selected-box-right"></div>
+
+            
+        <div class="icon1 icon printbtn">
+        <div class="icon-print"></div>
+         <p class="printtext">Print Design</p>
+          
+        </div><!--Icon1-->
+
+           <div class="icon2 icon webbtn">
+                <div class="icon-laptop"></div>
+                <p class="webtext">Web<br /></>Development</p>
+            </div><!--Icon2-->
+            
+       <div class="icon3 icon marketbtn">
+       <div class="icon-lightbulb nudge"></div>
+        <p class="markettext">Marketing</p>
+           </div>
+        </div><!--Icon3-->
+        
+        <div class="printdesc descbox">
+            <ul>
+                  <li>Print Collateral</li>
+                  <li>Pre-press</li>
+                  <li>Publications</li>
+             </ul>
+             <ul>
+                <li>Signs &amp; Banners</li>
+                 <li>Billboards</li>
+                  <li>Tradeshows</li>
+              </ul>
+              <ul>
+                <li>Packaging</li>
+                <li>Photo Editing</li>
+                <li>Illustration</li>
+            </ul>
+        </div><!--End printdesc-->
+        <div class="webdesc descbox">
+             <ul>
+                  <li>Visual Mockups</li>
+                  <li>HTML5 / CSS3</li>
+                  <li>JS &amp; jQuery</li>
+            </ul>
+            <ul>
+                 <li>Responsive Design</li>
+                 <li>User Experience</li>
+                 <li>Content Architecture</li>
+            </ul>
+            <ul>
+                 <li>Wordpress</li>
+                 <li>App UXI</li>
+            </ul>
+        </div><!--End Webdesc-->
+        <div class="marketdesc descbox">
+            <ul>
+                  <li>Social Campaigns</li>
+                  <li>Social Branding</li>
+                  <li>Email Newsletters</li>
+            </ul>
+            <ul>
+                 <li>Display Ads</li>
+                 <li>Interactive Ads</li>
+                 <li>Content Creation</li>
+            </ul>
+            <ul>
+                 <li>On-Site SEO</li>
+                 <li>Advertorials</li>
+            </ul>
+        </div><!--End Marketdesc-->
+
+        </div><!--End Navigatin_horiz-->
+        
+    </div><!--End Skills-->
+    
+    <div id="portfolio" class="portfolio">
+        
+       
+	<div id="main" role="main">
+      <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="images/portfolio/tovolo_hero_5.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/portfolio/tovolo_hero_3.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/portfolio/tovolo_hero_2.jpg" />
+  	    		</li>
+  	    		<li>
+  	    	    <img src="images/portfolio/tovolo_hero_4.jpg" />
+  	    		</li>
+              <li>
+  	    	    <img src="images/portfolio/tovolo_hero_1.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+          
+         <!-- FlexSlider -->
+  <script defer src="../jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+          
+        </section><!--End Slider-->
+
+        </div><!--End Main-->
+        
+        <div id="recent" class="Recent portfolio-section" style="margin-top: 400px; height: 60px;">
+            <h1>Recent work</h1>
+        </div><!--End Portfolio Section-->
+
+            <div class="tovolocherrypitter portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/cherrypitterbox.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Tovolo</h2>
+                    <h3><span class="labeltext">Project: </span>Cherry Pitter Box</h3>
+                    <p>Designed a box for a Cherry Pitter to be sold at various retail outlets. Performed photo editing on studio shots, Illustrated how-to instructions and submitted press-ready artwork.</p>
+                    	<a class="fancybox"  href="images/portfolio/cherrypitterbox1.jpg"><p class="readmore ">Example</p></a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+            <div class="tovolocherrypitter portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/hersheysspatulas.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Hershey</h2>
+                     <span class="via"><h3><span class="labeltext">Via:</span> Tovolo</h3></span>
+                    <h3><span class="labeltext">Project: </span>Vector Illustrations for Spatulas</h3>
+                    <p>Designed concept illustration for Hershey branded silicone spatulas. Took full color brand photos and converted into 3, 4 and 5 color designs without utilizing tints (due to silicone printing). Designed spatulas by company direction.</p>
+                  <a class="fancybox"  href="images/portfolio/hersheysspatula1.jpg"><p class="readmore ">Example</p></a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+                    
+            <div class="proj-wheelerdealerediting portfolio-listing">
+            <img class="portfoliophoto nudge" src="images/portfolio/wheelerdealerediting.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client:</span> Wheeler Dealer</h2>
+                <span class="via"><h3><span class="labeltext">Via:</span> FutureSight Interactive</h3></span>
+                <h3><span class="labeltext">Project: </span>Car Photo Processing and Editing</h3>
+                <p>Carried out production work in processing +300 car styles into 5 colors and layers for a UK based online auto marketplace website. Cars would allow users to choose their specifications and see the car with the correct color, wheels, rims, ect. Use photoshop to cut out all wheels, parts and windows (with transparency) and separated into layers.</p>
+                 <a class="fancybox"  href="images/portfolio/futuresightproduction.jpg"><p class="readmore ">Example 1</p></a>
+        
+                  <a class="fancybox"  href="images/portfolio/futuresightproduction2.jpg"><p class="readmore ">Example 2</p></a>
+            </div><!
+            </div><!--End Project info-->
+            </div><!--End WheelerDealer Portfolio Listing-->
+            
+        
+          <div class="proj-wheelerdealeruxi portfolio-listing">
+            <img class="portfoliophoto" src="images/portfolio/wheelerdealer.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client:</span> Wheeler Dealer</h2>
+                <span class="via"><h3><span class="labeltext">Via:</span> FutureSight Interactive</h3></span>
+                <h3><span class="labeltext">Project: </span>Alloy Marketplace Website UXI</h3>
+                <p>Helped with providing interface help, mockups, and suggestions to a unique wordpress theme using custom wordpress pluggins. Helped implement mockup front-end changes and enforce original .PSD document style in code.</p>
+              <a class="fancybox"  href="images/portfolio/wheelerdealeruxi1.jpg"><p class="readmore ">Example 1</p></a>
+                <a class="fancybox"  href="images/portfolio/wheelerdealeruxi2.jpg"><p class="readmore ">Example 2</p></a>
+            </div><!--End Project info-->
+            </div><!--End WheelerDealer Portfolio Listing-->
+        
+            
+            <div class="dreammedia portfolio-listing">
+            <img class="portfoliophoto" src="images/portfolio/dreammediaad.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client: </span>Chatrium Hotels</h2>
+                <h3><span class="labeltext">Project: </span>Advertorial for Dreams Magazine</h3>
+                <p>Designed a series of photocentric advertorials for Chatrium Hotel group published in a Singapore based luxury lifestyle magazine. Loved the beautiful photography of the hotels.</p>
+                  <a class="fancybox"  href="images/portfolio/dreammediaad1.jpg"><p class="readmore ">Example</p></a>
+            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->  
+            
+             <div class="weddinginvite portfolio-listing">
+            <img class="portfoliophoto nudge" src="images/portfolio/weddinginvite.jpg" />
+            <div class="project-info">
+                 <h2><span class="labeltext">Client: </span>Matt &amp; Leigh</h2>
+                <h3><span class="labeltext">Project: </span>Australian/Thai Theme Passport Wedding Invite</h3>
+                <p>Designed a multi-page printed passport style wedding invite. The wedding was taking place in Thailand but the bride and groom had come from Australia so a little inspiration from both were used.</p>
+<a class="fancybox"  href="images/portfolio/weddinginvite1.jpg"><p class="readmore ">Example</p></a>            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        <div id="print" class="print portfolio-section" style="height: 60px;">
+            <h1>Print work</h1>
+        </div><!--End Portfolio Section-->
+
+             <div class="simplotprint portfolio-listing">
+            <img class="portfoliophoto nudge" src="images/portfolio/simplotprint1.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client: </span>Simplot</h2>
+                <h3><span class="labeltext">Project: </span>Trifolds, Newsletters and Annual Reports</h3>
+                <p>Took reports, marketing content, and data and turned it into presentable corporate themed designs. Handled quarterly internal newsletter publishing projects.</p>
+               <a class="fancybox"  href="images/portfolio/simplot.jpg"><p class="readmore ">Example</p></a> 
+            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+          <div class="imfolder portfolio-listing">
+            <img class="portfoliophoto nudge" src="images/portfolio/innovativemediafolder.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client: </span>Innovative Media</h2>
+                <h3><span class="labeltext">Project: </span>Trifold PR-Packet with Stationary</h3>
+                <p>Designed a trifold piece for a marketing company out of California. Used custom cut 5 piece stationary sets that fit into folder pocket. UV spot and embossing were used on the interior map and illustrated design as well as the exterior pattern.</p>
+            <a class="fancybox"  href="images/portfolio/innovativemedia.jpg"><p class="readmore ">Example</p></a>            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+         <div class="proj-cliphanger portfolio-listing">
+                    <img class="portfoliophoto nudge" src="images/portfolio/cliphanger.jpg" />
+                    <div class="project-info">
+                        <h2><span class="labeltext">Client: </span>Clip Hanger</h2>
+                        <h3><span class="labeltext">Project: </span>Designed bubble packaging for a cell phone product.</p>
+ <a class="fancybox"  href="images/portfolio/cliphanger.jpg"><p class="readmore ">Example</p></a>                      </div><!--End Project info-->
+                </div><!--End Portfolio Listing-->
+                     
+            <div class="ranchocordovapkg portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/ranchocordovaprint1.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Rancho Cordova, California</h2>
+                     <span class="via"><h3><span class="labeltext">Via:</span> Risingline</h3></span>
+                    <h3><span class="labeltext">Project: </span>Concept Design for PR Kit</h3>
+                    <p>Designed concept branding PR Kit for the city of Rancho Cordova, California. Designed style and five pieces. </p>
+                    <a class="fancybox"  href="images/portfolio/ranchocordovaprint1.jpg"><p class="readmore ">Example</p></a>
+            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        
+          <div class="proj-bookaboxprint portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/bookabox.png" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Book A Box</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Visual Lounge Media</h3></span>
+                    <h3><span class="labeltext">Project: </span>Brand Design &amp; Print/Web Projects</h3>
+                    <p>Worked with project manager who worked with client, and web developer. Designed logo, e-commerce website, box design, car wrap, signs and print materials. </p>
+                        <a class="fancybox"  href="images/portfolio/bookabox1.jpg"><p class="readmore ">Example</p></a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+         <div class="sunfanbox portfolio-listing">
+            <img class="portfoliophoto nudge" src="images/portfolio/sunfanbox1.jpg" />
+            <div class="project-info">
+                <h2><span class="labeltext">Client: </span>Sunfan</h2>
+                <h3><span class="labeltext">Project: </span>Box Layout</h3>
+                <p>Designed a box for a solar house-mounted fan that was to be sold in Costco. Designed it in two different styles and submitted press-ready artwork.</p>
+                <a class="fancybox"  href="images/portfolio/sunfanbox1.jpg"><p class="readmore ">Example</p></a>
+            </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        <div class="escapehuntflyer portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/escapehuntflyer1.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Escape Hunt game company</h2>
+                    <h3><span class="labeltext">Project: </span>Bilingual Trifold Design</h3>
+                    <p>Designed a trifold in both English and Thai to promote the opening of a Sherlock Holmes themed reality escape game.</p>
+                    <a class="fancybox"  href="images/portfolio/escapehunt_flyer1.jpg"><p class="readmore ">Example</p></a>                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        <div id="web" class="web portfolio-section" style="height: 60px;">
+            <h1>Web work</h1>
+        </div><!--End Portfolio Section-->
+       
+                <div class="proj-tovoloweb portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/tovolowebsite1.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Tovolo Kitchenware</h2>
+                    <h3><span class="labeltext">Project: </span>Website Design and Development</h3>
+                    <p>Worked with a designer and project manager to research, collect and present inspiration, competitor websites and mockups. Upon feedback, I developed various mockups into working html samples with Javascript and jQuery for interaction.</p>
+                     <a class="fancybox"  href="images/portfolio/tovoloex1.jpg"><p class="readmore ">Example 1</p></a>        
+                      <a class="fancybox"  href="images/portfolio/tovoloex2.jpg"><p class="readmore ">Example 2</p></a>        
+<a class="fancybox"  href="images/portfolio/tovoloex3.jpg"><p class="readmore ">Example 3</p></a>                            
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+             <div class="proj-latestays portfolio-listing">
+                    <img class="portfoliophoto nudge" src="images/portfolio/latestays1.jpg" />
+                    <div class="project-info">
+                        <h2><span class="labeltext">Client: </span>Latestays.com</h2>
+                        <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                        <h3><span class="labeltext">Project: </span>Website Redesign and Development</h3>
+                        <p>In this project, I was tasked with designing a new interface for a bargain hotel booking website in SE Asia. My job was to take the content and structure from the current site, and mock up a design for an updated site with a more current look and feel and then implement through html and css.</p>
+                        <a class="fancybox"  href="images/portfolio/latestays1.jpg"><p class="readmore ">Homepage Example</p></a> 
+                        <a class="fancybox"  href="images/portfolio/latestays2.jpg"><p class="readmore ">Original Homepage Example</p></a> 
+                    </div><!--End Project info-->
+                </div><!--End Portfolio Listing-->
+        
+        
+               <div class="asiawebhotelexplore portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/asiawebexplore.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Asia Web Direct.com</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Explore Tool UXI</h3>
+                    <p>Worked as the interface designer on a project developing an element for a SE Asia online hotel booking website. Element would help visitors find out what kind of entertainment or attractions are near the hotel they are considering.</p>
+                      <a class="fancybox"  href="images/portfolio/pointofinterest1.jpg"><p class="readmore ">About</p></a> 
+                      <a class="fancybox"  href="images/portfolio/pointofinterest2.jpg"><p class="readmore ">Filters</p></a> 
+                     <a class="fancybox"  href="images/portfolio/pointofinterest3.jpg"><p class="readmore ">Points of Interest</p></a> 
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+             <div class="proj-asiawebipad portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/asiawebipad.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Asia Web Direct.com</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Tablet Formatted Site</h3>
+                    <p>Worked as as an interface designer alongside a web developer creating an tablet formatted version of a desktop and mobile site. Gestures and space saving mini filters helped provide for easier browsing of hotels with more room for larger photos. </p>
+                <a class="fancybox"  href="images/portfolio/awdipad1.jpg"><p class="readmore ">Example</p></a> 
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+          <div class="proj-eldorado portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/eldoradomobile.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>El Dorado Winery</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Risingline</h3></span>
+                    <h3><span class="labeltext">Project: </span>Mobile page design &amp; Development</h3>
+                    <p>Designed and developed a mobile formatted page for an existing desktop website. Highlighted main content pieces a user may be looking for on the go, and simplified navigation for ease of use on a smaller screen. </p>
+                    <a class="fancybox"  href="images/portfolio/eldorado.jpg"><p class="readmore ">Example</p></a>                 </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        <!-- <div class="proj-bookaboxweb portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/needphoto.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Book A Box</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Visual Lounge Media</h3></span>
+                    <h3><span class="labeltext">Project: </span>Website Design</h3>
+                    <p>Worked as the interface designer on a web project helping build an e-commerce website for a company that delivers and picks up boxes for moving. Worked with a web developer to complete this project.</p>
+                    <a href="#"><p class="readmore">Example</p></a>
+                </div>
+            </div>End Portfolio Listing-->
+        
+          <div class="proj-tenkarasenseiweb portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/tenkarasensei.png" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Tenkara Sensei, <small>Fishing Instructor</small></h2>
+                    <h3><span class="labeltext">Project: </span>Website Design and Development</h3>
+                    <p>Worked directly with a business owner to design and develop a website to support a Japanese fly fishing information and tour service. Used Javascript and Jquery for interactive functionality.</p>
+                    <a class="fancybox"  href="images/portfolio/sensei1.jpg"><p class="readmore ">Example 1</p></a> 
+                    <a class="fancybox"  href="images/portfolio/sensei2.jpg"><p class="readmore ">Example 2</p></a> 
+                    <a class="fancybox"  href="images/portfolio/sensei3.jpg"><p class="readmore ">Example 3</p></a> 
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+  
+        <div class="sierravintners portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/sierravintners1.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Sierra Vintners Winery</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Risingline</h3></span>
+                    <h3><span class="labeltext">Project: </span>Website Design</h3>
+                    <p>Designed the interface for a California Winery with direction from a managing director who worked with the client.</p>
+                   <a class="fancybox"  href="images/portfolio/sierravintners.jpg"><p class="readmore ">Example</p></a>  
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+    
+        
+            <div class="astahealth portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/astahealth.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Astahealth</h2>
+                    <h3><span class="labeltext">Project: </span>Minisite Design and Development</h3>
+                    <p>Astahealth is a site that sells weight loss and body building supplements, and I helped develop a mini-site design that could be templated to be used as individual product landing pages.</p>
+                    <a class="fancybox"  href="images/portfolio/astahealth1.jpg"><p class="readmore ">Example</p></a>  
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+         <div class="debtreductionservices portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/debtreductionservices.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Debt Reduction Services</h2>
+                    <h3><span class="labeltext">Project: </span>Website Design and Development</h3>
+                    <p>Worked with a developer to design and develop a larger 30+ page site for a non-profit in '11. Have helped with promotions, new pages and interface additions since launch. Planning on early 2014 redesign.</p>
+                 <a class="fancybox"  href="images/portfolio/debtreduction1.jpg"><p class="readmore ">Example 1</p></a>  <a class="fancybox"  href="images/portfolio/debtreduction2.jpg"><p class="readmore ">Example 2</p></a>  
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        <div id="marketing" class="web portfolio-section" style="height: 60px;">
+            <h1>Marketing work</h1>
+        </div><!--End Portfolio Section-->
+        
+    
+            <div class="columbia portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/columbia.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Columbia Benefit Solution</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span>Spot Color Marketing</h3></span>
+                    <h3><span class="labeltext">Project: </span> Responsive Email &amp; Survey Design</h3>
+                    <p>Created an email design and web survey for an insurance company to collect information from customers on their policy due to Affordable Care Act changes. Created using secure forms of data transmission and mobile friendly design.</p>
+                    <a class="fancybox"  href="images/portfolio/columbia1.jpg"><p class="readmore ">Email Design</p></a>  <a class="fancybox"  href="images/portfolio/columbia2.jpg"><p class="readmore ">Form Design</p></a>  
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+    
+         <div class="columbia portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/drsflash.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Debt Reduction Services</h2>
+                    <h3><span class="labeltext">Project: </span> Display Ads</h3>
+                    <p>Designed 30+ ad creatives for Flash (animation and expanding) and static banner display advertising with locally and nationally targeted campaigns.</p>
+                   <a class="readmore"  href="images/portfolio/flash/drs_flashex1.html" target="_blank">Flash Creative 1</a>
+					<a class="readmore"  href="images/portfolio/flash/drs_flashex2.html" target="_blank" style="margin-left: 20px;">Flash Creative 2</a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+         
+            <div class="asiawebemail portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/asiawebemail.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Asia Web Direct</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Email Design</h3>
+                    <p>This email newsletter was created to offer weekly specials on specific destinations. Secondary content and alternative destination buttons were created below to capture viewers not interested in the featured destinations.</p>
+                    <a class="fancybox"  href="images/portfolio/debtreduction1.jpg"><p class="readmore ">Example 1</p></a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+          <div class="wildfire portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/wildfirecampaign.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Asia Web Direct</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Wildfire Campaign</h3>
+                    <p>Created a Google Wildfire giveaway campaign to drive subscriptions to a list. Designed email creative (sends of 160k+), set up Wildfire Campaign, created Facebook ads, display ads and post material. Worked with team mates who took care of social promotion, ad purchasing, tracking, partners offers/strategy and language conversion.</p>
+                       <a class="fancybox"  href="images/portfolio/wildfireemail1.jpg"><p class="readmore ">Email Creative 1</p></a>  <a class="fancybox"  href="images/portfolio/wildfireemail2.jpg"><p class="readmore ">Email Creative 2 </p></a>  
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+        
+         <div class="lysibishopemail portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/latestaysfangate.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Latestays</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Fangate Design</h3>
+                    <p>Created an HTML fangate page for to allow a full branded experience within Facebook to allow fans of the page access to special hotel offers and and prize giveaways. This promo is laid out in Thai for use on the Latestays Thailand page.</p>
+                   <a class="fancybox"  href="images/portfolio/latestays_fbpromo1.jpg"><p class="readmore ">Example 1</p></a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+           <div class="asiawebdisplay portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/asiawebdisplay.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Asia Web Direct</h2>
+                    <span class="via"><h3><span class="labeltext">Via:</span> Wotif Group</h3></span>
+                    <h3><span class="labeltext">Project: </span>Display Ads</h3>
+                    <p>Designed 30+ Flash and banner display ads for local and internationally targeted web ad campaigns to promote hotels. Ads were targeted to cultural travel habits and served by IP and site related to users travel interest. </p>
+                      <a class="readmore"  href="images/portfolio/flash/awd_myad.html" target="_blank">Flash Creative 1</a>
+                    
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+                <div class="lysibishopemail portfolio-listing">
+                <img class="portfoliophoto nudge" src="images/portfolio/lysibishopemail.jpg" />
+                <div class="project-info">
+                    <h2><span class="labeltext">Client: </span>Lysi Bishop Real Estate</h2>
+                    <h3><span class="labeltext">Project: </span>Email Design</h3>
+                    <p>This is a newsletter template I designed to update subscribers on the latest news, events and house tours. I custom coded the template with the Mailchimp proprietary tags to allow admin staff to create newsletters WYSIWYG style without breaking the code.</p>
+                     <a class="fancybox readmore"  href="images/portfolio/lysibishop.jpg" target="_blank">Example</a>
+                </div><!--End Project info-->
+            </div><!--End Portfolio Listing-->
+        
+      
+			<a href="http://peaslee.virstorhosting.com/thirdspace/files/stephenpeaslee_resume.pdf" target="_blank" /><div class="download_btn">Download Resume</div></a><!--End Download Button-->
+			
+			<h1 class="resumeheader">Work Experience</h1>
+					
+            <div class="joblisting"><!--Start Joblisting Wotif Group-->
+				<div class="jobinfo">
+					<p class="companyname">Tovolo</p><br /><p class="companytitle">Innovative Kitchenware</p>
+					<p class="jobtitle">Temp Design &amp; Web Contractor</p>
+                    <p class="jobtitle">Via: Creative Circle</p>
+					<p class="jobdates">Oct-Dec 2013</p>				
+					<ul class="resume">
+						<li>Designed </li>
+						<li>Worked on email marketing, social networking, banner ad, mobile promotions &amp; other web marketing.</li>
+						<li>Worked on website, app and mobile designs, interfaces and updates.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/wotif.jpg" alt="Wotif Group" />
+			</div><!--End Job Listing-->
+            
+			<div class="joblisting"><!--Start Joblisting Wotif Group-->
+				<div class="jobinfo">
+					<p class="companyname">Wotif Group</p><br /><p class="companytitle">Asia Pacific Online Travel Brands</p>
+					<p class="jobtitle">Web Marketing &amp; UXI</p>
+					<p class="jobdates">Sept 2012 - Oct 2013</p>				
+					<ul class="resume">
+						<li>Worked on a team Designing for online travel brands in SE Asia.</li>
+						<li>Worked on email marketing, social networking, banner ad, mobile promotions &amp; other web marketing.</li>
+						<li>Worked on website, app and mobile designs, interfaces and updates.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/wotif.jpg" alt="Wotif Group" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Risingline Team-->
+			<div class="joblisting">
+				<div class="jobinfo">
+					<p class="companyname">RisingLine</p><br /><p class="companytitle">Web Design, Development &amp; Branding</p>
+					<p class="jobtitle">Graphic Designer &amp; UXI</p>
+					<p class="jobdates">April 2009 - Sept 2012</p>				
+					<ul class="resume">
+						<li>Worked remotely on web, UXI, print and identity projects for US clients.</li>
+						<li>Conducted meetings, organized workflow, and collaborated online.</li>
+					</ul>
+					<br />
+					<br />
+				</div><!--End Job Info-->
+				<img src="images/resume/risingline.jpg" alt="Risingline" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Lysi Bishop Team-->
+			<div class="joblisting">
+				<div class="jobinfo">
+					<p class="companyname">Keller Williams Real Estate</p><br /><p class="companytitle">Under the Lysi Bishop Team</p>
+					<p class="jobtitle">Media &amp Marketing</p>		
+					<p class="jobdates">August 2011 - July 2012</p>	
+					<ul class="resume">
+						<li>Provided design, web &amp; marketing support for high end real estate.</li>
+						<li>Team is ranked #7 for KW internationally by volume, &amp; #1 regionally.</li>
+						<li>Provided weekly publishing, print design, email marketing, social networking, video production, photo editing and copy writing.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/lysibishop.jpg" alt="Lysi Bishop" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Visual Lounge-->
+				<div class="joblisting">
+					<div class="jobinfo" style="padding-bottom: 25px;">
+						<p class="companyname">Visual Lounge</p><br /><p class="companytitle">Design &amp; Marketing</p>
+						<p class="jobtitle">Graphic Design &amp; Interface Developer</p>		
+						<p class="jobdates">January 2008 -  March 2009</p>	
+						<ul class="resume">
+							<li>Worked directly with companies to develop logos &amp; brands.</li>
+							<li>Designed print materials, banners, trade show exhibits &amp; logos.</li>
+							<li>Offered graphics and interface assistance to web developers.</li>
+						</ul>
+					</div><!--End Job Info-->
+					<img src="images/resume/visuallounge.jpg" alt="Visual Lounge" />
+				</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Steve Simon-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 15px;">
+					<p class="companyname">Steve Simon Media</p><br /><p class="companytitle">Media and Marketing</p>
+					<p class="jobtitle">Graphic Designer</p>		
+					<p class="jobdates">2008</p>	
+					<ul class="resume">
+						<li>Offered graphic design support on a team building Chinese Social networking site.</li>
+						<li>Created print &amp; web advertisements for local companies.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/stevesimon.jpg" alt="Steve Simon" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Selequity-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 15px;">
+					<p class="companyname">SelEquity Graphics</p><br /><p class="companytitle"></p>
+					<p class="jobtitle">Graphic Designer</p>		
+					<p class="jobdates">February 2007 - Aug 2008</p>	
+					<ul class="resume">
+						<li>Worked on a team providing print design, printing services, and publishing for primarily real estate companies.</li>
+						<li>Performed in-house design including pre-press, printing and cutting.</li>
+						<li>Worked on a team with director publishing weekly ads and quarterly publications</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/selequity.jpg" alt="Selequity" />
+			</div><!--End Job Listing-->
+			
+			<div class="resumespacer"></div>
+			
+			<!--Start Joblisting Visual String-->
+			<div class="joblisting">
+				<div class="jobinfo"  style="padding-bottom: 45px;">
+					<p class="companyname">Visual String</p><br /><p class="companytitle"></p>
+					<p class="jobtitle">Web Intern</p>		
+					<p class="jobdates">Dec 2006 - February 2007</p>	
+					<ul class="resume">
+						<li>Performed CSS/HTML updates and fixes on corporate sites.</li>
+						<li>Created interface designs for developers.</li>
+					</ul>
+				</div><!--End Job Info-->
+				<img src="images/resume/visualstring.jpg" alt="Visual String" />
+			</div><!--End Job Listing-->
+		
+			<div class="resumespacer"></div>
+		
+        
+        
+</div><!--End Content-nobg-->
+    
+	</div><!--End col_12-->
+</div> <!-- End Grid -->
+</body>
+</html>

@@ -1,0 +1,226 @@
+@charset "utf-8";
+/* Compiled by Stephen Peaslee */
+/* Set Defaults */
+*{
+margin:0;
+padding:0;
+}
+img,a img,:link img,:visited img{
+border:none;
+}
+img{
+vertical-align:middle;
+}
+p {
+margin:0em 0em 1em 0em;
+}
+ol,ul,dd{
+ margin: 0 0 1em 20px;
+ padding: 0;
+}
+ol li {
+	margin-left: 12px;
+}
+ul{
+list-style-type:none;
+}
+table{
+margin: 0 auto;
+}
+td,th{
+text-align:left;
+vertical-align:top;
+display:table-cell;
+}
+div{
+margin-left:auto;
+margin-right:auto;
+display:block;
+clear:none;
+text-align:left;
+height:auto;
+width:auto;
+}
+blockquote{
+margin: 20px 40px;
+}
+/* Hyperlinks */
+a:link,a:visited,a:active {
+color:#9f001d;
+}
+a:hover {
+text-decoration:underline;
+}
+a:link.a,a:visited.a,a:active.a {
+color:#9f001d;
+padding:0 0 0 10px;
+background:url(assets/images/01/arrow-grey-8h.png) no-repeat left 6px;
+}
+a:hover.a{
+text-decoration:underline;
+}
+a:link.aw,a:visited.aw,a:active.aw {
+color:white;
+padding:0 0 0 10px;
+background: url(assets/images/01/arrow-white.png) no-repeat left 4px;
+}
+a:hover.aw{
+text-decoration:underline;
+}
+a:active.menu,a:link.menu,a:visited.menu{
+color:#333333;
+}
+a:hover.menu {
+text-decoration:underline;
+}
+a:active.menuw,a:link.menuw,a:visited.menuw{
+color:#ffffff;
+}
+a:hover.menuw {
+text-decoration:underline;
+}
+a:active.menub,a:link.menub,a:visited.menub{
+color:#333333;
+}
+a:hover.menub{
+text-decoration:underline;
+color:#3b73b9;
+}
+a:link.nd,a:visited.nd{
+color:#333333;
+text-decoration:none;
+}
+a:link.ndb,a:visited.ndb{
+color:#013472;
+text-decoration:none;
+}
+a:active.nd,a:hover.nd,a:active.ndb,a:hover.ndb{
+text-decoration:none;
+}
+/*Font Styling*/
+#sidenav a {
+	font-family: 'MelbourneBold';
+	font-size: 1.2em;
+	color: #fff;
+	text-decoration: none;
+}
+/* Page Structure */
+	#sidenav {
+		float: left;
+		width: 220px;
+		height: 300px;
+		position: fixed;
+		padding-top: 20px;
+		margin-top: 100px;
+		margin-left: 50px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		background-color: #228096;
+	}
+	#content {
+		float: left;
+		width: 700px;
+		margin-left: 290px;
+		margin-top: 100px;
+	}
+	#container {
+	}
+
+/* Box Structure*/
+     
+    /* CSS for the big boxes */ 
+    .box {
+        width: 600px;
+        height: 300px;
+        color: #fff;
+        padding: 30px 10px 10px 10px;
+        margin: 82px 0px 0px 0px;
+		background-color: #228096;
+    }
+	.boxwrapper
+	{
+	
+	}
+    #box1 .box{
+    }
+    #box2 .box{
+    }
+    #box3 .box{
+    }
+    #box4 .box{
+    }
+    #box5 .box{
+    }
+    /* CSS for the small boxes that will scroll inside a div */
+     
+    #small-box-container {
+        border: 1px solid black;
+        padding: 20px;
+        width: 300px;
+        height: 200px;
+         
+        overflow: scroll;
+    }
+     
+    .small-box {
+         
+        color: #fff;
+        padding: 10px;
+         
+        width: 200px;
+        height: 200px;
+        margin: 0 0 50px 0;
+    }
+     
+    #small-box1 {
+        background: blue;
+    }
+     
+    #small-box2 {
+        background: red;
+    }
+     
+    #small-box3 {
+        background: green;
+    }
+    /*Reusable Classes*/
+    .largespacer {
+    	height: 700px;
+    	width: 300px;
+    }
+    .hide {
+    	display: none;
+    }
+    @font-face {
+    font-family: 'MelbourneRegular';
+    src: url('assets/fonts/melbourne_regular_basic-webfont.eot');
+    src: url('assets/fonts/melbourne_regular_basic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/melbourne_regular_basic-webfont.woff') format('woff'),
+         url('assets/fonts/melbourne_regular_basic-webfont.ttf') format('truetype'),
+         url('assets/fonts/melbourne_regular_basic-webfont.svg#MelbourneRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MelbourneLight';
+    src: url('assets/fonts/melbourne_light_basic-webfont.eot');
+    src: url('assets/fonts/melbourne_light_basic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/assets/fonts/melbourne_light_basic-webfont.woff') format('woff'),
+         url('melbourne_light_basic-webfont.ttf') format('truetype'),
+         url('assets/fonts/melbourne_light_basic-webfont.svg#MelbourneLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MelbourneBold';
+    src: url('assets/fonts/melbourne_bold_basic-webfont.eot');
+    src: url('assets/fonts/melbourne_bold_basic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/melbourne_bold_basic-webfont.woff') format('woff'),
+         url('assets/fonts/melbourne_bold_basic-webfont.ttf') format('truetype'),
+         url('assets/fonts/melbourne_bold_basic-webfont.svg#MelbourneBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+     
