@@ -22,6 +22,12 @@
 .nudge {
     margin-top: -18px;
 }
+.nudge1 {
+    padding-top: 10px;
+}
+.nudge2 {
+    padding-top: 30px;
+}
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/
@@ -59,6 +65,9 @@ font-family: "Arimo", arial, verdana, sans-serif;
 /*---------------------------------
 	LAYOUT
 -----------------------------------*/
+html {
+    overflow-x: hidden;
+}
 body{
 margin:0;
 padding:0 0 0 0;
@@ -182,7 +191,6 @@ span.pnavtitle  {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
-    display: none;
 }
 .navbar ul.portfolionav li a {
     font-size: 12pt;
@@ -192,6 +200,7 @@ span.pnavtitle  {
 }
 .navbar ul.portfolionav li:first-child {
     padding-bottom: 10px;
+    margin-top: 10px !important;
 }
 /* PORTFOLIO SECTION */
 .portfolio {
@@ -426,7 +435,7 @@ img.portfoliophoto {
     background: #fff;
     padding: 1em;
     margin-right: 15px !important;
-	margin-top: -10px !important;
+	margin-top: -13px !important;
     position: relative;
 }
 .content p {
@@ -437,6 +446,12 @@ img.portfoliophoto {
 }
 #about {
     margin-top: 100px !important;
+}
+#header_8 {
+    color: #fff;
+}
+.col9 {
+    width: 75.4333% !important
 }
 .callout{
 background:#4598ef;/*#86dc00;*/
@@ -464,13 +479,171 @@ padding:30px 0;
 border:5px solid #ddd;
 margin:30px 0;
 display:block;
+/*Media Queries*/
+}
+@media only screen
+and (max-width : 950px) {
+    .navbar ul {
+   font-size: 3.3em !important;
+    }
+    .portfolionav .icon-refresh-menu:before {
+    left: 398px !important;
+}
+  .portfolionav .icon-print-menu:before {
+    left: 513px !important;
+}
+    .portfolionav .icon-laptop-menu:before {
+    left: 613px !important;
+}
+ .portfolionav .icon-lightbulb-menu:before {
+    left: 712px !important;
+    top: 3px;
+}
+}
+@media only screen
+and (min-width : 600px) and (max-width : 826px) {
+    .navbar ul.mainnav li a {
+    font-size: 0.45em !important;
+    }
+    .navbar ul.portfolionav li a {
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 11pt;
+    margin-left: 20px !important;
+    }
+.portfolionav .icon-refresh-menu:before {
+    left: 385px !important;
+    top: 5px;
+}
+.portfolionav .icon-print-menu:before {
+    left: 473px !important;
+    top: 3px;
+}
+.portfolionav .icon-laptop-menu:before {
+    left: 548px  !important;
+    top: 4px;
+}
+.portfolionav .icon-lightbulb-menu:before {
+    left: 623px  !important;
+    top: 4px;
+}
+.portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before, .portfolionav .icon-laptop-menu:before, .portfolionav .icon-lightbulb-menu:before {
+    font-size: 19px;
+}
+}
+@media only screen
+and (min-width : 950px) and (max-width : 1024px) {
+    .portfolionav .icon-lightbulb-menu:before {
+    left: 735px !important;
+    top: 3px;
+}
+}
+@media only screen
+and (max-width : 1024px) {
+.portfolio {
+    margin-left: 0;
+    width: 100%;
+    }
+.box #stephen {
+    height: 264px !important;
+}
+.navbar ul {
+    display: inline-block;
+    float: left;
+    width: 1024px !important;
+    height: 70px;
+    padding: 0;
+    margin-top: -220px !important;
+    margin-left: -40px !important;
+    padding-left: 260px;     
+    background: #fff;
+    }
+.navbar {
+    border-radius: 0px !important;
+    width: 100%;
+     top: -40px;
+    background: none !important;
+}
+.col_9 {
+    width: 100% !important;
+}
+.mainnav {
+    background: #ffffff  !important;; 
+}
+.portfolionav {
+    background: #ffffff !important;
+}
+.pnavtitle {
+    color: #CCCCCC;
+    float: left;
+    font-size: 12pt;
+    margin-left: 20px;
+    margin-top: -30px;
+}
+.portfolionav .icon-refresh-menu:before {
+    left: 410px;
+    top: 5px;
+}
+.portfolionav .icon-print-menu:before {
+    left: 528px;
+    top: 3px;
+}
+.portfolionav .icon-laptop-menu:before {
+    left: 630px;
+    top: 4px;
+}
+.navbar ul li a {
+    font-size: 0.57em;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    margin-left: 15px;
+    padding: 20px 5px !important;
+    text-align: left;
+    color: #888;
+}
+.navbar ul.portfolionav {
+    position: absolute !important;
+    top: 85px;
+    left: 0;
+    z-index: 100;
+    height: 39px;
+}
+.navbar ul.portfolionav li a {
+    margin-left: 40px;
+}
+.navbar #logo {
+    color: #EFEFEF;
+    font-size: 1.7em;
+    left: 0;
+    padding: 0.25em;
+    position: absolute;
+    z-index: 1000;
+    text-decoration: none;
+    top: 30px;
+}
+.navbar ul {
+    margin-left: 370px;
+    margin-top: -110px;
+    float: left;
+}
+.content p {
+    font-size: 10.5pt;
+}
 }
 @media only screen 
-and (max-width : 769px) {
+and (max-width : 1022px) {
+    .jobdates {
+    float: left !important;
+    margin-top: -110px !important;
+    }
+    .companyname {
+    margin-top: 30px !important;
+    }
+    }
 
 }
 @media only screen 
-and (max-width : 769px) {
+and (min-width : 769px) {
 	.navbar {
 		left: 0px;
         right: none;
@@ -482,6 +655,33 @@ and (max-width : 769px) {
         letter-spacing: 0.03em;
         line-height: 0.03em;
     }
+}
+@media only screen 
+and (max-width : 1193px) {
+    #stephen {
+    height: 300px !important;
+    width: auto !important; 
+    }
+    #aboutbox1 h1 {
+    margin-left: 40px;
+    }
+    .content p {
+    color: #5F5F5F;
+    font-size: 11pt;
+    line-height: 1.4em;
+    margin-left: 40px;
+    text-align: left;
+    }    
+    }
+}
+
+@media only screen 
+and (min-width : 1194px) {
+   #stephen {
+    height: 100% !important;
+    width: auto !important;
+    }
+}
 .navbar #logo {
     width: 200px;
 }
@@ -490,11 +690,34 @@ and (max-width : 769px) {
     margin: -5px;
 }
     .navbar ul li a {
-       font-size: .3em;
-        letter-spacing: .03em;
-        margin-bottom: 20px;
-     padding: 10px 5px;
- 
+        color: #888;
+       font-size: .5em;
+       letter-spacing: .03em;
+       margin-bottom: 16px;
+       padding: 10px 5px;
+       text-align: left;
+        margin-left: 15px;
+       
+    }
+}
+
+@media only screen 
+and (max-width : 1236px) {
+    img.portfoliophoto {
+        height: auto !important;
+        width: 42% !important;
+        position: absolute;
+        top: 20%;
+    }
+    .jobinfo {
+        width: 110% !important;
+    }
+}
+@media only screen 
+and (max-width : 1300px) {
+    .availabilitybox {
+    left: 0 !important;
+    top: 200px;
     }
 }
 /* PAGES */
@@ -539,12 +762,97 @@ and (max-width : 769px) {
 .socialtext {
     display: none;
 }
+/* PAGES -  RESUME */
+.jobinfo {
+    background: none repeat scroll 0 0 #ECECEC;
+    float: left;
+    margin-left: 15px;
+    opacity: 0.8;
+    padding: 0px;
+    padding-left: 20px !important;
+    width: 490px;
+}
+.companyname {
+    color: #7C6783;
+    font-family: 'primeregular';
+    font-size: 1.7em;
+}
+.companytitle {
+    color: #707070;
+    font-family: 'primeregular';
+    font-size: 1em;
+    margin-top: -10px;
+}
+.resumelogo {
+    float: right;
+    height: 100% !important;
+    width: auto !important;
+    border: 1px solid #888888;
+    -webkit-box-shadow: -3px 12px 14px -9px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 12px 14px -9px rgba(0,0,0,0.75);
+    box-shadow: -3px 12px 14px -9px rgba(0,0,0,0.75);
+    border-radius: 200px 200px 200px 200px;
+-moz-border-radius: 200px 200px 200px 200px;
+-webkit-border-radius: 200px 200px 200px 200px;
+border: 0px solid #000000;
+    
+}
+.jobtitle {
+    color: #707070;
+    font-family: 'primeregular';
+    font-size: 1em;
+    margin-top: 0;
+}
+.jobinfo {
+    background: none repeat scroll 0 0 #ECECEC;
+    float: left;
+    margin: 10px;
+    opacity: 0.8;
+    padding: 0;
+    width: 100%;
+border-radius: 0px 200px 200px 0px;
+-moz-border-radius: 0px 200px 200px 0px;
+-webkit-border-radius: 0px 200px 200px 0px;
+border: 0px solid #000000;
+
+}
+.jobdates {
+    color: #707070;
+    float: right;
+    font-family: 'primeregular';
+    font-size: 1.2em;
+    margin-right: 20px;
+    margin-top: -80px;
+    right: 250px;
+}
+ul.resume {
+    list-style-position: outside;
+    list-style-type: square;
+    margin-bottom: 0px;
+    margin-left: 0;
+    margin-top: 0px;
+    width: 500px;
+}
+ul.resume li {
+    color: #FFFFFF;
+    font-family: helvetica,arial,sans-serif;
+    font-size: 0.9em;
+    margin-left: 20px;
+    padding-bottom: 2px;
+    padding-right: 20px;
+}
+.resume li {
+    color: #494949 !important;
+}
 @media only screen 
 and (min-width : 770px) {
 	.navbar {
     right: 71.7%;     
     left: none;
 	}
+    .navbar ul.portfolionav {
+            position: absolute !important;
+        }
 }
 @media only screen 
 and (max-width : 1236px) {
@@ -565,6 +873,29 @@ and (max-width : 560px) {
 	}
 }
 @media only screen 
+and (max-width : 758px) {
+	.resumelogo {
+        display: block;
+        float: left;
+        height: 120px;
+        padding: 10px;
+        width: 120px !important;
+	}
+}
+@media only screen 
+and (max-width : 1118px) {
+	#introheading {
+		font-size: 3em !important;
+        margin-top: -20px;
+	}
+}
+@media only screen 
+and (max-width : 1195px) {
+	.social {
+		margin-left: 40px;
+	}
+}
+@media only screen 
 and (min-width : 1207px) {
 	.content {
 		margin-right: 8px !important;
@@ -579,6 +910,12 @@ and (min-width : 758px) and (max-width : 1224px) {
 @media only screen 
 and (min-width : 1226px) {
 	#introheading {
+         margin-bottom: 32px;
+	}
+}
+@media only screen 
+and (min-width : 1382px) {
+	#about .box {
          margin-bottom: 32px;
 	}
 }
@@ -623,6 +960,10 @@ p.ptitle {
     border: 4px solid #ffffff;
     opacity: .8;
     color: #ffffff;
+}
+.firstnav {
+    margin-top: 20px;
+    padding-top: 20px;
 }
 .descbox {
     height: 180px;
@@ -834,6 +1175,10 @@ margin-top: -35px;
     color: #7C6783;
     margin-top: 35px;
 }
+#resume {
+    color: #7C6783 !important;
+    margin-top: 200px;
+}
 /* Availability Box */
 .availabilitybox {
     background: #fff;
@@ -847,6 +1192,7 @@ margin-top: -35px;
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
+        transition: transform .2s ease-in-out;
 }
 .avlabels {
     float: left;
