@@ -9,6 +9,9 @@
 .fade {
     opacity: .8;
 }
+.fade2 {
+    opacity: 1 !important;
+}
 .hidden {
     display: none;
 }
@@ -28,6 +31,7 @@
 .nudge2 {
     padding-top: 30px;
 }
+
 /*---------------------------------
 	IMPORTS
 -----------------------------------*/
@@ -191,12 +195,17 @@ span.pnavtitle  {
     -moz-transition: all 1s ease-in-out;
     -o-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    display: none;
 }
 .navbar ul.portfolionav li a {
     font-size: 12pt;
     padding-left: 45px;
-    line-height: .22em;
+    line-height: .42em;
     float: left;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    transition: transform .2s ease-in-out;
 }
 .navbar ul.portfolionav li:first-child {
     padding-bottom: 10px;
@@ -393,25 +402,32 @@ img.portfoliophoto {
 .pnavtitle {
     color: #ccc;
     font-size: 12pt;
+    padding-left: 20px;
 }
-
 .portfolionav .icon-print:before, .portfolionav .icon-refresh:before, .portfolionav .icon-laptop:before, .portfolionav .icon-lightbulb:before {
     clear: both;
     left: 0;
     color: #bababa;
     font-size: 25pt;
-    padding: 0;
+    padding: 1px 0 0 15px;
     margin: 0;
-    padding-left: 10px;
 }
-.portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before, .portfolionav .icon-laptop-menu:before, .portfolionav .icon-lightbulb-menu:before {
+.portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before, .portfolionav .icon-laptop-menu:before {
     clear: both;
     left: 6px;
     color: #bababa;
     font-size: 17pt;
-    padding: 0;
+    padding: 1px 0 0 15px;
     margin: 0;
-    padding-left: 10px;
+    
+}
+.portfolionav .icon-lightbulb-menu:before {
+    clear: both;
+    left: 11px !important;
+    color: #bababa;
+    font-size: 17pt;
+    margin: 0;
+    padding: 1px 0 0 15px;
 }
 /* CONTENT */
 .introbox {
@@ -1105,7 +1121,6 @@ p.ptitle {
 
 .icon-refresh-menu:before, .icon-print-menu:before, .icon-laptop-menu:before, .icon-lightbulb-menu:before {
     font-size: 15px;
-    padding-top: 10px;
     margin-top: 0px;
     padding: 10px;
     left: 0;
@@ -1118,6 +1133,31 @@ p.ptitle {
 }
 .selected {
     color: #E9BA00 !important;
+}
+.selected2 {
+    background: #e0e0e0;
+    opacity: .8;
+    color: #9d9d9d !important;
+    border-radius: 20px;
+    font-weight: bold;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    transition: transform .2s ease-in-out;
+}
+.selected2:after, .selected3:after {
+    content: '<';
+    padding: 5px;
+    font-weight: bold;
+    font-family: 'primeregular';
+}
+.selected3 {
+    background: #e0e0e0;
+    opacity: .8;
+    color: #444444;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    transition: transform .2s ease-in-out;
 }
 .navbar li a:hover {
     color: #fff !important;

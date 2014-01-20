@@ -40,37 +40,123 @@
        // Scroll the whole document
        $('body').localScroll({
           target:'body'
-       });
-       
-       
-     
-                               $(window).on('scroll', function() {
-                                var y_scroll_pos = window.pageYOffset;
-                                var scroll_pos_test = 700;             // set to whatever you want it to be
-                                   
-                                if(y_scroll_pos > scroll_pos_test) {
-                                    $(".portfolionav").fadeIn("fast");
-                                    $(".portfoliolink").addClass("selected");
-                                }
-                                    if(y_scroll_pos < scroll_pos_test) {
-                                    $(".portfolionav").fadeOut("fast");
-                                    $(".portfoliolink").removeClass("selected");
-                            
-                                }
-                                    
-                                   if ($(window).scrollTop() + $(window).height() > $('#resume').position().top){    
-                                            $(".portfolionav").fadeOut("fast");
-                            
-                                }  
-                                   
-                              $('#resume').waypoint(function() {
-                                    $(".portfolionav").fadeOut("fast");
-                                    $(".portfoliolink").removeClass("selected");
-                            
-                              });
-                                   
-                               });
-   
+       });       
+        // Page Triggers
+        $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = 200;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test) {
+                $(".aboutlink").removeClass("selected");
+            }
+                if(y_scroll_pos < scroll_pos_test) {
+                $(".aboutlink").addClass("selected");
+            }                                    
+        });       
+        $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test = 700;             // set to whatever you want it to be
+               
+            if(y_scroll_pos < scroll_pos_test) {
+                $(".aboutlink").addClass("selected");
+                $(".portfoliolink").removeClass("selected");
+                $(".portfolionav").fadeOut("fast");
+            }                                    
+            });            
+           $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test7 = 870;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test7) {
+                $(".portfoliolink").addClass("selected");
+                $(".portfolionav").fadeIn("slow");
+            }                                    
+           });
+       //Portfolio Sub Links
+            $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test8 = 2000;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test8) {
+                $(".jump-recent").addClass("selected2");
+                $(".jump-print").removeClass("selected2");
+                $(".jump-marketing").removeClass("selected3");
+            }                                    
+           });
+        $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test9 = 4000;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test9) {
+                $(".jump-print").addClass("selected2");                
+                $(".jump-recent").removeClass("selected2");
+                $(".jump-web").removeClass("selected2");
+                $(".jump-marketing").removeClass("selected3");
+            }                                    
+           });
+           $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test9 = 6000;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test9) {
+                $(".jump-web").addClass("selected2");
+                $(".jump-print").removeClass("selected2");
+                 $(".jump-marketing").removeClass("selected2");
+            }  
+           });
+            $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test11 = 9400;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test11) {
+                $(".jump-marketing").addClass("selected3");
+                $(".jump-web").removeClass("selected2");
+            }   
+           });
+                $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test12 = 12200;             // set to whatever you want it to be
+               
+            if(y_scroll_pos > scroll_pos_test12) {
+                $(".jump-marketing").removeClass("selected3");
+                $(".portfolionav li").hide("fast");
+            }   
+              if(y_scroll_pos < scroll_pos_test12) {
+                $(".jump-marketing").removeClass("selected2");
+                $(".portfolionav li").fadeIn("slow");
+            }   
+           });
+       //Portfolio Sub Links End
+           $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test3 = 12400;             // set to whatever you want it to be
+               
+            if(y_scroll_pos < scroll_pos_test3) {
+                $(".resumelink").removeClass("selected");
+            }
+                if(y_scroll_pos > scroll_pos_test3) {
+                $(".portfoliolink").removeClass("selected");
+                $(".resumelink").addClass("selected");
+                $(".icon-refresh-menu")
+            }
+           });
+          
+           $(window).on('scroll', function() {
+            var y_scroll_pos = window.pageYOffset;
+            var scroll_pos_test4 = 13500;             // set to whatever you want it to be
+               
+            if(y_scroll_pos < scroll_pos_test4) {
+                $(".contactlink").removeClass("selected");
+            }
+                if(y_scroll_pos > scroll_pos_test4) {
+            
+                $(".resumelink").removeClass("selected");
+                $(".contactlink").addClass("selected");
+                    
+        
+            }
+               
+           });
    });
 </script>
     
@@ -102,30 +188,30 @@ $(document).ready(function() {
 		   </script>
 
 </head>
-<body class="loading">
+<body id="top" class="loading">
     
 <img src="images/bg7.jpg" class="fade-in two" style="position: absolute; top: 0px; left: 0px; z-index: -5; width: 100%;" alt="Thirdspace" />
     
 <div class="grid flex">
 	<div class="col_12" style="margin-top:100px;">
         <div class="navbar col_3 visible column">
-            <img src="images/logo.png" id="logo" alt="ThirdSpace" /></a><!--End Logobox-->
+            <a href="#top"><img src="images/logo.png" id="logo" alt="ThirdSpace" /></a><!--End Logobox-->
    			        <br />
           <div class="icon-reorder"></div>
 
             <ul class="mainnav">
-				<li><a href="#about">About</a></li>
+				<li><a class="aboutlink" href="#about">About</a></li>
 				<li><a class="portfoliolink" href="#portfolio">Portfolio</a></li>
 				<li><a class="resumelink" href="#resume">Resume</a></li>
-				<li><a href="#header_8">Contact</a></li>
+				<li><a class="contactlink" href="#header_8">Contact</a></li>
 			</ul>
         
             <ul class="portfolionav">
                 <li><p class="pnavtitle">Browse Work</p></li>
-                <li class="firstnav icon-refresh-menu"><a href="#recent">Recent</a></li>
-                <li class="icon-print-menu"><a href="#print">Print</a></li>
-                <li class="icon-laptop-menu"><a href="#web">Web</a></li>
-                <li class="icon-lightbulb-menu"><a href="#marketing">Marketing</a></li>
+                <li class="firstnav icon-refresh-menu"><a class="jump-recent" href="#recent">Recent</a></li>
+                <li class="icon-print-menu"><a class="jump-print" href="#print">Print</a></li>
+                <li class="icon-laptop-menu"><a  class="jump-web" href="#web">Web</a></li>
+                <li class="icon-lightbulb-menu"><a class="jump-marketing" href="#marketing">Marketing</a></li>
             </ul>
             
             </div><!--End navbar-->
