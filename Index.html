@@ -61,15 +61,22 @@
                 $(".aboutlink").addClass("selected");
                 $(".portfoliolink").removeClass("selected");
                 $(".portfolionav").fadeOut("fast");
+                $(".link").removeClass("nudgeup");
             }                                    
             });            
            $(window).on('scroll', function() {
             var y_scroll_pos = window.pageYOffset;
             var scroll_pos_test7 = 870;             // set to whatever you want it to be
-               
+            
+              if(y_scroll_pos < scroll_pos_test7) {
+                $(".link").removeClass("nudgeup");
+              }     
             if(y_scroll_pos > scroll_pos_test7) {
                 $(".portfoliolink").addClass("selected");
                 $(".portfolionav").fadeIn("slow");
+                $(".link").addClass("nudgeup");
+
+                
             }                                    
            });
        //Portfolio Sub Links
@@ -120,10 +127,13 @@
             if(y_scroll_pos > scroll_pos_test12) {
                 $(".jump-marketing").removeClass("selected3");
                 $(".portfolionav li").hide("fast");
+                $(".link").removeClass("nudgeup");
+                $(".portfolionav").addClass("hide");
             }   
               if(y_scroll_pos < scroll_pos_test12) {
                 $(".jump-marketing").removeClass("selected2");
                 $(".portfolionav li").fadeIn("slow");
+                $(".portfolionav").removeClass("hide");
             }   
            });
        //Portfolio Sub Links End
@@ -181,7 +191,7 @@ $(document).ready(function() {
           
           $(document).ready(function(){
               $('#about').waypoint(function{
-                  $(".portfolionav") .fadeIn("fast");
+                  $(".portfolionav") .fadeIn("slow");
                       $(".portfoliolink").addClass("selected");
 
   });
@@ -200,18 +210,18 @@ $(document).ready(function() {
           <div class="icon-reorder"></div>
 
             <ul class="mainnav">
-				<li><a class="aboutlink" href="#about">About</a></li>
-				<li><a class="portfoliolink" href="#portfolio">Portfolio</a></li>
-				<li><a class="resumelink" href="#resume">Resume</a></li>
-				<li><a class="contactlink" href="#header_8">Contact</a></li>
+				<li><a class="link aboutlink" href="#aboutmarker">About</a></li>
+				<li><a class="link portfoliolink" href="#portfolio">Portfolio</a></li>
+				<li><a class="link resumelink" href="#resume">Resume</a></li>
+				<li><a class="link contactlink" href="#header_8">Contact</a></li>
 			</ul>
         
             <ul class="portfolionav">
                 <li><p class="pnavtitle">Browse Work</p></li>
-                <li class="firstnav icon-refresh-menu"><a class="jump-recent" href="#recent">Recent</a></li>
-                <li class="icon-print-menu"><a class="jump-print" href="#print">Print</a></li>
-                <li class="icon-laptop-menu"><a  class="jump-web" href="#web">Web</a></li>
-                <li class="icon-lightbulb-menu"><a class="jump-marketing" href="#marketing">Marketing</a></li>
+                <li class="pnav firstnav icon-refresh-menu"><a class="jump-recent" href="#recent">Recent</a></li>
+                <li class="pnav icon-print-menu"><a class="jump-print" href="#print">Print</a></li>
+                <li class="pnav icon-laptop-menu"><a  class="jump-web" href="#web">Web</a></li>
+                <li class="pnav icon-lightbulb-menu"><a class="jump-marketing" href="#marketing">Marketing</a></li>
             </ul>
             
             </div><!--End navbar-->
@@ -237,7 +247,8 @@ $(document).ready(function() {
 		</div><!--End Box1-->
 		
         </div><!--End Content-->
-
+    <div id="aboutmarker"></div><!--End About Marker-->
+        
     <div id="about" class="content col_9 bar visible column fade">
          <div class="box">
 			<div class="fill">
@@ -807,7 +818,7 @@ $(document).ready(function() {
             </div><!--End Portfolio Listing-->
         
       
-			<a href="http://peaslee.virstorhosting.com/thirdspace/files/stephenpeaslee_resume.pdf" target="_blank" /><div class="download_btn">Download Resume</div></a><!--End Download Button-->
+			<a href="http://peaslee.virstorhosting.com/thirdspace/files/stephenpeaslee_resume.pdf" target="_blank" /><div class="download_btn">Download Resume <sub>(Right Click + Save As)</sub></sub></p></div></a><!--End Download Button-->
 			
 			<h1 id="resume" class="resumeheader">Resume</h1>
 					
@@ -955,10 +966,10 @@ $(document).ready(function() {
         	<form class="jotform-form" action="http://submit.jotform.me/submit/23081083809453/" method="post" name="form_23081083809453" id="23081083809453" accept-charset="utf-8">
 		  	<input type="hidden" name="formID" value="23081083809453" />
 		  	
-		  	<div class="form-all" style="width: 700px; margin-left: 20px;">
+		  	<div class="form-all" style="width: 100%; margin-left: 20px;">
 			  <ul class="form-section">
 			      <li id="cid_8" class="form-input-wide">
-			        <div class="form-header-group" style="background-color: #7C6783; width: 780px; margin-left: 0px;">
+			        <div class="form-header-group" style="border-radius: 4px; background-color: #7C6783; width: 100%; margin-left: 0px;">
 			          <h2 id="header_8" class="form-header">Get a quote!</h2>
 			        </div><!--End Form-header-group-->
 			      </li>
@@ -988,13 +999,13 @@ $(document).ready(function() {
 			        </div><!--End Label_6-->
 			      </li>
 			      <li class="form-line" id="id_7">
-			        <label class="form-label-left" id="label_7" for="input_7"> About your project </label>
+			        <label class="form-label-left aboutlabel" id="label_7" for="input_7"> About your project </label>
 			        <div id="cid_7" class="form-input">
 			          <textarea id="input_7" class="form-textarea" name="q7_aboutYour" cols="40" rows="6"></textarea>
 			        </div><!--End Cid_7-->
 			      </li>
 			      <li class="form-line" id="id_4">
-			        <label class="form-label-left" id="label_4" for="input_4"> How would you like me to contact you </label>
+			        <label class="form-label-left phonelabel" id="label_4" for="input_4">Preferred contact method</label>
 			        <div id="cid_4" class="form-input">
 			          <select class="form-dropdown" style="width:150px" id="input_4" name="q4_howWould">
 			            <option>  </option>
