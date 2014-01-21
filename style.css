@@ -178,7 +178,6 @@ ul.portfolionav li.pnav  {
     letter-spacing: 0.03em;
     line-height: 0.1em;
     margin: -10px 0 10px;
-
     padding: 0;
     width: 180px;
 	}
@@ -496,7 +495,7 @@ img.portfoliophoto {
 .col9 {
     width: 75.4333% !important
 }
-.callout{
+.callout {
 background:#4598ef;/*#86dc00;*/
 padding:3em 0;
 color:#fff;
@@ -514,15 +513,16 @@ display:block;
 	 .callout .button{margin-top:10px;}
 	 .callout.green{background:#19ad0b;/*#86dc00;*/}
 
-#mc_embed_signup{
-padding:30px 0;
+#mc_embed_signup {
+padding:30px 0; 
 }
 
-#ui-preview{
+#ui-preview {
 border:5px solid #ddd;
 margin:30px 0;
 display:block;
-/*Media Queries*/
+/*MEDIA QUERIES*/
+
 }
 @media only screen
 and (max-width : 950px) {
@@ -688,7 +688,7 @@ and (max-width : 1024px) {
     top: 3px;
 }
 .portfolionav .icon-laptop-menu:before {
-    left: 620px !important;
+    left: 640px;
     top: 4px;
 }
 .portfolionav .icon-lightbulb-menu:before {
@@ -717,8 +717,8 @@ and (max-width : 1024px) {
 .navbar #logo {
     color: #EFEFEF;
     font-size: 1.7em;
-    left: -15px;
-    width: 300px !important;
+    left: 5px;
+    width: 200px !important;
     padding: 0.25em;
     position: absolute;
     z-index: 1000;
@@ -734,6 +734,12 @@ and (max-width : 1024px) {
     font-size: 10.5pt;
 }
 }
+@media only screen
+and (min-width : 750px) {
+    .col_3 {
+        left: 0 !important;
+    }
+}
 @media only screen 
 and (max-width : 1022px) {
     .jobdates {
@@ -744,12 +750,10 @@ and (max-width : 1022px) {
     margin-top: 30px !important;
     }
     }
-
 }
 @media only screen 
-and (min-width : 768px) {
-	.navbar {
-		left: 0px;
+and (min-width : 740px) {
+    .navbar {
         right: none;
         top: -50px;
         border-radius: 0;
@@ -758,6 +762,14 @@ and (min-width : 768px) {
         display: inline;
         letter-spacing: 0.03em;
         line-height: 0.03em;
+    }
+}
+
+@media only screen 
+and (min-width : 1194px) {
+   #stephen {
+    height: 100% !important;
+    width: auto !important;
     }
 }
 @media only screen 
@@ -788,13 +800,6 @@ and (max-width : 1193px) {
     }
 }
 
-@media only screen 
-and (min-width : 1194px) {
-   #stephen {
-    height: 100% !important;
-    width: auto !important;
-    }
-}
 .navbar #logo {
     width: 200px;
 }
@@ -833,12 +838,7 @@ and (max-width : 1000px) {
     top: 200px;
     }
 }
-@media only screen 
-and (max-width : 1000px) {
-    .availabilitybox {
-        margin-top: 50px;
-    }
-}
+
 @media only screen 
 and (min-width: 650px) {
     #cid_7 {
@@ -853,6 +853,8 @@ and (min-width: 650px) {
     margin-top: -220px;
     }
 }
+/*END MEDIA QUERIES*/
+
 /* PAGES */
 /* PAGES - HOME*/
 #introheading {
@@ -1070,11 +1072,13 @@ and (max-width : 777px) {
     width: auto; 
 	}
 }
+}
 @media only screen
 and (min-width : 1400px) {
     #id_7 textarea {
         width: 600px;
     }
+}
 }
 
 @media only screen 
@@ -1486,9 +1490,6 @@ margin-top: -35px;
     top: 3px;
     color: #fff;
 }
-
-/*Media Queries*/
-
 @font-face {
     font-family: 'web_symbolsregular';
     src: url('fonts/websymbols-regular.eot');
