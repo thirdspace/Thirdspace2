@@ -53,7 +53,7 @@ font-weight:normal;
 
 thead th,
 tbody th{
-font-family: "Arimo", arial, verdana, sans-serif;
+    font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 button,
@@ -61,7 +61,7 @@ a.btn,
 input[type="submit"],
 input[type="reset"],
 input[type="button"]{
-font-family: "Arimo", arial, verdana, sans-serif;
+    font-family: "Arimo", arial, verdana, sans-serif;
 }
 input[type="tel"] {
     height: 40px;
@@ -71,11 +71,11 @@ input[type="tel"] {
 }
 
 .menu{
-font-family: "Arimo", arial, verdana, sans-serif;
+    font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 blockquote{
-font-family: "Arimo", arial, verdana, sans-serif;
+    font-family: "Arimo", arial, verdana, sans-serif;
 }
 
 /*---------------------------------
@@ -85,34 +85,34 @@ html {
     overflow-x: hidden;
 }
 body{
-margin:0;
-padding:0 0 0 0;
-color:#000;
-font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
-text-shadow: 0 0 1px transparent; /* google font pixelation fix */
+    margin:0;
+    padding:0 0 0 0;
+    color:#000;
+    font:normal 0.9em/150% 'Arimo', arial, verdana, sans-serif;
+    text-shadow: 0 0 1px transparent; /* google font pixelation fix */
 }
 
 #wrap{
-width:100%;
-background:#fff;
-margin:30px auto 30px auto;
-padding:0 2%;
-border:1px solid #ccc;
+    width:100%;
+    background:#fff;
+    margin:30px auto 30px auto;
+    padding:0 2%;
+    border:1px solid #ccc;
 }
 
 
 #footer{
-text-align:center;
-padding:20px;
-margin:0;
-border-top:1px solid #ddd;
-color:#999;
-font-size:0.8em;
-text-shadow:0px 1px 1px #fff;
-position: relative;
-top:0;
-left:0;
-background:#fff;
+    text-align:center;
+    padding:20px;
+    margin:0;
+    border-top:1px solid #ddd;
+    color:#999;
+    font-size:0.8em;
+    text-shadow:0px 1px 1px #fff;
+    position: relative;
+    top:0;
+    left:0;
+    background:#fff;
 }
 .nav ul li {
     display: inline;
@@ -121,8 +121,7 @@ background:#fff;
     width: 74.3333% !important;
 }
 .navbar ul li a {
-    color: #000;
-    line-height: .4em;
+    line-height: .45em;
     margin: 0;
     padding: 0;
     padding: 10px 20px;
@@ -138,14 +137,14 @@ background:#fff;
 /* NAV BAR*/
 .navbar {
 position:fixed;
-top:110px;
+top:109px;
 background:#fff !important;
 color:#fff;
 z-index:1000;
 margin-left: 1.5em;
 padding: 0;
 opacity: .8;
-right: 72.7% !important;
+right: 73.2% !important;
 border-radius: 20px 0px 0px 20px;
 -moz-border-radius: 20px 0px 0px 20px;
 -webkit-border-radius: 20px 0px 0px 20px;
@@ -172,7 +171,7 @@ ul.portfolionav li.pnav  {
     margin: -5px -6px !important;
 }
 
-.navbar ul{
+.navbar ul {
     display: block;
     font-size: 4.4em;
     letter-spacing: 0.03em;
@@ -189,11 +188,11 @@ ul.portfolionav li.pnav  {
     }
  .navbar li a {
 		display:inline-block;
-		color:#efefef;
 		text-decoration:none;
 		text-transform: uppercase;
 		font-size: 25pt;
-        line-height: 0.25em;
+ line-height: 0.5em !important;
+        color: #909090;
     }
 	#link-top{
 	display:none;
@@ -482,8 +481,21 @@ img.portfoliophoto {
     text-align: left;
     color: #5f5f5f;
 }
+#navbtn {
+    display: none;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background-size: 40px !important; 
+    background: url('images/menu.png') center no-repeat;
+    text-indent: -99999px;
+    overflow: hidden;
+    position: absolute;
+    top: 45px;
+    right: 30px;
+}
 #about {
-    margin-top: 100px !important;
+    margin-top: 97px !important;
 }
 #aboutmarker {
     margin-top: 240px;
@@ -556,9 +568,6 @@ and (min-width : 600px) {
 }
 @media only screen
 and (min-width : 600px) and (max-width : 826px) {
-    .navbar ul.mainnav li a {
-    font-size: 0.45em !important;
-    }
     .navbar ul.portfolionav li a {
     padding-left: 0;
     padding-right: 0;
@@ -592,6 +601,12 @@ and (min-width : 950px) and (max-width : 1024px) {
     .portfolionav .icon-lightbulb-menu:before {
     left: 748px !important;
     top: 3px;
+}
+#introheading {
+    font-size: 4em !important;
+    margin-bottom: 10px;
+    width: 700px;
+    margin-top: -50px !important;
 }
 }
 @media only screen
@@ -629,7 +644,7 @@ and (max-width : 1024px) {
     height: 70px;
     padding: 0;
     margin-top: -220px !important;
-    margin-left: -40px !important;
+    margin-left: -30px !important;
     padding-left: 260px;     
     background: #fff;
     }
@@ -639,18 +654,16 @@ and (max-width : 1024px) {
 .navbar {
     border-radius: 0px !important;
     width: 100%;
-     top: -40px;
+    top: -40px;
     background: none !important;
 }
 .col_9 {
     width: 100% !important;
 }
-.mainnav {
-    background: #ffffff  !important;
-}
 .portfolionav {
     background: #ffffff !important;
 }
+
 .portfolionav li a:hover {
     color: #3a3a3a !important;
     background: none !important;
@@ -688,7 +701,7 @@ and (max-width : 1024px) {
     top: 3px;
 }
 .portfolionav .icon-laptop-menu:before {
-    left: 640px;
+    left: 635px;
     top: 4px;
 }
 .portfolionav .icon-lightbulb-menu:before {
@@ -696,13 +709,12 @@ and (max-width : 1024px) {
     top: 4px;
 }
 .navbar ul li a {
-    font-size: 0.57em;
     letter-spacing: 0.03em;
     margin-bottom: 16px;
     margin-left: 15px;
     padding: 20px 5px !important;
     text-align: left;
-    color: #888;
+    color: #545454;
 }
 .navbar ul.portfolionav {
     position: absolute !important;
@@ -718,7 +730,7 @@ and (max-width : 1024px) {
     color: #EFEFEF;
     font-size: 1.7em;
     left: 5px;
-    width: 200px !important;
+    width: 230px !important;
     padding: 0.25em;
     position: absolute;
     z-index: 1000;
@@ -733,12 +745,73 @@ and (max-width : 1024px) {
 .content p {
     font-size: 10.5pt;
 }
+.navbar #logo {
+    width: 190px !important;
+}
 }
 @media only screen
-and (min-width : 750px) {
-    .col_3 {
-        left: 0 !important;
+and (min-width : 1024px) {
+     .navbar #logo {
+    width: 230px !important;
+    margin-bottom: -12px;
     }
+    .navbar ul li a {
+    line-height: .5em !important;
+    }
+    .navbar ul {
+    margin: -10px 0 -14px;
+    }
+}     
+@media only screen
+and (max-width : 700px) {
+.navbar ul.mainnav li  {
+    float: none; 
+    display: block;
+        line-height: .2em;
+    }
+.navbar ul.portfolionav {
+    display: none !important;
+}
+
+.first {
+    opacity: 0;
+}
+
+#navbtn {
+    display: block;
+    z-index: 1000;
+    }
+.navbar ul.mainnav {
+    height: 60px;
+}
+.navbar #logo {
+    margin-top: -10px;
+    width: 230px !important;
+}
+}
+@media only screen
+and (min-width : 700px) and (max-width : 768px) {
+.navbar ul {
+      margin-left: -60px !important;
+    }
+}
+@media only screen
+and (max-width : 768px) {
+    .col_3 {
+        left: 0;
+    }
+    .navbar ul li a {
+    margin-left: 10px !important;
+    }
+    .navbar ul.mainnav {
+}
+.content {
+    margin-top: -150px !important;
+}
+.pnavtitle {
+    font-size: 10pt !important;
+    margin-left: 34px !important;
+}
 }
 @media only screen 
 and (max-width : 1022px) {
@@ -762,7 +835,6 @@ and (min-width : 740px) {
         display: inline;
         letter-spacing: 0.03em;
         line-height: 0.03em;
-    }
 }
 
 @media only screen 
@@ -770,6 +842,19 @@ and (min-width : 1194px) {
    #stephen {
     height: 100% !important;
     width: auto !important;
+    }
+}
+@media only screen 
+and (max-width : 1193px) {
+  .navbar ul li a {
+        color: #888;
+       font-size: .5em;
+       letter-spacing: .03em;
+       margin-bottom: 16px;
+       padding: 10px 5px;
+       text-align: left;
+        margin-left: 15px;
+       
     }
 }
 @media only screen 
@@ -788,16 +873,6 @@ and (max-width : 1193px) {
     margin-left: 40px;
     text-align: left; 
     }
-.navbar ul li a {
-        color: #888;
-       font-size: .5em;
-       letter-spacing: .03em;
-       margin-bottom: 16px;
-       padding: 10px 5px;
-       text-align: left;
-        margin-left: 15px;
-       
-    }
 }
 
 .navbar #logo {
@@ -807,26 +882,10 @@ and (max-width : 1193px) {
    padding: 0;
     margin: -5px;
 }
-    .navbar ul li a {
-        color: #888;
-       font-size: .5em;
-       letter-spacing: .03em;
-       margin-bottom: 16px;
-       padding: 10px 5px;
-       text-align: left;
-        margin-left: 15px;
-       
-    }
 }
 
 @media only screen 
 and (max-width : 1236px) {
-    img.portfoliophoto {
-        height: auto !important;
-        width: 42% !important;
-        position: absolute;
-        top: 20%;
-    }
     .jobinfo {
         width: 110% !important;
     }
@@ -838,7 +897,12 @@ and (max-width : 1000px) {
     top: 200px;
     }
 }
-
+@media only screen
+and (min-width : 1207px) {
+.navbar {
+        right: 72.7% !important;
+}
+}
 @media only screen 
 and (min-width: 650px) {
     #cid_7 {
@@ -1052,7 +1116,20 @@ and (min-width : 770px) {
         }
 }
 @media only screen 
-and (min-width : 708px) {
+and (min-width : 600px)and (max-width : 830px) {
+    .navbar ul.mainnav li a {
+    font-size: 0.48em !important; /*grandma*/
+    }
+}
+@media only screen 
+and (min-width : 830px)and (max-width : 880px) {
+    .navbar ul.mainnav li a {
+    font-size: 0.53em !important;
+    margin-left: 28px;
+    }
+}
+@media only screen 
+and (min-width : 100px) {
 	.navbar ul {
     margin-top: -10px !important;  
 	}
@@ -1080,19 +1157,6 @@ and (min-width : 1400px) {
     }
 }
 }
-
-@media only screen 
-and (max-width : 1205px) {
-	.content {
-    margin-right: 10px !important;    
-	}
-}
-@media only screen 
-and (max-width : 560px) {
-	#navigation_horiz ul li.link {
-		display: none;     
-	}
-}
 @media only screen 
 and (max-width : 758px) {
 	.resumelogo {
@@ -1106,7 +1170,7 @@ and (max-width : 758px) {
 @media only screen 
 and (max-width : 1118px) {
 	#introheading {
-		font-size: 3em !important;
+		font-size: 3em;
         margin-top: -20px;
 	}
 }
