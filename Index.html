@@ -44,9 +44,9 @@
        
           $("#navbtn").click(function() {
            $("a.link").toggleClass("show");
-            $("#navbtn").addClass("activenav");
-
-          });
+            $("#navbtn").toggleClass("activenav");
+          })
+          
        
         // Page Triggers
         $(window).on('scroll', function() {

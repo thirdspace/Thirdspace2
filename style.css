@@ -130,6 +130,7 @@ body{
     font-family: 'primelight';
 }
 .activenav {
+    background: url('images/close.png') no-repeat right !important;
 }
 .navbar ul li a:active {
     background: #E9BA00;
@@ -819,8 +820,9 @@ and (max-width : 700px) {
     color: #fff;
     display: none;
 }
-.navbar ul li a:not:first-child {
-    border-bottom: 1px solid #fff;
+.navbar ul li a {
+    border-bottom: 1px solid #fff important;
+    border-top: 1px solid  #fff!important;
 }
 .navbar ul li {
     width: 100% !important;
