@@ -41,6 +41,13 @@
        $('body').localScroll({
           target:'body'
        });       
+       
+          $("#navbtn").click(function() {
+           $("a.link").toggleClass("show");
+            $("#navbtn").addClass("activenav");
+
+          });
+       
         // Page Triggers
         $(window).on('scroll', function() {
             var y_scroll_pos = window.pageYOffset;

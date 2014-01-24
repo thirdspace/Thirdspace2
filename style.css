@@ -22,6 +22,9 @@
 .hide {
     display: none !important;
 }
+.show {
+    display: block !important;
+}
 .nudge {
     margin-top: -18px;
 }
@@ -121,11 +124,12 @@ body{
     width: 74.3333% !important;
 }
 .navbar ul li a {
-    line-height: .45em;
     margin: 0;
     padding: 0;
-    padding: 10px 20px;
+ padding: 10px 20px;
     font-family: 'primelight';
+}
+.activenav {
 }
 .navbar ul li a:active {
     background: #E9BA00;
@@ -170,12 +174,13 @@ span.pnavtitle  {
 ul.portfolionav li.pnav  {
     margin: -5px -6px !important;
 }
-
+.navbar ul.portfolionav {
+    line-height: 0.1em;
+}
 .navbar ul {
     display: block;
     font-size: 4.4em;
     letter-spacing: 0.03em;
-    line-height: 0.1em;
     margin: -10px 0 10px;
     padding: 0;
     width: 180px;
@@ -191,7 +196,7 @@ ul.portfolionav li.pnav  {
 		text-decoration:none;
 		text-transform: uppercase;
 		font-size: 25pt;
- line-height: 0.5em !important;
+        line-height: 0.5em;
         color: #909090;
     }
 	#link-top{
@@ -477,7 +482,7 @@ img.portfoliophoto {
 }
 .content p {
     font-size: 11pt;
-    line-height: 1.4em;
+    line-height: 1.3em;
     text-align: left;
     color: #5f5f5f;
 }
@@ -487,12 +492,13 @@ img.portfoliophoto {
     width: 40px;
     height: 40px;
     background-size: 40px !important; 
-    background: url('images/menu.png') center no-repeat;
+    background: url('images/menu.png') no-repeat;
+     background-position: right center;
     text-indent: -99999px;
     overflow: hidden;
     position: absolute;
-    top: 45px;
-    right: 30px;
+    top: 33px;
+    right: 20px;
 }
 #about {
     margin-top: 97px !important;
@@ -567,9 +573,20 @@ and (min-width : 600px) {
     }
 }
 @media only screen
+and (min-width : 600px) and (max-width : 700px) {
+    .navbar ul.mainnav li {
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+    .navbar ul li a {
+    width: 100% !important;
+    text-align: center !important;
+    }
+}
+@media only screen
 and (min-width : 600px) and (max-width : 826px) {
     .navbar ul.portfolionav li a {
-    padding-left: 0;
+    padding-left: 20px;
     padding-right: 0;
     font-size: 11pt;
     margin-left: 20px !important;
@@ -595,6 +612,11 @@ and (min-width : 600px) and (max-width : 826px) {
 .portfolionav {
     left: -65px !important;
 }
+}
+@media only screen
+and (min-width : 100px) and (max-width : 700px) {
+
+
 }
 @media only screen
 and (min-width : 950px) and (max-width : 1024px) {
@@ -644,7 +666,7 @@ and (max-width : 1024px) {
     height: 70px;
     padding: 0;
     margin-top: -220px !important;
-    margin-left: -30px !important;
+    margin-left: -80px !important;
     padding-left: 260px;     
     background: #fff;
     }
@@ -712,7 +734,7 @@ and (max-width : 1024px) {
     letter-spacing: 0.03em;
     margin-bottom: 16px;
     margin-left: 15px;
-    padding: 20px 5px !important;
+    padding: 30px 5px !important;
     text-align: left;
     color: #545454;
 }
@@ -761,26 +783,67 @@ and (min-width : 1024px) {
     .navbar ul {
     margin: -10px 0 -14px;
     }
+    .navbar ul.portfolionav {
+    line-height: .1em;
+    }
+    .navbar ul.portfolionav li a {
+    padding-left: 55px;
+    height: 26px;
+    }   
+    .navbar ul.portfolionav li:first-child {
+      margin-bottom: -10px;	
+	  padding-bottom: 10px;
+	  margin-left: -10px; 			
+	  margin-top: 0 !important;		
+      margin-top: 10px !important;
+	  padding: 10px; 			
+}
 }     
 @media only screen
 and (max-width : 700px) {
 .navbar ul.mainnav li  {
     float: none; 
     display: block;
-        line-height: .2em;
-    }
+    line-height: .2em;
+    background: #8a698c;
+    width: 100% !important;
+    margin-left: -250px !important;
+    margin-top: -10px !important;
+    text-align: center;
+}
+.navbar ul li a {
+    margin: 0 !important;
+    font-size: 0.45em !important;
+    text-align: center;
+    width: 90%;
+    color: #fff;
+    display: none;
+}
+.navbar ul li a:not:first-child {
+    border-bottom: 1px solid #fff;
+}
+.navbar ul li {
+    width: 100% !important;
+}
 .navbar ul.portfolionav {
     display: none !important;
 }
-
-.first {
-    opacity: 0;
+#introheading {
+    display: none;
 }
-
+.navbar ul li.first a {
+    margin-top: 70px !important;
+}
+ul.mainnav {
+    margin-top: 40px !important;
+}
 #navbtn {
     display: block;
     z-index: 1000;
-    }
+}
+.social img {
+    padding: 5px;
+}
 .navbar ul.mainnav {
     height: 60px;
 }
@@ -1114,11 +1177,19 @@ and (min-width : 770px) {
     .navbar ul.portfolionav {
             position: absolute !important;
         }
-}
+}   
 @media only screen 
 and (min-width : 600px)and (max-width : 830px) {
     .navbar ul.mainnav li a {
-    font-size: 0.48em !important; /*grandma*/
+    font-size: 0.45em !important; 
+    }
+    .navbar ul li {
+    margin: none !important;
+    padding: none !important;
+    }
+    .last {
+    display: none;
+    
     }
 }
 @media only screen 
