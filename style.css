@@ -498,7 +498,7 @@ img.portfoliophoto {
     text-indent: -99999px;
     overflow: hidden;
     position: absolute;
-    top: 33px;
+    top: 30px;
     right: 20px;
 }
 #about {
@@ -535,7 +535,9 @@ display:block;
 #mc_embed_signup {
 padding:30px 0; 
 }
-
+.loading .flex-viewport {
+    max-height: 1000px !important;
+}
 #ui-preview {
 border:5px solid #ddd;
 margin:30px 0;
@@ -585,10 +587,23 @@ and (min-width : 600px) and (max-width : 700px) {
     }
 }
 @media only screen
-and (min-width : 100) and (max-width : 320px) {
+and (min-width : 100px) and (max-width : 320px) {
     .navbar ul {
     margin-left: -180px !important;
     }
+/*Specific Project 480 320 tweaks*/
+.tovolocherrypitter {
+    height: 440px;
+}
+.tovolocherrypitter .project-info {
+    top: 200px !important;
+}
+.tovolospatulas {
+    height: 550px !important;
+}
+.tovolospatulas .project-info {
+    top: 200px !important;
+}
 }
 @media only screen
 and (min-width : 600px) and (max-width : 826px) {
@@ -621,11 +636,6 @@ and (min-width : 600px) and (max-width : 826px) {
 }
 }
 @media only screen
-and (min-width : 100px) and (max-width : 700px) {
-
-
-}
-@media only screen
 and (min-width : 950px) and (max-width : 1024px) {
     .portfolionav .icon-lightbulb-menu:before {
     left: 748px !important;
@@ -639,7 +649,26 @@ and (min-width : 950px) and (max-width : 1024px) {
 }
 }
 @media only screen
-and (min-width : 770px) and (max-width : 950px) {
+and (min-width : 200px) and (max-width : 330px) {
+    .navbar ul.mainnav li  {
+    margin-left: -280px !important;
+    }
+}
+@media only screen
+and (min-width : 330px) and (max-width : 400px) {
+ .navbar ul.mainnav li  {
+margin-left: -220px !important;
+    }
+}
+
+@media only screen
+(max-width : 626px) {
+    .navbar ul {
+    margin-left: -80px !important;
+}
+}
+@media only screen
+and (min-width : 625px) and (max-width : 950px) {
     .portfolionav .icon-laptop-menu:before {
         left: 640px;
     }
@@ -651,17 +680,30 @@ and (min-width : 770px) and (max-width : 950px) {
 }
 }
 @media only screen 
-and (min-width : 330px) and (max-width : 1024px) {
+and (min-width : 247px) and (max-width : 1024px) {
     .navbar ul {   
     margin-left: -30px !important;
 }
+}
+@media only screen
+and (min-width : 320px) and (max-width : 247px) {
+
+    .navbar ul {
+    margin-left: -35px;
+}
+}
+@media only screen
+and (min-width : 626px) and (max-width : 1024px) {
+    .navbar ul {
+    padding-left: 260px !important; 
+    }
 }
 @media only screen
 and (max-width : 1024px) {
 .portfolio {
     margin-left: 0;
     width: 100%;
-    }
+}
 .box #stephen {
     height: 264px !important;
 }
@@ -679,9 +721,8 @@ and (max-width : 1024px) {
     height: 70px;
     padding: 0;
     margin-top: -220px !important;
-    padding-left: 260px;     
     background: #fff;
-    }
+}
 .navbar ul li {
     margin: 10px -5px !important;
 }
@@ -802,29 +843,114 @@ and (min-width : 1024px) {
     padding-left: 55px;
     height: 26px;
     }   
-    .navbar ul.portfolionav li:first-child {
+    .navbar ul.portfolionav li {
       margin-bottom: -10px;	
 	  padding-bottom: 10px;
 	  margin-left: -10px; 			
-	  margin-top: 0 !important;		
-      margin-top: 10px !important;
-	  padding: 10px; 			
 }
-}     
+}
 @media only screen
-and (max-width : 700px) {
-.navbar ul.mainnav li  {
+and (max-width : 480px) {
+#aboutbox1 {
+    float: left;
+    margin-left: -15px !important;
+    margin-top: 155px !important;
+    width: 290px;
+}
+.box #stephen {
+    float: left;
+    height: 264px !important;
+    margin-top: -80px !important;
+}
+#aboutbox1 h1 {
+    font-size: 2.6em !important;
+}
+#recent {
+margin-top: 0 !important;
+}
+.portfolio-listing {
+    background-color: #E2E2E2;
+     -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    clear: both;
+    height: 305px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    height: 470px;
+}
+img.portfoliophoto {
+ float: left;
+height: auto !important;
+    -moz-border-radius-topleft: 8px;
+-webkit-border-top-left-radius: 8px;
+ border-top-left-radius: 8px;
+-moz-border-radius-topright: 8px;
+-webkit-border-top-right-radius: 8px;
+border-top-right-radius: 8px;
+
+}
+.tovolocherrypitter.portfolio-listing {
+background: #E2E2E2;
+}
+.project-info {
+    background: none repeat scroll 0 0 #fff !important;
+    -moz-border-radius-bottomright: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    -moz-border-radius-topleft: 0px !important;
+    -webkit-border-top-left-radius: 0px !important;
+    -moz-border-radius-topright: 0px !important;
+    -webkit-border-top-right-radius: 0px !important;
+    float: right;
+    left: 0;
+    margin-right: 10px;
+    margin-left: 5%;
+    opacity: 0.8;
+    padding: 10px;
+    position: absolute;
+    top: 250px;
+    width: 90%;
+    z-index: 600 !important;
+}
+.desc {
+    max-height: 60px;
+    text-overflow: hidden !important;
+}
+
+.skillsbox {
+    display: none;
+}
+.flexslider {
+   margin: 1050px 0 60px !important;
+}
+}
+@media only screen
+and (max-width : 626px) {
+.navbar ul.mainnav li {
     float: none; 
     display: block;
     line-height: .2em;
     background: #8a698c;
     width: 100% !important;
-    margin-left: -250px !important;
     margin-top: -10px !important;
     text-align: center;
 }
 .navbar ul li a {
-    margin: 0 !important;
+    margin: 0;
     font-size: 0.45em !important;
     text-align: center;
     width: 90%;
@@ -842,7 +968,8 @@ and (max-width : 700px) {
     display: none !important;
 }
 #introheading {
-    display: none;
+   font-size: 24pt !important;
+    margin-top: -20px !important;
 }
 .navbar ul li.first a {
     margin-top: 70px !important;
@@ -866,18 +993,52 @@ ul.mainnav {
 }
 }
 @media only screen
+and (min-width : 400px) and (max-width : 480px) {
+    .navbar ul.mainnav li {
+    margin-left: -220px !important;
+    }
+}
+@media only screen
+and (min-width : 480px) and (max-width : 540px) {
+    .navbar ul.mainnav li {
+    margin-left: -180px !important;
+    }
+}
+@media only screen
+and (min-width : 540px) and (max-width : 626px) {
+    .navbar ul.mainnav li {
+    margin-left: -150px !important;
+    }
+}
+@media only screen
+and (min-width : 626px) and (max-width : 700px) {
+    .navbar ul.mainnav li a {
+        font-size: 0.35em !important;
+         margin-top: 5px !important;
+    }
+.navbar ul {
+      margin-left: -80px !important;
+    }
+}
+@media only screen
 and (min-width : 700px) and (max-width : 768px) {
 .navbar ul {
       margin-left: -60px !important;
+    }
+    .navbar ul.mainnav li a {
+    margin-top: -5px !important;
+    }
+}
+@media only screen
+and (min-width : 768px) {
+        .navbar ul.mainnav li a {
+    margin-top: -5px !important;
     }
 }
 @media only screen
 and (max-width : 768px) {
     .col_3 {
         left: 0;
-    }
-    .navbar ul li a {
-    margin-left: 10px !important;
     }
     .navbar ul.mainnav {
 }
@@ -1190,9 +1351,9 @@ and (min-width : 770px) {
     .navbar ul.portfolionav {
             position: absolute !important;
         }
-}   
+}
 @media only screen 
-and (min-width : 600px)and (max-width : 830px) {
+and (min-width : 626px)and (max-width : 830px) {
     .navbar ul.mainnav li a {
     font-size: 0.45em !important; 
     }

@@ -30,11 +30,18 @@
      <script type="text/javascript" src="/js/jquery.fancybox.pack.js?v=2.1.1"></script>
      <script type="text/javascript" src="/js/jquery.fancybox-buttons.js?v=1.0.4"></script>
      <script type="text/javascript" src="/js/jquery.fancybox-media.js?v=1.0.4"></script>
+     <script type="text/javascript" src="/js/jquery.jtruncate.pack.js"></script>
+
      
 	 
 <!-- LOCAL SCROLL -->    
 
 <script type="text/javascript">
+    
+    $().ready(function() {  
+ $('.desc').jTruncate();  
+}); 
+    
    $(document).ready(function()
    {
        // Scroll the whole document
@@ -221,7 +228,7 @@ $(document).ready(function() {
 				<li><a class="link portfoliolink" href="#portfolio">Portfolio</a></li>
 				<li><a class="link resumelink" href="#resume">Resume</a></li>
 				<li><a class="link contactlink" href="#header_8">Contact</a></li>
-                <li><a href="#" id="navbtn"><img src="images/menu.png" width="20px" height="23px"></a></li>
+                <li><a id="navbtn"><img src="images/menu.png" width="20px" height="23px"></a></li>
 			</ul>
         
             <ul class="portfolionav">
@@ -334,7 +341,7 @@ $(document).ready(function() {
 				});
 		   </script>
     
-    <div class="content_nobg" style="opacity: .8;">	
+    <div class="skillsbox content_nobg" style="opacity: .8;">	
         
      <div class="availabilitybox">
         
@@ -492,7 +499,7 @@ $(document).ready(function() {
                 </div><!--End Project info-->
             </div><!--End Portfolio Listing-->
         
-            <div class="tovolocherrypitter portfolio-listing">
+            <div class="tovolospatulas portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/hersheysspatulas.jpg" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Hershey</h2>
@@ -509,7 +516,7 @@ $(document).ready(function() {
                 <h2><span class="labeltext">Client:</span> Wheeler Dealer</h2>
                 <span class="via"><h3><span class="labeltext">Via:</span> FutureSight Interactive</h3></span>
                 <h3><span class="labeltext">Project: </span>Car Photo Processing and Editing</h3>
-                <p>Carried out production work in processing +300 car styles into 5 colors and layers for a UK based online auto marketplace website. Cars would allow users to choose their specifications and see the car with the correct color, wheels, rims, ect. Use photoshop to cut out all wheels, parts and windows (with transparency) and separated into layers.</p>
+                <p class="desc">Carried out production work in processing +300 car styles into 5 colors and layers for a UK based online auto marketplace website. Cars would allow users to choose their specifications and see the car with the correct color, wheels, rims, ect. Use photoshop to cut out all wheels, parts and windows (with transparency) and separated into layers.</p>
                  <a class="fancybox"  href="images/portfolio/futuresightproduction.jpg"><p class="readmore ">Example 1</p></a>
         
                   <a class="fancybox"  href="images/portfolio/futuresightproduction2.jpg"><p class="readmore ">Example 2</p></a>
