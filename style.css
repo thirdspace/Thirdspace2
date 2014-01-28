@@ -589,7 +589,7 @@ and (min-width : 600px) and (max-width : 700px) {
     }
 }
 @media only screen
-and (min-width : 320px) and (max-width: 1024px) {
+and (min-width : 320px) {
 .navbar ul {
     margin-left: -180px !important;
     }
@@ -636,7 +636,7 @@ and (min-width : 320px) and (max-width: 1024px) {
     max-height: 130px !important;
 }
 .proj-wheelerdealerediting.portfolio-listing {
-    height: 570px !important;
+    height: 590px !important;
 }
 .proj-wheelerdealeruxi.portfolio-listing {
     height: 490px !important;
@@ -648,19 +648,19 @@ and (min-width : 320px) and (max-width: 1024px) {
     height: 490px !important;
 }
 .proj-weddinginvite.portfolio-listing {
-    height: 450px !important;
+    height: 490px !important;
 }
 .proj-weddinginvite .project-info {
     top: 200px !important;
 }
 .proj-simplotprint.portfolio-listing {
-    height: 480px !important;
+    height: 515px !important;
 }
 .proj-simplotprint .projectinfo {
     top: 230px !important;
 }
 .proj-imfolder.portfolio-listing {
-    height: 500px !important;
+    height: 555px !important;
 }
 .proj-imfolder .project-info {
     top: 240px !important;
@@ -675,13 +675,13 @@ and (min-width : 320px) and (max-width: 1024px) {
     top: 230px !important;
 }
 .proj-bookaboxprint.portfolio-listing {
-    height: 500px !important;
+    height: 530px !important;
 }
 .proj-bookaboxprint .project-info {
-    top: 220px !important;
+    top: 230px !important;
 }
 .proj-escapehuntflyer.portfolio-listing {
-  height: 480px !important;
+  height: 490px !important;
 }
 .proj-escapehuntflyer .project-info {
     top: 230px !important;
@@ -690,16 +690,16 @@ and (min-width : 320px) and (max-width: 1024px) {
   height: 560px !important;
 }
 .proj-latestays.portfolio-listing {
-    height: 560px !important;
+    height: 580px !important;
 }
 .proj-asiawebhotelexplore.portfolio-listing {
     height: 550px !important;
 }
 .proj-asiawebipad.portfolio-listing {
-    height: 560px !important;
+    height: 600px !important;
 }
 .proj-eldorado.portfolio-listing {
-    height: 560px !important;
+    height: 580px !important;
 }
 .proj-tenkarasenseiweb img {
     margin-left: 0px;
@@ -724,7 +724,7 @@ and (min-width : 320px) and (max-width: 1024px) {
     top: 230px !important;
 }
 .proj-columbia.portfolio-listing {
- height: 560px !important;
+ height: 580px !important;
 }
 .proj-columbia .project-info {
     top: 230px !important;
@@ -733,20 +733,10 @@ and (min-width : 320px) and (max-width: 1024px) {
     display: none;
 }
 .proj-asiawebemail.portfolio-listing {
-    height: 505px !important;
+    height: 525px !important;
 }
 .proj-asiawebemail .project-info {
     top: 230px !important;
-}
-.proj-wildfire.portfolio-listing {
-    height: 550px;
-}
-.proj-lysibishopemail.portfolio-listing {
-    height: 540px;
-}
-}
-.proj-asiawebdisplay.portfolio-listing {
-    height: 540px;
 }
 .project-info .readmore {
     clear: both;
@@ -754,10 +744,6 @@ and (min-width : 320px) and (max-width: 1024px) {
     margin: 0px !important;
     padding: 5px 20px 5px 5px !important;
     position: relative;
-}
-.portfolio-listing {
-    height: 535px;
-    width: 250px;
 }
 }
 @media only screen
