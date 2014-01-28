@@ -589,7 +589,7 @@ and (min-width : 600px) and (max-width : 700px) {
     }
 }
 @media only screen
-and (min-width : 320px) and (max-width: 1024px) {
+and (min-width : 100px) and (max-width : 320px) {
 .navbar ul {
     margin-left: -180px !important;
     }
@@ -603,8 +603,9 @@ and (min-width : 320px) and (max-width: 1024px) {
     padding-bottom: 20px;
     padding-top: 20px;
     position: relative;
-    width: 330px !important;
-    margin-left: -15px !important;
+    margin-left: -18px !important;
+    height: 535px;
+    width: 300px;
 }
 .project-info p {
     font-size: .8em !important;
@@ -636,7 +637,7 @@ and (min-width : 320px) and (max-width: 1024px) {
     max-height: 130px !important;
 }
 .proj-wheelerdealerediting.portfolio-listing {
-    height: 570px !important;
+    height: 580px !important;
 }
 .proj-wheelerdealeruxi.portfolio-listing {
     height: 490px !important;
@@ -648,7 +649,7 @@ and (min-width : 320px) and (max-width: 1024px) {
     height: 490px !important;
 }
 .proj-weddinginvite.portfolio-listing {
-    height: 450px !important;
+    height: 480px !important;
 }
 .proj-weddinginvite .project-info {
     top: 200px !important;
@@ -743,8 +744,7 @@ and (min-width : 320px) and (max-width: 1024px) {
 }
 .proj-lysibishopemail.portfolio-listing {
     height: 540px;
-}
-}
+} 
 .proj-asiawebdisplay.portfolio-listing {
     height: 540px;
 }
@@ -754,10 +754,6 @@ and (min-width : 320px) and (max-width: 1024px) {
     margin: 0px !important;
     padding: 5px 20px 5px 5px !important;
     position: relative;
-}
-.portfolio-listing {
-    height: 535px;
-    width: 250px;
 }
 }
 @media only screen
@@ -1003,12 +999,6 @@ and (min-width : 1024px) {
 	  padding-bottom: 10px;
 	  margin-left: -10px; 			
 }
-}
-@media only screen 
-and (min-width : 320px) and (max-width : 480px) {
-    .portfoliolisting {
-        width: 100%;
-    }
 }
 @media only screen
 and (max-width : 480px) {
