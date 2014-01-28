@@ -29,7 +29,7 @@
     margin-top: -18px;
 }
 .nudgeup {
-    margin-top: -20px !important;
+    margin-top: -10px !important;
 }
 .nudgedown {
     margin-top: 0px !important;
@@ -250,6 +250,7 @@ ul.portfolionav li.pnav  {
     float: right;
     opacity: .8;
     padding: 10px;
+    padding-bottom: 20px;
     margin-right: 20px;
     position: absolute;
     right: 0px;
@@ -331,6 +332,9 @@ img.portfoliophoto {
     font-size: 1.3em;
      color: #3D3D3D;
 }
+p.project-info {
+        text-overflow: hidden !important;
+}
 .project-info p {
     line-height: 1.6em;
     font-size: .9em;
@@ -397,7 +401,7 @@ img.portfoliophoto {
 }
 .via h3 {
     font-size: 1.4em;
-    line-height: 50%;
+    line-height: 90%;
     padding-left: 35px;
     margin-bottom: 15px;
     position: relative;
@@ -591,9 +595,25 @@ and (min-width : 100px) and (max-width : 320px) {
     .navbar ul {
     margin-left: -180px !important;
     }
+.portfolio-listing {
+    background-color: #E2E2E2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    clear: both;
+    height: 490px;
+    margin-top: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: relative;
+    width: 300px !important;
+    margin-left: -20px;
+}
 /*Specific Project 480 320 tweaks*/
 .tovolocherrypitter {
     height: 440px;
+}
+.tovolocherrypitter.portfolio-listing {
+    height: 420px;
 }
 .tovolocherrypitter .project-info {
     top: 200px !important;
@@ -601,8 +621,131 @@ and (min-width : 100px) and (max-width : 320px) {
 .tovolospatulas {
     height: 550px !important;
 }
+.tovolospatulas.portfolio-listing {
+    height: 510px !important;
+}
 .tovolospatulas .project-info {
     top: 200px !important;
+}
+.proj-wheelerdealerediting .project-info {
+    top: 220px !important;
+}
+.proj-wheelerdealerediting .desc {
+    max-height: 130px !important;
+}
+.proj-wheelerdealerediting.portfolio-listing {
+    height: 590px !important;
+}
+.proj-wheelerdealeruxi.portfolio-listing {
+    height: 490px !important;
+}
+.proj-wheelerdealeruxi .project-info {
+    top: 180px;
+}
+.proj-dreammedia.portfolio-listing {
+    height: 490px !important;
+}
+.proj-weddinginvite.portfolio-listing {
+    height: 490px !important;
+}
+.proj-weddinginvite .project-info {
+    top: 200px !important;
+}
+.proj-simplotprint.portfolio-listing {
+    height: 515px !important;
+}
+.proj-simplotprint .projectinfo {
+    top: 230px !important;
+}
+.proj-imfolder.portfolio-listing {
+    height: 555px !important;
+}
+.proj-imfolder .project-info {
+    top: 240px !important;
+}
+.proj-cliphanger.portfolio-listing {
+    height: 460px !important;
+}
+.ranchocordovapkg.portfolio-listing {
+    height: 530px !important;
+}
+.ranchocordovapkg .project-info {
+    top: 230px !important;
+}
+.proj-bookaboxprint.portfolio-listing {
+    height: 530px !important;
+}
+.proj-bookaboxprint .project-info {
+    top: 230px !important;
+}
+.proj-escapehuntflyer.portfolio-listing {
+  height: 490px !important;
+}
+.proj-escapehuntflyer .project-info {
+    top: 230px !important;
+}
+.proj-tovoloweb.portfolio-listing {
+  height: 560px !important;
+}
+.proj-latestays.portfolio-listing {
+    height: 580px !important;
+}
+.proj-asiawebhotelexplore.portfolio-listing {
+    height: 550px !important;
+}
+.proj-asiawebipad.portfolio-listing {
+    height: 600px !important;
+}
+.proj-eldorado.portfolio-listing {
+    height: 580px !important;
+}
+.proj-tenkarasenseiweb img {
+    margin-left: 0px;
+    margin-top: -10px;
+}
+.proj-tenkarasenseiweb.portfolio-listing {
+    height: 540px !important;
+}
+.proj-sierravintners.portfolio-listing {
+    height: 520px !important;
+}
+.proj-astahealth.portfolio-listing {
+    height: 470px !important;
+}
+.proj-astahealth .project-info {
+    top: 220px !important;
+}
+.proj-debtreductionservices.portfolio-listing {
+    height: 530px !important;
+}
+.proj-debtreductionservices .project-info {
+    top: 230px !important;
+}
+.proj-columbia.portfolio-listing {
+ height: 580px !important;
+}
+.proj-columbia .project-info {
+    top: 230px !important;
+}
+.proj-debtreductionads a.flash {
+    display: none;
+}
+.proj-asiawebemail.portfolio-listing {
+    height: 525px !important;
+}
+.proj-asiawebemail .project-info {
+    top: 230px !important;
+}
+.project-info .readmore {
+    clear: both;
+    display: inline;
+    margin: 0px !important;
+    padding: 5px 20px 5px 5px !important;
+    position: relative;
+}
+.project-info p {
+    font-size: .8em;
+    line-height: 1.4em;
 }
 }
 @media only screen
@@ -849,6 +992,12 @@ and (min-width : 1024px) {
 	  margin-left: -10px; 			
 }
 }
+@media only screen 
+and (min-width : 320px) and (max-width : 480px) {
+    .portfoliolisting {
+        width: 100%;
+    }
+}
 @media only screen
 and (max-width : 480px) {
 #aboutbox1 {
@@ -886,7 +1035,6 @@ margin-top: 0 !important;
     padding-bottom: 20px;
     padding-top: 20px;
     position: relative;
-    width: 100%;
     height: 470px;
 }
 img.portfoliophoto {
@@ -1030,8 +1178,8 @@ and (min-width : 700px) and (max-width : 768px) {
     }
 }
 @media only screen
-and (min-width : 768px) {
-        .navbar ul.mainnav li a {
+and (min-width : 768px) and (max-width : 828px) {
+    .navbar ul.mainnav li a {
     margin-top: -5px !important;
     }
 }
@@ -1061,8 +1209,14 @@ and (max-width : 1022px) {
     }
     }
 }
+@media only screen
+and (min-width : 950px) and (max-width : 1024px) { 
+    .portfolionav {
+        top: 85px !important;
+    }
+}
 @media only screen 
-and (min-width : 740px) {
+and (min-width : 740px) and (max-width : 1024px) {
     .navbar {
         right: none;
         top: -50px;
@@ -1082,7 +1236,7 @@ and (min-width : 1194px) {
     }
 }
 @media only screen 
-and (max-width : 1193px) {
+and (max-width : 1024px) {
   .navbar ul li a {
         color: #888;
        font-size: .5em;
@@ -1394,13 +1548,11 @@ and (max-width : 777px) {
     width: auto; 
 	}
 }
-}
 @media only screen
 and (min-width : 1400px) {
     #id_7 textarea {
         width: 600px;
     }
-}
 }
 @media only screen 
 and (max-width : 758px) {
