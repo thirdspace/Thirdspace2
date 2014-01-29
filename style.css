@@ -300,11 +300,16 @@ img.portfoliophoto {
 .portfolionav .icon-lightbulb:before {
     left: 8px;
 }
+@media only screen
+and (min-width : 481px) {
+    .portfolio-section {
+    width: 100%;
+    }
+}
 .portfolio-section {
     background: #6B5373;
     color: #fff;
     height: 70px;
-    width: 100%;
     padding: 2px 10px;
     margin-top: 20px;
     margin-bottom: -10px;
@@ -765,6 +770,24 @@ and (min-width : 100px) and (max-width : 320px) {
 .slider {
     display: none;
 }
+/*Resume adjustments*/
+.jobinfo {
+    border-radius: 0 !important;
+    margin-left: -30px !important;
+    width: 580px !important;
+}
+.companyname {
+    width: 320px;
+}
+.download_btn {
+    display: none;
+}
+.jobtitle {
+    display: none;
+}
+ul.resume li {
+    width: 280px !important; 
+}
 }
 @media only screen
 and (min-width : 321px) and (max-width : 480px) {
@@ -776,6 +799,18 @@ and (min-width : 321px) and (max-width : 480px) {
     }
     #aboutbox1 p, p.ptitle, #aboutbox1 h1 {
     width: 410px;
+}
+.jobinfo {
+      margin-left: -30px !important;
+      width: 500px !important;
+      border-radius: 0 !important;
+}
+.portfolio-section h1{
+    width: 295px !important;
+    margin-left: -20px !important;
+}
+.resumelogo {
+    box-shadow: none !important;
 }
 .box #stephen {
     float: left;
@@ -891,7 +926,7 @@ and (max-width : 1024px) {
     width: 100%;
 }
 .box #stephen {
-    height: 264px !important;
+    height: 244px !important;
 }
 .selected2:after, .selected3:after {
     margin-right: -20px;
@@ -1143,16 +1178,33 @@ and (max-width : 480px) {
     margin-top: 155px !important;
     width: 290px;
 }
+.portfolio-section {
+    width: 290px !important;
+    margin-left: -20px;
+}
+.social img {
+    width: 50px;
+}
 .box #stephen {
     float: left;
-    height: 264px !important;
+    height: 244px !important;
     margin-top: -80px !important;
 }
 #aboutbox1 h1 {
     font-size: 2.6em !important;
 }
 #recent {
-margin-top: 0 !important;
+    margin-top: 0 !important;
+}
+ul.resume li {
+    line-height: 1em;
+    width: 410px;
+}
+.jobinfo {
+    padding: 10px !important;
+}
+p.jobdates {
+float: right !important;
 }
 .portfolio-listing {
     background-color: #E2E2E2;
@@ -1416,7 +1468,7 @@ and (max-width : 1193px) {
 }
 
 @media only screen 
-and (max-width : 1236px) {
+and (min-width : 321px) and (max-width : 1236px) {
     .jobinfo {
         width: 110% !important;
     }
@@ -1533,13 +1585,18 @@ border: 0px solid #000000;
     font-size: 1em;
     margin-top: 0;
 }
+@media only screen
+and (min-width : 481px) {
+    .jobinfo {
+    width: 100% !important;
+    }
+}
 .jobinfo {
     background: none repeat scroll 0 0 #ECECEC;
     float: left;
     margin: 10px;
     opacity: 0.8;
     padding: 0;
-    width: 100% !important;
 border-radius: 0px 200px 200px 0px;
 -moz-border-radius: 0px 200px 200px 0px;
 -webkit-border-radius: 0px 200px 200px 0px;
@@ -1808,6 +1865,9 @@ p.ptitle {
 }
 .marketbtn {
     left: -180px;
+}
+.resumelogo {
+    box-shadow: none !important;
 }
 .printdesc, .webdesc, .marketdesc {
     top: 180px;
