@@ -325,6 +325,7 @@ img.portfoliophoto {
     font-size: 1.6em;
      color: #3D3D3D;
     margin-bottom: -5px;
+    line-height: 1em;
 }
 .project-info h3 {
     font-size: 1.3em;
@@ -654,13 +655,13 @@ and (min-width : 100px) and (max-width : 320px) {
     top: 200px !important;
 }
 .proj-simplotprint.portfolio-listing {
-    height: 480px !important;
+    height: 520px !important;
 }
 .proj-simplotprint .projectinfo {
     top: 230px !important;
 }
 .proj-imfolder.portfolio-listing {
-    height: 500px !important;
+    height: 540px !important;
 }
 .proj-imfolder .project-info {
     top: 240px !important;
@@ -669,13 +670,13 @@ and (min-width : 100px) and (max-width : 320px) {
     height: 460px !important;
 }
 .proj-ranchocordovapkg.portfolio-listing {
-    height: 530px !important;
+    height: 510px !important;
 }
 .proj-ranchocordovapkg .project-info {
     top: 230px !important;
 }
 .proj-bookaboxprint.portfolio-listing {
-    height: 500px !important;
+    height: 510px !important;
 }
 .proj-bookaboxprint .project-info {
     top: 220px !important;
@@ -687,16 +688,19 @@ and (min-width : 100px) and (max-width : 320px) {
     top: 230px !important;
 }
 .proj-tovoloweb.portfolio-listing {
-  height: 560px !important;
+  height: 540px !important;
 }
 .proj-latestays.portfolio-listing {
-    height: 560px !important;
+    height: 570px !important;
+}
+.proj-latestaysfangate.portfolio-listing {
+    height: 530px;
 }
 .proj-asiawebhotelexplore.portfolio-listing {
     height: 545px !important;
 }
 .proj-asiawebipad.portfolio-listing {
-    height: 560px !important;
+    height: 590px !important;
 }
 .proj-eldorado.portfolio-listing {
     height: 560px !important;
@@ -709,7 +713,7 @@ and (min-width : 100px) and (max-width : 320px) {
     height: 540px !important;
 }
 .proj-sierravintners.portfolio-listing {
-    height: 520px !important;
+    height: 500px !important;
 }
 .proj-astahealth.portfolio-listing {
     height: 470px !important;
@@ -718,13 +722,16 @@ and (min-width : 100px) and (max-width : 320px) {
     top: 220px !important;
 }
 .proj-debtreductionservices.portfolio-listing {
-    height: 530px !important;
+    height: 510px !important;
+}
+.proj-debtreduction.portfolio-listing {
+    height: 500px;
 }
 .proj-debtreductionservices .project-info {
     top: 230px !important;
 }
 .proj-columbia.portfolio-listing {
- height: 560px !important;
+ height: 570px !important;
 }
 .proj-columbia .project-info {
     top: 230px !important;
@@ -733,16 +740,16 @@ and (min-width : 100px) and (max-width : 320px) {
     display: none;
 }
 .proj-asiawebemail.portfolio-listing {
-    height: 505px !important;
+    height: 515px !important;
 }
 .proj-asiawebemail .project-info {
     top: 230px !important;
 }
 .proj-wildfire.portfolio-listing {
-    height: 550px;
+    height: 580px;
 }
 .proj-lysibishopemail.portfolio-listing {
-    height: 510px !important;
+    height: 515px !important;
 }
 .proj-asiawebdisplay.portfolio-listing {
     height: 545px !important;
@@ -1112,8 +1119,11 @@ and (min-width : 400px) and (max-width : 480px) {
 .proj-asiawebemail.portfolio-listing {
     height: 520px;
 }
-.proj-wildfire portfolio-listing {
-    height: 560px;
+.proj-wildfire.portfolio-listing {
+    height: 600px;
+}
+.proj-wildfire .project-info {
+    top: 230px;
 }
 .proj-lysibishopemail.portfolio-listing {
     height: 525px;
