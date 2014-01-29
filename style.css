@@ -182,6 +182,7 @@ ul.portfolionav li.pnav  {
     display: block;
     font-size: 4.4em;
     letter-spacing: 0.03em;
+    line-height: .4;
     margin: -10px 0 10px;
     padding: 0;
     width: 180px;
@@ -197,7 +198,6 @@ ul.portfolionav li.pnav  {
 		text-decoration:none;
 		text-transform: uppercase;
 		font-size: 25pt;
-        line-height: 0.0em;
         color: #909090;
     }
 	#link-top{
@@ -214,7 +214,6 @@ ul.portfolionav li.pnav  {
 .navbar ul.portfolionav li a {
     font-size: 12pt;
     padding-left: 45px;
-    line-height: .42em;
     float: left;
     border-radius: 20px;
     -moz-border-radius: 20px;
@@ -612,22 +611,22 @@ and (min-width : 100px) and (max-width : 320px) {
     line-height: 1.4em !important;
 }
 /*Specific Project 480 320 tweaks*/
-.tovolocherrypitter {
+.proj-tovolocherrypitter {
     height: 440px;
 }
-.tovolocherrypitter.portfolio-listing {
+.proj-tovolocherrypitter.portfolio-listing {
     height: 420px;
 }
-.tovolocherrypitter .project-info {
+.proj-tovolocherrypitter .project-info {
     top: 200px !important;
 }
-.tovolospatulas {
+.proj-tovolospatulas {
     height: 550px !important;
 }
-.tovolospatulas.portfolio-listing {
+.proj-tovolospatulas.portfolio-listing {
     height: 510px !important;
 }
-.tovolospatulas .project-info {
+.proj-tovolospatulas .project-info {
     top: 200px !important;
 }
 .proj-wheelerdealerediting .project-info {
@@ -669,10 +668,10 @@ and (min-width : 100px) and (max-width : 320px) {
 .proj-cliphanger.portfolio-listing {
     height: 460px !important;
 }
-.ranchocordovapkg.portfolio-listing {
+.proj-ranchocordovapkg.portfolio-listing {
     height: 530px !important;
 }
-.ranchocordovapkg .project-info {
+.proj-ranchocordovapkg .project-info {
     top: 230px !important;
 }
 .proj-bookaboxprint.portfolio-listing {
@@ -694,7 +693,7 @@ and (min-width : 100px) and (max-width : 320px) {
     height: 560px !important;
 }
 .proj-asiawebhotelexplore.portfolio-listing {
-    height: 550px !important;
+    height: 545px !important;
 }
 .proj-asiawebipad.portfolio-listing {
     height: 560px !important;
@@ -743,11 +742,12 @@ and (min-width : 100px) and (max-width : 320px) {
     height: 550px;
 }
 .proj-lysibishopemail.portfolio-listing {
-    height: 540px;
-} 
-.proj-asiawebdisplay.portfolio-listing {
-    height: 540px;
+    height: 510px !important;
 }
+.proj-asiawebdisplay.portfolio-listing {
+    height: 545px !important;
+}
+
 .project-info .readmore {
     clear: both;
     display: inline;
@@ -755,6 +755,27 @@ and (min-width : 100px) and (max-width : 320px) {
     padding: 5px 20px 5px 5px !important;
     position: relative;
 }
+.slider {
+    display: none;
+}
+}
+@media only screen
+and (min-width : 321px) and (max-width : 480px) {
+    #aboutbox1 {
+        width: 430px !important;
+        float: left;
+        margin-left: 5px !important;
+        margin-top: -50px !important;
+    }
+    #aboutbox1 p, p.ptitle, #aboutbox1 h1 {
+    width: 410px;
+}
+.box #stephen {
+    float: left;
+    height: 130px !important;
+    margin-top: 0 !important;
+    width: 140px !important;
+    }
 }
 @media only screen
 and (min-width : 600px) and (max-width : 826px) {
@@ -787,11 +808,18 @@ and (min-width : 600px) and (max-width : 826px) {
 }
 }
 @media only screen
+and (max-width : 1020px) {
+    .navbar ul.portfolionav li a {
+    line-height: .42em;
+}
+}
+@media only screen
 and (min-width : 950px) and (max-width : 1024px) {
     .portfolionav .icon-lightbulb-menu:before {
     left: 748px !important;
     top: 3px;
 }
+
 #introheading {
     font-size: 4em !important;
     margin-bottom: 10px;
@@ -909,7 +937,7 @@ and (max-width : 1024px) {
 .navbar ul.portfolionav li a {
     margin: -40px 29px !important;
     border-radius: 0px !important;
-    line-height: auto !important;
+    line-height: .5em !important;
     padding: 0 !important;  
 }
 .portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before {
@@ -976,13 +1004,10 @@ and (max-width : 1024px) {
 }
 }
 @media only screen
-and (min-width : 1024px) {
+and (min-width : 1025px) {
      .navbar #logo {
     width: 230px !important;
     margin-bottom: -12px;
-    }
-    .navbar ul li a {
-    line-height: .5em !important;
     }
     .navbar ul {
     margin: -10px 0 -14px;
@@ -993,11 +1018,111 @@ and (min-width : 1024px) {
     .navbar ul.portfolionav li a {
     padding-left: 55px;
     height: 26px;
-    }   
+    line-height: .5em !important;
+    }
     .navbar ul.portfolionav li {
       margin-bottom: -10px;	
 	  padding-bottom: 10px;
 	  margin-left: -10px; 			
+}
+}
+@media only screen
+and (min-width : 400px) and (max-width : 480px) {
+.box #stephen {
+    float: left;
+    height: 130px !important;
+    margin-top: 210px !important;
+    width: 265px !important;
+}
+#aboutbox1 {
+    margin-top: -35px !important;
+}
+.proj-tovolocherrypitter.portfolio-listing {
+    height: 490px; 
+}
+.proj-tovolospatulas.portfolio-listing {
+    height: 520px;
+}
+.proj-wheelerdealerediting.portfolio-listing .desc {
+    max-height: 130px !important;
+}
+.proj-wheelerdealerediting.portfolio-listing {
+    height: 590px;
+}
+.proj-wheelerdealeruxi.portfolio-listing {
+    height: 530px;
+}
+.proj-dreammedia.portfolio-listing {
+    height: 490px;
+}
+.proj-weddinginvite.portfolio-listing {
+    height: 510px;
+}
+.proj-simplotprint.portfolio-listing {
+    height: 490px;
+}
+.proj-imfolder.portfolio-listing {
+    height: 530px;
+}
+.proj-bookaboxprint.portfolio-listing {
+    height: 530px;
+}
+.proj-cliphanger.portfolio-listing {
+    height: 430px;
+}
+.proj-ranchocordovapkg.portfolio-listing {
+    height: 520px;
+}
+.proj-escapehuntflyer.portfolio-listing {
+    height: 480px;
+    }
+.proj-latestays.portfolio-listing {
+    height: 570px;
+}
+.proj-asiawebhotelexplore.portfolio-listing {
+    height: 545px;
+}
+.proj-asiawebipad.portfolio-listing {
+     height: 540px;
+}
+.proj-eldorado.portfolio-listing {
+    height: 545px;
+}
+.proj-tenkarasenseiweb img {
+    margin-left: 0 !important;
+}
+.proj-tenkarasenseiweb.portfolio-listing {
+    height: 540px;
+}
+.proj-tovoloweb.portfolio-listing {
+    height: 530px;
+    }
+.proj-sierravintners.portfolio-listing {
+    height: 480px;
+}
+.proj-astahealth.portfolio-listing {
+    height: 510px;
+}
+.proj-columbia.portfolio-listing {
+    height: 570px;
+}
+.proj-asiawebdisplay.portfolio-listing {
+    height: 520px;
+}
+.proj-asiawebemail.portfolio-listing {
+    height: 520px;
+}
+.proj-wildfire portfolio-listing {
+    height: 560px;
+}
+.proj-lysibishopemail.portfolio-listing {
+    height: 525px;
+}
+.proj-debtreductionservices.portfolio-listing {
+    height: 510px;
+}
+.proj-wildfire.portfolio-listing {
+    height: 560px;
 }
 }
 @media only screen
@@ -1178,6 +1303,9 @@ and (min-width : 700px) and (max-width : 768px) {
     .navbar ul.mainnav li a {
     margin-top: -5px !important;
     }
+    .navbar ul.portfolionav li a {
+    line-height: .5em;
+    }
 }
 @media only screen
 and (min-width : 768px) and (max-width : 828px) {
@@ -1218,7 +1346,7 @@ and (min-width : 950px) and (max-width : 1024px) {
     }
 }
 @media only screen 
-and (min-width : 740px) and (max-width : 1024px) {
+and (min-width : 626px) and (max-width : 1024px) {
     .navbar {
         right: none;
         top: -50px;
@@ -1227,7 +1355,7 @@ and (min-width : 740px) and (max-width : 1024px) {
     .navbar ul {
         display: inline;
         letter-spacing: 0.03em;
-        line-height: 0.03em;
+        line-height: 0.0em;
 }
 
 @media only screen 
@@ -1401,12 +1529,11 @@ border: 0px solid #000000;
     margin: 10px;
     opacity: 0.8;
     padding: 0;
-    width: 100%;
+    width: 100% !important;
 border-radius: 0px 200px 200px 0px;
 -moz-border-radius: 0px 200px 200px 0px;
 -webkit-border-radius: 0px 200px 200px 0px;
 border: 0px solid #000000;
-
 }
 .jobdates {
     color: #707070;

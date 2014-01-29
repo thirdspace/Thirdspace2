@@ -49,8 +49,11 @@
           $("#navbtn").click(function() {
            $("a.link").toggleClass("show");
             $("#navbtn").toggleClass("activenav");
-          })
+          });
           
+            $("a.link").click(function() {
+             $("a.link").toggleClass("show");
+            });
        
         // Page Triggers
         $(window).on('scroll', function() {
@@ -486,7 +489,7 @@ $(document).ready(function() {
             <h1>Recent work</h1>
         </div><!--End Portfolio Section-->
 
-            <div class="tovolocherrypitter portfolio-listing">
+            <div class="proj-tovolocherrypitter portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/cherrypitterbox.jpg" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Tovolo</h2>
@@ -496,7 +499,7 @@ $(document).ready(function() {
                 </div><!--End Project info-->
             </div><!--End Portfolio Listing-->
         
-            <div class="tovolospatulas portfolio-listing">
+            <div class="proj-tovolospatulas portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/hersheysspatulas.jpg" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Hershey</h2>
@@ -586,7 +589,7 @@ $(document).ready(function() {
  <a class="fancybox"  href="images/portfolio/cliphanger.jpg"><p class="readmore ">Example</p></a>                      </div><!--End Project info-->
                 </div><!--End Portfolio Listing-->
                      
-            <div class="ranchocordovapkg portfolio-listing">
+            <div class="proj-ranchocordovapkg portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/ranchocordovaprint1.jpg" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Rancho Cordova, California</h2>
