@@ -1667,7 +1667,6 @@ and (max-width : 1024px) {
     top: 30px;
 }
 .navbar ul {
-    margin-left: 370px;
     margin-top: -110px;
     float: left;
 }
@@ -2081,12 +2080,17 @@ ul.resume li {
 	left: 3px;
 	top: 0px;
 }
+
 @media only screen 
-and (min-width : 770px) {
-	.navbar {
-    right: 71.7%;     
+and (min-width : 770px) and (max-width :  1024px) {
+.navbar {
+    left: -10px !important;     
     left: none;
 	}
+}
+
+@media only screen 
+and (min-width : 770px) {
     .navbar ul.portfolionav {
             position: absolute !important;
         }
