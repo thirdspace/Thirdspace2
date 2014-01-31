@@ -1688,7 +1688,6 @@ and (min-width : 626px) and (max-width : 700px) {
 }
 }
 
-
 @media only screen
 and (min-width : 700px) and (max-width : 768px) {
     
@@ -1697,6 +1696,32 @@ and (min-width : 700px) and (max-width : 768px) {
     }
     .navbar ul.portfolionav li a {
     line-height: .5em;
+}
+}
+
+@media only screen 
+and (min-width : 708px) {
+	#id_7 textarea {
+    width: 500px; 
+}
+}
+
+@media only screen 
+and (max-width : 758px) {
+    
+	.resumelogo {
+        display: block;
+        float: left;
+        height: 120px;
+        padding: 10px;
+        width: 120px !important;
+}
+}
+
+@media only screen 
+and (max-width : 777px) {
+	#id_7 textarea {
+    width: auto; 
 }
 }
 
@@ -1821,6 +1846,17 @@ and (min-width : 626px) and (max-width : 1024px) {
 }
 }
 
+
+
+@media only screen 
+and (min-width : 830px)and (max-width : 880px) {
+    
+    .navbar ul.mainnav li a {
+    font-size: 0.53em !important;
+    margin-left: 28px;
+}
+}
+
 @media only screen
 and (max-width : 950px) {
     .navbar ul {
@@ -1854,15 +1890,6 @@ and (max-width : 1000px) {
     .availabilitybox {
     left: 0 !important;
     top: 200px;
-}
-}
-
-@media only screen 
-and (min-width : 830px)and (max-width : 880px) {
-    
-    .navbar ul.mainnav li a {
-    font-size: 0.53em !important;
-    margin-left: 28px;
 }
 }
 
@@ -1918,7 +1945,6 @@ and (max-width : 1024px) {
     width: 1024px !important;
     height: 70px;
     padding: 0;
-    margin-top: -220px !important;
     background: #fff;
 }
 .navbar ul li {
@@ -2010,10 +2036,6 @@ and (max-width : 1024px) {
     text-decoration: none;
     top: 35px;
 }
-.navbar ul {
-    margin-top: -110px;
-    float: left;
-}
 .content p {
     font-size: 10.5pt;
 }
@@ -2026,6 +2048,14 @@ and (max-width : 1024px) {
 and (min-width : 950px) and (max-width : 1024px) { 
     .portfolionav {
         top: 85px !important;
+}
+}
+
+@media only screen 
+and (min-width : 100px) {
+    
+	.navbar ul {
+    margin-top: -10px !important;  
 }
 }
 
@@ -2118,47 +2148,22 @@ and (min-width : 321px) and (max-width : 1236px) {
 }
 }
 
+@media only screen
+and (min-width : 1400px) {
+    
+    #id_7 textarea {
+        width: 600px;
+}
+}
+
+
+
 /** BELOW UNCLASSED**/
 
 
 
-@media only screen 
-and (min-width : 100px) {
-	.navbar ul {
-    margin-top: -10px !important;  
-	}
-#id_7 textarea {
-    width: 400px; 
-	}
-}
-@media only screen 
-and (min-width : 708px) {
-	#id_7 textarea {
-    width: 500px; 
-	}
-}
-@media only screen 
-and (max-width : 777px) {
-	#id_7 textarea {
-    width: auto; 
-	}
-}
-@media only screen
-and (min-width : 1400px) {
-    #id_7 textarea {
-        width: 600px;
-    }
-}
-@media only screen 
-and (max-width : 758px) {
-	.resumelogo {
-        display: block;
-        float: left;
-        height: 120px;
-        padding: 10px;
-        width: 120px !important;
-	}
-}
+
+
 @media only screen 
 and (max-width : 1118px) {
 	#introheading {
