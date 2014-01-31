@@ -2099,6 +2099,16 @@ and (min-width : 1025px) {
 }
 
 @media only screen 
+and (max-width : 1118px) {
+    
+	#introheading {
+		font-size: 3em;
+        margin-top: -20px;
+}
+}
+
+
+@media only screen 
 and (max-width : 1193px) {
     #stephen {
     height: 300px !important;
@@ -2138,6 +2148,25 @@ and (min-width : 1207px) {
 .navbar {
         right: 72.7% !important;
 }
+.content {
+		margin-right: 8px !important;
+}
+}
+
+@media only screen 
+and (min-width : 758px) and (max-width : 1224px) {
+    
+	#introheading {
+         margin-bottom: 32px;
+}
+}
+
+
+@media only screen 
+and (min-width : 1226px) {
+	#introheading {
+         margin-bottom: 32px;
+}
 }
 
 @media only screen 
@@ -2145,6 +2174,14 @@ and (min-width : 321px) and (max-width : 1236px) {
     
     .jobinfo {
         width: 110% !important;
+}
+}
+
+@media only screen 
+and (min-width : 1382px) {
+    
+	#about .box {
+         margin-bottom: 32px;
 }
 }
 
@@ -2157,50 +2194,6 @@ and (min-width : 1400px) {
 }
 
 
-
-/** BELOW UNCLASSED**/
-
-
-
-
-
-@media only screen 
-and (max-width : 1118px) {
-	#introheading {
-		font-size: 3em;
-        margin-top: -20px;
-	}
-}
-@media only screen 
-and (max-width : 1195px) {
-	.social {
-		margin-left: 40px;
-	}
-}
-@media only screen 
-and (min-width : 1207px) {
-	.content {
-		margin-right: 8px !important;
-	}
-}
-@media only screen 
-and (min-width : 758px) and (max-width : 1224px) {
-	#introheading {
-         margin-bottom: 32px;
-	}
-}
-@media only screen 
-and (min-width : 1226px) {
-	#introheading {
-         margin-bottom: 32px;
-	}
-}
-@media only screen 
-and (min-width : 1382px) {
-	#about .box {
-         margin-bottom: 32px;
-	}
-}
 @font-face {
     font-family: 'web_symbolsregular';
     src: url('fonts/websymbols-regular.eot');
