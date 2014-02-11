@@ -773,7 +773,7 @@ p.ptitle {
 .selected3 {
     background: #e0e0e0;
     opacity: .8;
-    color: #9d9d9d;
+    color: #444444;
     font-weight: bold;
     border-radius: 20px;
     -moz-border-radius: 20px;
@@ -994,15 +994,9 @@ border: 0px solid #000000;
     margin: 10px;
     opacity: 0.8;
     padding: 0;
--webkit-border-radius: 200px;
--webkit-border-top-left-radius: 10px;
--webkit-border-bottom-left-radius: 10px;
--moz-border-radius: 200px;
--moz-border-radius-topleft: 10px;
--moz-border-radius-bottomleft: 10px;
-border-radius: 200px;
-border-top-left-radius: 10px;
-border-bottom-left-radius: 10px;
+border-radius: 0px 200px 200px 0px;
+-moz-border-radius: 0px 200px 200px 0px;
+-webkit-border-radius: 0px 200px 200px 0px;
 border: 0px solid #000000;
 }
 .jobdates {
@@ -1354,19 +1348,12 @@ and (min-width : 321px) and (max-width : 480px) {
     margin-top: 0 !important;
     width: 140px !important;
 }
-p.jobdates {
-    float: right !important;
-    margin-top: -120px !important;
-}
 }
 @media only screen
 and (min-width : 315px) and (max-width : 325px) {
 body {
     width: 320px;
     overflow-x: hidden;
-}
-p.jobdates {
-    width: 200px;
 }
 .jobinfo {
     border-radius: 0 !important;
@@ -1402,10 +1389,8 @@ p.jobdates {
     width: 330px !important;
 }
 }
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
-and (orientation : landscape) { 
+@media only screen
+and (min-width : 475px) and (max-width : 485px) {
 body {
     width: 480px;
     overflow-x: hidden;
@@ -1417,7 +1402,6 @@ body {
     width: 460px;
 }
 .jobinfo {
-    float: right !important;
     border-radius: 0 !important;
     margin-left: -30px !important;
     width: 480px !important;
@@ -1598,7 +1582,7 @@ ul.resume li {
     padding: 10px !important;
 }
 p.jobdates {
-    float: left;
+float: left !important;
     margin-left: 120px;
     clear: both;
     font-size: .9em;
@@ -1678,7 +1662,6 @@ background: #E2E2E2;
 }
 
 /*****************  480 px - 765 px    **************/
-
 @media only screen
 and (min-width : 481px) {
     
@@ -1686,87 +1669,7 @@ and (min-width : 481px) {
     width: 100% !important;
 }
 }
-/*Grandma*/
-@media only screen
-and (min-width : 481px) and (max-width : 580px) {
-body {
-    width: 560px;
-    overflow-x: hidden;
-}
-.project-info p {
-   font-size: .8em !important;
-    line-height: 1.3em;
-}
-p.jobdates {
-    float: right !important;
-}
-.joblisting {
-    margin-left: 40px;
-    position: relative;
-    border-radius: 0 !important;
-}
-.portfolio-listing {
-    width: 540px !important;
-}
-.navbar {
-    position: fixed !important;
-    top: -54px !important;
-}
-.navbar ul li a {
-    color: #ffffff;
-}
-ul.resume li {
-font-size: .5em !important;
-}
-.navbar #logo {
-    top: 45px !important;
-}
-.slider {
-    display: none;
-}
-.portfolio-section {
-    margin-left: -20px;
-    padding-left: 70px;
-}
-.social img {
-    width: 50px;
-}
-.box #stephen {
-    float: left;
-    height: 244px !important;
-    margin-top: -80px !important;
-}
-#skills {
-    display: none;
-}
-#aboutbox1 h1 {
-    font-size: 2.6em !important;
-}
-.labeltext {
-    font-size: .8em !important;
-    font-family: 'prime', sans-serif;
-}
-.project-info h2, .project-info h3 {
-     font-size: 1.1em !important;
-}
-#recent {
-    margin-top: 0 !important;
-}
-ul.resume li {
-    line-height: 1em;
-    width: 410px;
-}
-.jobinfo {
-    padding: 10px !important;
-}
-p.jobdates {
-    float: left;
-    margin-left: 120px;
-    clear: both;
-    font-size: .9em;
-    margin-top: -120px !important;
-}
-}
+
 @media only screen
 and (min-width : 540px) and (max-width : 626px) {
     .navbar ul.mainnav li {
@@ -2159,7 +2062,7 @@ and (max-width : 1024px) {
     color: #3a3a3a !important;
     background: none !important;
 }
-.portfolionav li a.selected2:hover, .portfolionav li a.selected3:hover {
+.portfolionav li a.selected2:hover {
     color: #E9BA00 !important;
     background: none !important;
 }
@@ -2247,7 +2150,7 @@ and (min-width : 100px) {
 and (max-width : 1022px) {
     
     .jobdates {
-    float: left;
+    float: left !important;
     margin-top: -110px !important;
     }
     .companyname {
@@ -2279,9 +2182,6 @@ and (min-width : 1025px) {
       margin-bottom: -10px;	
 	  padding-bottom: 10px;
 	  margin-left: -10px; 			
-}
-.proj-dreammedia.portfolio-listing img.portfoliophoto {
-    margin-top: -18px;
 }
 }
 
@@ -2386,12 +2286,7 @@ and (min-width : 430px) and (max-width : 474px) {
 and (min-width : 321px) and (max-width : 1236px) {
     
     .jobinfo {
-        width: 100% !important;
-        border-radius: 0 !important;
-}
-.joblisting {
-    margin-left: -10px;
-    border-radius: 0 !important;
+        width: 110% !important;
 }
 }
 
