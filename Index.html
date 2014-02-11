@@ -2,10 +2,12 @@
 <html>
 <head>
     <!-- META -->
-    <title>HTML KickStart Elements</title>
+    <title>Thirdspace Media | Stephen Peaslees Design Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0">
+
 	
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
@@ -35,154 +37,131 @@
      
 	 
 <!-- LOCAL SCROLL -->    
-
 <script type="text/javascript">
     
    
-   $(document).ready(function()
-   {
-       // Scroll the whole document
-       $('body').localScroll({
-          target:'body'
-       });       
-       
-          $("#navbtn").click(function() {
-           $("a.link").toggleClass("show");
-            $("#navbtn").toggleClass("activenav");
-          });
-          
-            $("a.link").click(function() {
-             $("a.link").toggleClass("show");
-            $("#navbtn").toggleClass("activenav");
-            });
-       
-        // Page Triggers
-        $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test = 200;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test) {
-                $(".aboutlink").removeClass("selected");
-            }
-                if(y_scroll_pos < scroll_pos_test) {
-                $(".aboutlink").addClass("selected");
-            }                                    
-        });       
-        $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test = 700;             // set to whatever you want it to be
-               
-            if(y_scroll_pos < scroll_pos_test) {
-                $(".aboutlink").addClass("selected");
-                $(".portfoliolink").removeClass("selected");
-                $(".portfolionav").fadeOut("fast");
-                $(".link").removeClass("nudgeup");
-            }                                    
-            });            
-           $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test7 = 870;             // set to whatever you want it to be
-            
-              if(y_scroll_pos < scroll_pos_test7) {
-                $(".link").removeClass("nudgeup");
-              }     
-            if(y_scroll_pos > scroll_pos_test7) {
-                $(".portfoliolink").addClass("selected");
-                $(".portfolionav").fadeIn("slow");
-                $(".link").addClass("nudgeup");
-
-                
-            }                                    
-           });
-       //Portfolio Sub Links
-            $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test8 = 2000;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test8) {
-                $(".jump-recent").addClass("selected2");
-                $(".jump-print").removeClass("selected2");
-                $(".jump-marketing").removeClass("selected3");
-            }                                    
-           });
-        $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test9 = 4000;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test9) {
-                $(".jump-print").addClass("selected2");                
-                $(".jump-recent").removeClass("selected2");
-                $(".jump-web").removeClass("selected2");
-                $(".jump-marketing").removeClass("selected3");
-            }                                    
-           });
-           $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test9 = 6000;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test9) {
-                $(".jump-web").addClass("selected2");
-                $(".jump-print").removeClass("selected2");
-                 $(".jump-marketing").removeClass("selected2");
-            }  
-           });
-            $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test11 = 9400;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test11) {
-                $(".jump-marketing").addClass("selected3");
-                $(".jump-web").removeClass("selected2");
+  $(document).ready(function () {
+// Scroll the whole document
+ $('body').localScroll({
+        target: 'body'
+    });
+    $("#navbtn").click(function () {
+        $("a.link").toggleClass("show");
+        $("#navbtn").toggleClass("activenav");
+    });
+    $("a.link").click(function () {
+        $("a.link").toggleClass("show");
+        $("#navbtn").toggleClass("activenav");
+    });
+ // Page Triggers
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 200; // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test) {
+            $(".aboutlink").removeClass("selected");
+        }
+        if (y_scroll_pos < scroll_pos_test) {
+            $(".aboutlink").addClass("selected");
+        }
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test = 700; // set to whatever you want it to be
+        if (y_scroll_pos < scroll_pos_test) {
+            $(".aboutlink").addClass("selected");
+            $(".portfoliolink").removeClass("selected");
+            $(".portfolionav").fadeOut("fast");
+            $(".link").removeClass("nudgeup");
+        }
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test7 = 870;             // set to whatever you want it to be
+        if (y_scroll_pos < scroll_pos_test7) {
+            $(".link").removeClass("nudgeup");
+        }
+        if (y_scroll_pos > scroll_pos_test7) {
+            $(".portfoliolink").addClass("selected");
+            $(".portfolionav").fadeIn("slow");
+            $(".link").addClass("nudgeup");
+        }
+    });
+    //Portfolio Sub Links
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test8 = 2000;             // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test8) {
+            $(".jump-recent").addClass("selected2");
+            $(".jump-print").removeClass("selected2");
+            $(".jump-marketing").removeClass("selected3");
+        }
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test9 = 4000;             // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test9) {
+            $(".jump-print").addClass("selected2");
+            $(".jump-recent").removeClass("selected2");
+            $(".jump-web").removeClass("selected2");
+            $(".jump-marketing").removeClass("selected3");
+        }
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test9 = 6000;             // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test9) {
+            $(".jump-web").addClass("selected2");
+            $(".jump-print").removeClass("selected2");
+            $(".jump-marketing").removeClass("selected2");
+        }  
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test11 = 9400;             // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test11) {
+            $(".jump-marketing").addClass("selected3");
+            $(".jump-web").removeClass("selected2");
             }   
-           });
-                $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test12 = 12200;             // set to whatever you want it to be
-               
-            if(y_scroll_pos > scroll_pos_test12) {
-                $(".jump-marketing").removeClass("selected3");
-                $(".portfolionav li").hide("fast");
-                $(".link").removeClass("nudgeup");
-                $(".portfolionav").addClass("hide");
-            }   
-              if(y_scroll_pos < scroll_pos_test12) {
-                $(".jump-marketing").removeClass("selected2");
-                $(".portfolionav li").fadeIn("slow");
-                $(".portfolionav").removeClass("hide");
-            }   
-           });
-       //Portfolio Sub Links End
-           $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test3 = 12400;             // set to whatever you want it to be
-               
-            if(y_scroll_pos < scroll_pos_test3) {
-                $(".resumelink").removeClass("selected");
-            }
-                if(y_scroll_pos > scroll_pos_test3) {
-                $(".portfoliolink").removeClass("selected");
-                $(".resumelink").addClass("selected");
-                $(".icon-refresh-menu")
-            }
-           });
-          
-           $(window).on('scroll', function() {
-            var y_scroll_pos = window.pageYOffset;
-            var scroll_pos_test4 = 13500;             // set to whatever you want it to be
-               
-            if(y_scroll_pos < scroll_pos_test4) {
-                $(".contactlink").removeClass("selected");
-            }
-                if(y_scroll_pos > scroll_pos_test4) {
-            
-                $(".resumelink").removeClass("selected");
-                $(".contactlink").addClass("selected");
-                    
-        
-            }
-               
-           });
-   });
+        });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test12 = 12200;             // set to whatever you want it to be
+        if (y_scroll_pos > scroll_pos_test12) {
+            $(".jump-marketing").removeClass("selected3");
+            $(".portfolionav li").hide("fast");
+            $(".link").removeClass("nudgeup");
+            $(".portfolionav").addClass("hide");
+        }   
+        if (y_scroll_pos < scroll_pos_test12) {
+            $(".jump-marketing").removeClass("selected2");
+            $(".portfolionav li").fadeIn("slow");
+            $(".portfolionav").removeClass("hide");
+        }   
+    });
+    //Portfolio Sub Links End
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test3 = 12400; // set to whatever you want it to be
+        if (y_scroll_pos < scroll_pos_test3) {
+       	    $(".resumelink").removeClass("selected");
+        }
+        if (y_scroll_pos > scroll_pos_test3) {
+            $(".portfoliolink").removeClass("selected");
+            $(".resumelink").addClass("selected");
+        }
+    });
+    $(window).on('scroll', function () {
+        var y_scroll_pos = window.pageYOffset;
+        var scroll_pos_test4 = 13500; // set to whatever you want it to be
+        if (y_scroll_pos < scroll_pos_test4) {
+            $(".contactlink").removeClass("selected");
+        }
+        if (y_scroll_pos > scroll_pos_test4) {
+            $(".resumelink").removeClass("selected");
+            $(".contactlink").addClass("selected");
+        }
+    });
+});
 </script>
     
     
@@ -229,7 +208,7 @@ $(document).ready(function() {
 				<li><a class="link portfoliolink" href="#portfolio">Portfolio</a></li>
 				<li><a class="link resumelink" href="#resume">Resume</a></li>
 				<li><a class="link contactlink" href="#header_8">Contact</a></li>
-                <li><a id="navbtn"><img src="images/menu.png" alt="menu" width="20" height="23"></a></li>
+                <li><a id="navbtn">Navbtn</a></li>
 			</ul>
         
             <ul class="portfolionav">
@@ -450,15 +429,15 @@ $(document).ready(function() {
             <li>
   	    	    <img src="images/portfolio/tovolo_hero_5.jpg" alt="Tovolo Sample 1" />
   	    		</li>
-  	    		<li>
+  	    		<!--<li>
   	    	    <img src="images/portfolio/tovolo_hero_3.jpg" alt="Tovolo Sample 2" />
-  	    		</li>
-  	    		<li>
+  	    		</li>-->
+  	    		<!--<li>
   	    	    <img src="images/portfolio/tovolo_hero_2.jpg" alt="Tovolo Sample 3" />
-  	    		</li>
-  	    		<li>
-  	    	    <img src="images/portfolio/tovolo_hero_4.jpg" alt="Tovolo Sample 4" />
-  	    		</li>
+  	    		</li>-->
+  	    		 <!--<li>
+  	    	   <img src="images/portfolio/tovolo_hero_4.jpg" alt="Tovolo Sample 4" />
+  	    		</li>-->
               <li>
   	    	    <img src="images/portfolio/tovolo_hero_1.jpg" alt="Tovolo Sample 5" />
   	    		</li>
@@ -500,15 +479,15 @@ $(document).ready(function() {
                 </div><!--End Project info-->
             </div><!--End Portfolio Listing-->
         
-            <div class="proj-tovolospatulas portfolio-listing">
+            <!--<div class="proj-tovolospatulas portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/hersheysspatulas.jpg" alt="Hersheys Spatula Design" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Hershey</h2><h3  class="via"><span class="labeltext">Via:</span> Tovolo</h3>
                     <h3><span class="labeltext">Project: </span>Vector Illustrations for Spatulas</h3>
                     <p>Designed concept illustration for Hershey branded silicone spatulas. Took full color brand photos and converted into 3, 4 and 5 color designs without utilizing tints (due to silicone printing). Designed spatulas by company direction.</p>
                   <a class="fancybox"  href="images/portfolio/hersheysspatula1.jpg"><p class="readmore ">Example</p></a>
-                </div><!--End Project info-->
-            </div><!--End Portfolio Listing-->
+                </div>
+            </div><!--End Portfolio Listing-->-->
                     
             <div class="proj-wheelerdealerediting portfolio-listing">
             <img class="portfoliophoto nudge" src="images/portfolio/wheelerdealerediting.jpg" alt="Wheeler Dealer Production Work" />
@@ -630,7 +609,7 @@ $(document).ready(function() {
             <h1>Web work</h1>
         </div><!--End Portfolio Section-->
        
-                <div class="proj-tovoloweb portfolio-listing">
+                <!--<div class="proj-tovoloweb portfolio-listing">
                 <img class="portfoliophoto nudge" src="images/portfolio/tovolowebsite1.jpg" alt="Tovolo Website UXI and Development" />
                 <div class="project-info">
                     <h2><span class="labeltext">Client: </span>Tovolo Kitchenware</h2>
@@ -639,7 +618,7 @@ $(document).ready(function() {
                      <a class="fancybox"  href="images/portfolio/tovoloex1.jpg"><p class="readmore ">Example 1</p></a>        
                       <a class="fancybox"  href="images/portfolio/tovoloex2.jpg"><p class="readmore ">Example 2</p></a>        
 <a class="fancybox"  href="images/portfolio/tovoloex3.jpg"><p class="readmore ">Example 3</p></a>                            
-                </div><!--End Project info-->
+                </div>
             </div><!--End Portfolio Listing-->
         
              <div class="proj-latestays portfolio-listing">
@@ -826,7 +805,7 @@ $(document).ready(function() {
                     <img class="resumelogo" src="images/resume/tovolo.jpg" alt="Wotif Group" />
 					<p class="companyname">Tovolo</p><p class="companytitle">Innovative Kitchenware</p>
 					<p class="jobtitle">Temp Design &amp; Web Contractor Via: Creative Circle</p>
-					<p class="jobdates">Oct-Dec 2013</p>				
+					<p class="jobdates">Oct - Dec 2013</p>				
 					<ul class="resume">
 						<li>Edited studio photography from highres raw images.</li>
 						<li>Created box concepts and collaborated with other designers</li>
@@ -859,7 +838,7 @@ $(document).ready(function() {
 
 					<p class="companyname">RisingLine</p><p class="companytitle">Web Design, Development &amp; Branding</p>
 					<p class="jobtitle">Graphic Designer &amp; UXI</p>
-					<p class="jobdates">April 2009 - Sept 2012</p>				
+					<p class="jobdates">Apr 2009 - Sept 2012</p>				
 					<ul class="resume">
 						<li>Worked remotely on web, UXI, print and identity projects for US clients.</li>
 						<li>Conducted meetings, organized workflow, and collaborated online.</li>
@@ -875,9 +854,9 @@ $(document).ready(function() {
 				<div class="jobinfo">
                    <img class="resumelogo" src="images/resume/lysibishop.jpg" alt="Lysi Bishop" />
 
-					<p class="companyname">Keller Williams Real Estate</p><p class="companytitle">On the Lysi Bishop Team</p>
+					<p class="companyname">Keller Williams</p><p class="companytitle">Lysi Bishop Team</p>
 					<p class="jobtitle" style="margin-top: -10px;">Media &amp; Marketing</p>		
-					<p class="jobdates nudge1">August 2011 - July 2012</p>	
+					<p class="jobdates nudge1">Aug 2011 - Jul 2012</p>	
 					<ul class="resume" style="margin-top: -15px;">
 						<li>Provided design, web &amp; marketing support for high end real estate.</li>
 						<li>Team is ranked #7 for KW internationally by volume, &amp; #1 regionally.</li>
@@ -896,7 +875,7 @@ $(document).ready(function() {
 
 						<p class="companyname">Visual Lounge</p><p class="companytitle">Design &amp; Marketing</p>
 						<p class="jobtitle">Graphic Design &amp; Interface Developer</p>		
-						<p class="jobdates">January 2008 -  March 2009</p>	
+						<p class="jobdates">Jan 2008 - Mar 2009</p>	
 						<ul class="resume">
 							<li>Worked directly with companies to develop logos &amp; brands.</li>
 							<li>Designed print materials, banners, trade show exhibits &amp; logos.</li>
@@ -931,7 +910,7 @@ $(document).ready(function() {
 
 					<p class="companyname">SelEquity Graphics</p><p class="companytitle"></p>
 					<p class="jobtitle">Graphic Designer</p>		
-					<p class="jobdates nudge2" style="margin-top: -50px;">February 2007 - Aug 2008</p>	
+					<p class="jobdates" style="margin-top: -50px;">Feb 2007 - Aug 2008</p>	
 					<ul class="resume">
 						<li>Worked on a team providing print design, printing services, and publishing for primarily real estate companies.</li>
 						<li>Performed in-house design including pre-press, printing and cutting.</li>
@@ -950,7 +929,7 @@ $(document).ready(function() {
 
 					<p class="companyname">Visual String</p><p class="companytitle"></p>
 					<p class="jobtitle">Web Intern</p>		
-					<p class="jobdates nudge2" style="margin-top: -40px;">Dec 2006 - February 2007</p>	
+					<p class="jobdates" style="margin-top: -40px;">Dec 2006 - Feb 2007</p>	
 					<ul class="resume">
 						<li>Performed CSS/HTML updates and fixes on corporate sites.</li>
 						<li>Created interface designs for developers.</li>
