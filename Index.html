@@ -71,85 +71,84 @@
             $(".aboutlink").addClass("selected");
             $(".portfoliolink").removeClass("selected");
             $(".portfolionav").fadeOut("fast");
-            $(".link").removeClass("nudgeup");
         }
     });
     $(window).on('scroll', function () {
         var y_scroll_pos = window.pageYOffset;
         var scroll_pos_test7 = 870;             // set to whatever you want it to be
         if (y_scroll_pos < scroll_pos_test7) {
-            $(".link").removeClass("nudgeup");
+            $(".portfolionav li").fadeIn("slow");
         }
         if (y_scroll_pos > scroll_pos_test7) {
             $(".portfoliolink").addClass("selected");
             $(".portfolionav").fadeIn("slow");
-            $(".link").addClass("nudgeup");
         }
     });
     //Portfolio Sub Links
-    $(window).on('scroll', function () {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test8 = 2000;             // set to whatever you want it to be
-        if (y_scroll_pos > scroll_pos_test8) {
-            $(".jump-recent").addClass("selected2");
-            $(".jump-print").removeClass("selected2");
-            $(".jump-marketing").removeClass("selected3");
-        }
-    });
-    $(window).on('scroll', function () {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test9 = 4000;             // set to whatever you want it to be
-        if (y_scroll_pos > scroll_pos_test9) {
-            $(".jump-print").addClass("selected2");
-            $(".jump-recent").removeClass("selected2");
-            $(".jump-web").removeClass("selected2");
-            $(".jump-marketing").removeClass("selected3");
-        }
-    });
-    $(window).on('scroll', function () {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test9 = 6000;             // set to whatever you want it to be
-        if (y_scroll_pos > scroll_pos_test9) {
-            $(".jump-web").addClass("selected2");
-            $(".jump-print").removeClass("selected2");
-            $(".jump-marketing").removeClass("selected2");
-        }  
-    });
-    $(window).on('scroll', function () {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test11 = 9400;             // set to whatever you want it to be
-        if (y_scroll_pos > scroll_pos_test11) {
-            $(".jump-marketing").addClass("selected3");
-            $(".jump-web").removeClass("selected2");
-            }   
-        });
-    $(window).on('scroll', function () {
-        var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test12 = 12200;             // set to whatever you want it to be
-        if (y_scroll_pos > scroll_pos_test12) {
-            $(".jump-marketing").removeClass("selected3");
-            $(".portfolionav li").hide("fast");
-            $(".link").removeClass("nudgeup");
-            $(".portfolionav").addClass("hide");
-        }   
-        if (y_scroll_pos < scroll_pos_test12) {
-            $(".jump-marketing").removeClass("selected2");
-            $(".portfolionav li").fadeIn("slow");
-            $(".portfolionav").removeClass("hide");
-        }   
-    });
+                $(window).on('scroll', function () {
+                    var y_scroll_pos = window.pageYOffset;
+                    var scroll_pos_test8 = 2000;             // set to whatever you want it to be
+                    if (y_scroll_pos > scroll_pos_test8) {
+                        $(".jump-recent").addClass("selected2");
+                        $(".jump-print").removeClass("selected2");
+                        $(".jump-marketing").removeClass("selected3");
+                    }
+                });
+                $(window).on('scroll', function () {
+                    var y_scroll_pos = window.pageYOffset;
+                    var scroll_pos_test9 = 4000;             // set to whatever you want it to be
+                    if (y_scroll_pos > scroll_pos_test9) {
+                        $(".jump-print").addClass("selected2");
+                        $(".jump-recent").removeClass("selected2");
+                        $(".jump-web").removeClass("selected2");
+                        $(".jump-marketing").removeClass("selected3");
+                    }
+                });
+                $(window).on('scroll', function () {
+                    var y_scroll_pos = window.pageYOffset;
+                    var scroll_pos_test9 = 6000;             // set to whatever you want it to be
+                    if (y_scroll_pos > scroll_pos_test9) {
+                        $(".jump-web").addClass("selected2");
+                        $(".jump-print").removeClass("selected2");
+                        $(".jump-marketing").removeClass("selected2");
+                    }  
+                });
+                $(window).on('scroll', function () {
+                    var y_scroll_pos = window.pageYOffset;
+                    var scroll_pos_test11 = 9400;             // set to whatever you want it to be
+                    if (y_scroll_pos > scroll_pos_test11) {
+                        $(".jump-marketing").addClass("selected3");
+                        $(".jump-web").removeClass("selected2");
+                       $(".resumelink").addClass("selected");
+                        }   
+                    });
+                $(window).on('scroll', function () {
+                    var y_scroll_pos = window.pageYOffset;
+                    var scroll_pos_test12 = 12100;             // set to whatever you want it to be
+                    if (y_scroll_pos > scroll_pos_test12) {
+                        $(".jump-marketing").removeClass("selected3");
+                        $(".portfolionav li").fadeOut("fast");
+                        $(".portfoliolink").removeClass("selected");
+                    }   
+                    if (y_scroll_pos < scroll_pos_test12) {
+                        $(".jump-marketing").removeClass("selected2");
+                        $(".portfolionav li").fadeIn("slow");
+                        
+                    }   
+                });
     //Portfolio Sub Links End
-    $(window).on('scroll', function () {
+  $(window).on('scroll', function () {
         var y_scroll_pos = window.pageYOffset;
-        var scroll_pos_test3 = 12400; // set to whatever you want it to be
-        if (y_scroll_pos < scroll_pos_test3) {
-       	    $(".resumelink").removeClass("selected");
+        var scroll_pos_test4 = 12101; // set to whatever you want it to be
+        if (y_scroll_pos < scroll_pos_test4) {
+            $(".resumelink").removeClass("selected");
+            $(".portfolionav li").fadeIn("fast");                        
         }
-        if (y_scroll_pos > scroll_pos_test3) {
+        if (y_scroll_pos > scroll_pos_test4) {
             $(".portfoliolink").removeClass("selected");
             $(".resumelink").addClass("selected");
         }
-    });
+});
     $(window).on('scroll', function () {
         var y_scroll_pos = window.pageYOffset;
         var scroll_pos_test4 = 13500; // set to whatever you want it to be
@@ -426,12 +425,19 @@ $(document).ready(function() {
       <section class="slider">
         <div class="flexslider">
           <ul class="slides">
-            <li>
+                <li>
+  	    	    <img src="images/portfolio/eldorado_hero1.jpg" alt="Tovolo Sample 4" />
+  	    		</li>
+                <li>
   	    	    <img src="images/portfolio/tovolo_hero_5.jpg" alt="Tovolo Sample 1" />
+  	    		</li>
+                <li>
+  	    	    <img src="images/portfolio/awd_hero1.jpg" alt="Tovolo Sample 1" />
   	    		</li>
   	    		<li>
   	    	    <img src="images/portfolio/tovolo_hero_1.jpg" alt="Tovolo Sample 4" />
   	    		</li>
+              
           </ul>
         </div>
           

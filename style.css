@@ -40,6 +40,13 @@
 .nudge2 {
     padding-top: 30px;
 }
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
 
 /*---------------------------------
 	IMPORTS
@@ -126,8 +133,7 @@ body{
 }
 .navbar ul li a {
     margin: 0;
-    padding: 0;
- padding: 10px 20px;
+    padding: 10px 20px;
     font-family: 'primelight';
 }
 .activenav {
@@ -136,6 +142,7 @@ body{
 .navbar ul li a:active {
     background: #E9BA00;
     color: #fff;
+    height: 20px;
 }
 .navbar ul li a:hover {
     background: #cccccc;
@@ -148,7 +155,7 @@ background:#fff !important;
 color:#fff;
 z-index:1000;
 margin-left: 1.5em;
-padding: 0;
+padding: 0 0 7px;
 opacity: .8;
 right: 73.2% !important;
 border-radius: 20px 0px 0px 20px;
@@ -181,9 +188,7 @@ ul.portfolionav li.pnav  {
 }
 .navbar ul {
     display: block;
-    font-size: 4.4em;
     letter-spacing: 0.03em;
-    line-height: .4;
     margin: -10px 0 10px;
     padding: 0;
     width: 180px;
@@ -439,6 +444,7 @@ p.project-info {
     color: #ccc;
     font-size: 12pt;
     padding-left: 20px;
+    padding-bottom: 5px;
 }
 .portfolionav .icon-print:before, .portfolionav .icon-refresh:before, .portfolionav .icon-laptop:before, .portfolionav .icon-lightbulb:before {
     clear: both;
@@ -469,7 +475,7 @@ p.project-info {
 .introbox {
 }
 .bar {
-    min-height: 264px;
+    min-height: 263px;
 }
 .box {
     width: 100%;
@@ -487,7 +493,7 @@ p.project-info {
     background: #fff;
     padding: 1em;
     margin-right: 15px !important;
-	margin-top: -13px !important;
+	margin-top: -12px !important;
     position: relative;
 }
 .content p {
@@ -554,6 +560,7 @@ display:block;
 }
 /* ABOUT PAGE */
 #stephen {
+  @include border-radius(10px);
    height: 265px;
     left: 0;
     position: absolute;
@@ -936,7 +943,7 @@ margin-top: -35px;
 }
 .social img {
 	float: left;
-	margin-top: -5px;
+	margin-top: -10px;
 }
 .social p {
 	float: right;
@@ -2236,7 +2243,7 @@ and (min-width : 1207px) {
         right: 72.7% !important;
 }
 .content {
-		margin-right: 8px !important;
+		margin-right: 9px !important;
 }
 }
 
