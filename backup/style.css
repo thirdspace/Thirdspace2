@@ -40,6 +40,13 @@
 .nudge2 {
     padding-top: 30px;
 }
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
 
 /*---------------------------------
 	IMPORTS
@@ -86,6 +93,7 @@ blockquote{
 -----------------------------------*/
 html {
     overflow-x: hidden;
+    width: 100%;
 }
 body{
     margin:0;
@@ -134,6 +142,7 @@ body{
 .navbar ul li a:active {
     background: #E9BA00;
     color: #fff;
+    height: 20px;
 }
 .navbar ul li a:hover {
     background: #cccccc;
@@ -146,7 +155,7 @@ background:#fff !important;
 color:#fff;
 z-index:1000;
 margin-left: 1.5em;
-padding: 0;
+padding: 0 0 7px;
 opacity: .8;
 right: 73.2% !important;
 border-radius: 20px 0px 0px 20px;
@@ -179,9 +188,7 @@ ul.portfolionav li.pnav  {
 }
 .navbar ul {
     display: block;
-    font-size: 4.4em;
     letter-spacing: 0.03em;
-    line-height: .4;
     margin: -10px 0 10px;
     padding: 0;
     width: 180px;
@@ -437,6 +444,7 @@ p.project-info {
     color: #ccc;
     font-size: 12pt;
     padding-left: 20px;
+    padding-bottom: 5px;
 }
 .portfolionav .icon-print:before, .portfolionav .icon-refresh:before, .portfolionav .icon-laptop:before, .portfolionav .icon-lightbulb:before {
     clear: both;
@@ -467,7 +475,7 @@ p.project-info {
 .introbox {
 }
 .bar {
-    min-height: 264px;
+    min-height: 263px;
 }
 .box {
     width: 100%;
@@ -485,7 +493,7 @@ p.project-info {
     background: #fff;
     padding: 1em;
     margin-right: 15px !important;
-	margin-top: -13px !important;
+	margin-top: -12px !important;
     position: relative;
 }
 .content p {
@@ -505,7 +513,7 @@ p.project-info {
     text-indent: -99999px;
     overflow: hidden;
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 20px;
 }
 #about {
@@ -552,6 +560,7 @@ display:block;
 }
 /* ABOUT PAGE */
 #stephen {
+  @include border-radius(10px);
    height: 265px;
     left: 0;
     position: absolute;
@@ -934,7 +943,7 @@ margin-top: -35px;
 }
 .social img {
 	float: left;
-	margin-top: -5px;
+	margin-top: -10px;
 }
 .social p {
 	float: right;
@@ -1347,9 +1356,84 @@ and (min-width : 321px) and (max-width : 480px) {
     width: 140px !important;
 }
 }
-
+@media only screen
+and (min-width : 315px) and (max-width : 325px) {
+body {
+    width: 320px;
+    overflow-x: hidden;
+}
+.jobinfo {
+    border-radius: 0 !important;
+    margin-left: -30px !important;
+    width: 320px !important;
+}
+.portfolio-listing {
+    width: 300px !important;
+    margin-left: -25px !important;
+}
+.project-info p {
+    line-height: 1.2em !important;
+}
+.navbar ul li .link {
+    color: #FFFFFF;
+    margin-left: 50px;
+    text-align: center;
+    line-height: 0em;
+}
+#introheading {
+    background: none repeat scroll 0 0 #FFFFFF;
+    font-size: 3em;
+    margin-left: -20px;
+    width: 300px !important;
+}
+.col_9.long {
+    background: none !important;
+}
+#aboutbox1 {
+    float: left;
+    margin-left: -55px !important;
+    margin-top: 155px !important;
+    width: 330px !important;
+}
+}
+@media only screen
+and (min-width : 475px) and (max-width : 485px) {
+body {
+    width: 480px;
+    overflow-x: hidden;
+}
+#aboutbox1 {
+    float: left;
+    margin-left: -55px !important;
+    padding-top: 160px;
+    width: 460px;
+}
+.jobinfo {
+    border-radius: 0 !important;
+    margin-left: -30px !important;
+    width: 480px !important;
+}
+.portfolio-listing {
+    width: 460px !important;
+     margin-left: -25px !important;
+}
+.project-info p {
+    font-size: .9em !important;
+    line-height: 1.4em;
+}
+.navbar ul li .link {
+    color: #FFFFFF;
+    margin-left: 70px;
+    text-align: center;
+}
+.navbar ul li a {
+    line-height: 0;
+      padding: 20px 5px !important;
+}
+}
 @media only screen
 and (min-width : 400px) and (max-width : 480px) {
+
 .box #stephen {
     float: left;
     height: 130px !important;
@@ -1456,15 +1540,25 @@ and (min-width : 400px) and (max-width : 480px) {
 
 @media only screen
 and (max-width : 480px) {
-#aboutbox1 {
-    float: left;
-    margin-left: -15px !important;
-    margin-top: 155px !important;
-    width: 290px;
+.navbar {
+        position: fixed !important;
+        top: -54px !important;
+}
+.navbar ul li a {
+    color: #ffffff;
+}
+ul.resume li {
+font-size: .5em !important;
+}
+.navbar #logo {
+    top: 45px !important;
+}
+.slider {
+    display: none;
 }
 .portfolio-section {
-    width: 290px !important;
     margin-left: -20px;
+    padding-left: 40px;
 }
 .social img {
     width: 50px;
@@ -1477,6 +1571,13 @@ and (max-width : 480px) {
 #aboutbox1 h1 {
     font-size: 2.6em !important;
 }
+.labeltext {
+    font-size: .8em !important;
+    font-family: 'prime', sans-serif;
+}
+.project-info h2, .project-info h3 {
+     font-size: 1.1em !important;
+}
 #recent {
     margin-top: 0 !important;
 }
@@ -1488,7 +1589,11 @@ ul.resume li {
     padding: 10px !important;
 }
 p.jobdates {
-float: right !important;
+float: left !important;
+    margin-left: 120px;
+    clear: both;
+    font-size: .9em;
+    margin-top: -120px !important;
 }
 .portfolio-listing {
     background-color: #E2E2E2;
@@ -1498,10 +1603,10 @@ float: right !important;
     -moz-border-radius-bottomleft: 8px;
     -webkit-border-bottom-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    -moz-border-radius-topleft: 0px !important;
-    -webkit-border-top-left-radius: 0px !important;
-    -moz-border-radius-topright: 0px !important;
-    -webkit-border-top-right-radius: 0px !important;
+    -moz-border-radius-topleft: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-right-radius: 8px;
     clear: both;
     height: 305px;
     margin-top: 40px;
@@ -1557,6 +1662,9 @@ background: #E2E2E2;
 }
 .flexslider {
    margin: 1050px 0 60px !important;
+}
+.companytitle {
+    line-height: 1em;
 }
 }
 
@@ -1648,8 +1756,10 @@ ul.mainnav {
 }
 
 @media only screen
-and (min-width : 600px) and (max-width : 700px) {
-    
+and (min-width : 626px) and (max-width : 626px) {
+.navbar ul li a {
+    color: #ffffff !important;
+}
 .navbar ul.mainnav li {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -1687,7 +1797,6 @@ and (min-width : 626px) and (max-width : 700px) {
 }
 }
 
-
 @media only screen
 and (min-width : 700px) and (max-width : 768px) {
     
@@ -1699,8 +1808,46 @@ and (min-width : 700px) and (max-width : 768px) {
 }
 }
 
-/*****************  765 px - 900 px    **************/
+@media only screen
+and (min-width : 700px) and (max-width : 830px) {
+    .navbar ul.mainnav li a {
+        margin-top: -10px;
+    }
+}
 
+@media only screen 
+and (min-width : 708px) {
+	#id_7 textarea {
+    width: 500px; 
+}
+}
+
+@media only screen 
+and (max-width : 758px) {
+    
+	.resumelogo {
+        display: block;
+        float: left;
+        height: 120px;
+        padding: 10px;
+        width: 120px !important;
+}
+}
+
+@media only screen 
+and (max-width : 777px) {
+	#id_7 textarea {
+    width: auto; 
+}
+}
+
+/*****************  765 px - 900 px    **************/
+@media only screen
+and (min-width : 626px) and (max-width : 682px) {
+.navbar ul.portfolionav {
+    left: -100px !important;
+    }
+}
 @media only screen 
 and (min-width : 770px) {
     
@@ -1767,14 +1914,20 @@ and (min-width : 626px)and (max-width : 830px) {
 }
 }
 
+@media only screen 
+and (min-width : 830px)and (max-width : 1024px) {
+    
+    .navbar ul.mainnav li a {
+    margin-top: -10px !important;
+}
+}
+
 @media only screen
 and (max-width : 768px) {
     
     .col_3 {
         left: 0;
     }
-    .navbar ul.mainnav {
-}
 }
 
 @media only screen
@@ -1797,26 +1950,21 @@ and (min-width : 770px) and (max-width :  1024px) {
 }
 }
 
-@media only screen 
-and (max-width : 1024px) {
-    
-  .navbar ul li a {
-        color: #888;
-       font-size: .5em;
-       letter-spacing: .03em;
-       margin-bottom: 16px;
-       padding: 10px 5px;
-       text-align: left;
-        margin-left: 15px;       
-}
-}
-
 /*****************  900 px - 1024 px    **************/
+
 @media only screen
 and (min-width : 626px) and (max-width : 1024px) {
 
     .navbar ul {
     padding-left: 260px !important; 
+}
+}
+@media only screen 
+and (min-width : 830px)and (max-width : 880px) {
+    
+    .navbar ul.mainnav li a {
+    font-size: 0.53em !important;
+    margin-left: 28px;
 }
 }
 
@@ -1840,13 +1988,6 @@ and (max-width : 950px) {
 }
 }
 
-@media only screen
-and (max-width : 1020px) {
-    .navbar ul.portfolionav li a {
-    line-height: .42em;
-}
-}
-
 @media only screen 
 and (max-width : 1000px) {
     
@@ -1857,23 +1998,9 @@ and (max-width : 1000px) {
 }
 
 @media only screen 
-and (min-width : 830px)and (max-width : 880px) {
-    
-    .navbar ul.mainnav li a {
-    font-size: 0.53em !important;
-    margin-left: 28px;
-}
-}
-
-@media only screen 
 and (min-width : 830px) and (max-width : 1024px) {
-    .navbar {
-        right: none;
-        top: -50px;
-        border-radius: 0;
-	}
+
     .navbar ul {
-        display: inline;
         letter-spacing: 0.03em;
         line-height: 0.0em;
 }
@@ -1881,11 +2008,14 @@ and (min-width : 830px) and (max-width : 1024px) {
 
 @media only screen
 and (min-width : 950px) and (max-width : 1024px) {
-    .portfolionav .icon-lightbulb-menu:before {
+    
+.portfolionav .icon-lightbulb-menu:before {
     left: 748px !important;
     top: 3px;
 }
-
+.portfolionav {
+        top: 85px !important;
+}
 #introheading {
     font-size: 4em !important;
     margin-bottom: 10px;
@@ -1917,7 +2047,6 @@ and (max-width : 1024px) {
     width: 1024px !important;
     height: 70px;
     padding: 0;
-    margin-top: -220px !important;
     background: #fff;
 }
 .navbar ul li {
@@ -1982,7 +2111,6 @@ and (max-width : 1024px) {
 }
 .navbar ul li a {
     letter-spacing: 0.03em;
-    margin-bottom: 16px;
     margin-left: 15px;
     padding: 30px 5px !important;
     text-align: left;
@@ -2009,10 +2137,6 @@ and (max-width : 1024px) {
     text-decoration: none;
     top: 35px;
 }
-.navbar ul {
-    margin-top: -110px;
-    float: left;
-}
 .content p {
     font-size: 10.5pt;
 }
@@ -2021,10 +2145,11 @@ and (max-width : 1024px) {
 }
 }
 
-@media only screen
-and (min-width : 950px) and (max-width : 1024px) { 
-    .portfolionav {
-        top: 85px !important;
+@media only screen 
+and (min-width : 100px) {
+    
+	.navbar ul {
+    margin-top: -10px !important;  
 }
 }
 
@@ -2068,6 +2193,16 @@ and (min-width : 1025px) {
 }
 
 @media only screen 
+and (max-width : 1118px) {
+    
+	#introheading {
+		font-size: 3em;
+        margin-top: -20px;
+}
+}
+
+
+@media only screen 
 and (max-width : 1193px) {
     #stephen {
     height: 300px !important;
@@ -2107,6 +2242,51 @@ and (min-width : 1207px) {
 .navbar {
         right: 72.7% !important;
 }
+.content {
+		margin-right: 9px !important;
+}
+}
+
+@media only screen 
+and (min-width : 758px) and (max-width : 1224px) {
+    
+	#introheading {
+         margin-bottom: 32px;
+}
+}
+
+
+@media only screen 
+and (min-width : 1226px) {
+	#introheading {
+         margin-bottom: 32px;
+}
+}
+@media only screen
+and (min-width : 321px) and (max-width : 379px) {
+.navbar ul li .link {
+    color: #FFFFFF;
+    margin-left: 10px !important;
+    text-align: center;
+}
+}
+
+@media only screen
+and (min-width : 380px) and (max-width : 429px) {
+.navbar ul li .link {
+    color: #FFFFFF;
+    margin-left: 30px !important;
+    text-align: center;
+}
+}
+
+@media only screen
+and (min-width : 430px) and (max-width : 474px) {
+.navbar ul li .link {
+    color: #FFFFFF;
+    margin-left: 50px !important;
+    text-align: center;
+}
 }
 
 @media only screen 
@@ -2117,84 +2297,23 @@ and (min-width : 321px) and (max-width : 1236px) {
 }
 }
 
-/** BELOW UNCLASSED**/
-
-
-
-@media only screen 
-and (min-width : 100px) {
-	.navbar ul {
-    margin-top: -10px !important;  
-	}
-#id_7 textarea {
-    width: 400px; 
-	}
-}
-@media only screen 
-and (min-width : 708px) {
-	#id_7 textarea {
-    width: 500px; 
-	}
-}
-@media only screen 
-and (max-width : 777px) {
-	#id_7 textarea {
-    width: auto; 
-	}
-}
-@media only screen
-and (min-width : 1400px) {
-    #id_7 textarea {
-        width: 600px;
-    }
-}
-@media only screen 
-and (max-width : 758px) {
-	.resumelogo {
-        display: block;
-        float: left;
-        height: 120px;
-        padding: 10px;
-        width: 120px !important;
-	}
-}
-@media only screen 
-and (max-width : 1118px) {
-	#introheading {
-		font-size: 3em;
-        margin-top: -20px;
-	}
-}
-@media only screen 
-and (max-width : 1195px) {
-	.social {
-		margin-left: 40px;
-	}
-}
-@media only screen 
-and (min-width : 1207px) {
-	.content {
-		margin-right: 8px !important;
-	}
-}
-@media only screen 
-and (min-width : 758px) and (max-width : 1224px) {
-	#introheading {
-         margin-bottom: 32px;
-	}
-}
-@media only screen 
-and (min-width : 1226px) {
-	#introheading {
-         margin-bottom: 32px;
-	}
-}
 @media only screen 
 and (min-width : 1382px) {
+    
 	#about .box {
          margin-bottom: 32px;
-	}
 }
+}
+
+@media only screen
+and (min-width : 1400px) {
+    
+    #id_7 textarea {
+        width: 600px;
+}
+}
+
+
 @font-face {
     font-family: 'web_symbolsregular';
     src: url('fonts/websymbols-regular.eot');
