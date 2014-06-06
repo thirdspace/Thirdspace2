@@ -127,6 +127,7 @@ body{
 .navbar ul li a {
     margin: 0;
     padding: 10px 20px !important;
+    line-height: 1em;
     font-family: 'primelight';
 }
 .activenav {
@@ -179,6 +180,7 @@ ul.portfolionav li.pnav  {
 }
 .navbar ul.portfolionav {
     line-height: 0.1em;
+    padding-top: 20px;
 }
 .navbar ul {
     display: block;
@@ -2178,9 +2180,10 @@ and (min-width : 1025px) {
     line-height: .1em;
 }
 .navbar ul.portfolionav li a {
-    padding-left: 55px;
     height: 26px;
-    line-height: .5em !important;
+    line-height: 0.5em !important;
+    margin-left: 20px;
+    padding-left: 40px !important;
 }
 .navbar ul.portfolionav li {
       margin-bottom: -10px;	
