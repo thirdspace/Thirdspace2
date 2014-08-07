@@ -286,8 +286,8 @@ img.portfoliophoto {
     background-repeat: repeat-x;
 }*/
     
-.proj-wildfireemail1 img.portfoliophoto {
-    margin-top: -20px;
+.proj-wildfireemail1 img.portfoliophoto, .proj-dreammedia img.portfoliophoto {
+    margin-top: -20px !important;
     height: 305px !important;
 }
 .proj-tenkarasenseiweb {
@@ -508,7 +508,7 @@ p.project-info {
     text-indent: -99999px;
     overflow: hidden;
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 20px;
 }
 #about {
@@ -978,6 +978,12 @@ margin-top: -35px;
     font-size: 1em;
     margin-top: -10px;
 }
+.companylocation {
+    color: #707070;
+    font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+    font-size: 1em;
+    margin-top: -10px;
+}
 .resumelogo {
     float: right;
     height: 100% !important;
@@ -1039,7 +1045,7 @@ ul.resume li {
 }
 .form-all input[type="text"], .form-all input[type="email"] {
      font-size: 1.6em;
-     border-radius: 7px;
+     border-radius: 3px;
 }
 #input_9 {
     width: 260px !important;
@@ -1424,11 +1430,6 @@ body {
     font-size: .9em !important;
     line-height: 1.4em;
 }
-.navbar ul li .link {
-    color: #FFFFFF;
-    margin-left: 70px;
-    text-align: center;
-}
 .navbar ul li a {
     line-height: 0;
       padding: 15px 30px !important;
@@ -1556,6 +1557,7 @@ font-size: .5em !important;
 .navbar #logo {
     top: 45px !important;
 }
+
 .slider {
     display: none;
 }
@@ -1679,14 +1681,6 @@ and (min-width : 481px) {
     width: 100% !important;
 }
 }
-
-@media only screen
-and (min-width : 540px) and (max-width : 626px) {
-    .navbar ul.mainnav li {
-    margin-left: -150px !important;
-    }
-}
-
 @media only screen
 and (min-width : 600px) {
     
@@ -1706,10 +1700,13 @@ and (max-width : 626px) {
     float: none; 
     display: block;
     line-height: .2em;
+    margin-left: 0 !important;
     background: #8a698c;
     width: 100% !important;
-    margin-top: -10px !important;
     text-align: center;
+}
+.navbar ul {
+    margin-top: -20px !important;   
 }
 .navbar ul li a {
     margin: 0;
@@ -1725,6 +1722,7 @@ and (max-width : 626px) {
 }
 .navbar ul li {
     width: 100% !important;
+    margin-left: 0 !important;
 }
 .navbar ul.portfolionav {
     display: none !important;
@@ -1734,7 +1732,7 @@ and (max-width : 626px) {
     margin-top: -20px !important;
 }
 .navbar ul li.first a {
-    margin-top: 70px !important;
+    margin-top: 60px !important;
 }
 ul.mainnav {
     margin-top: 40px !important;
@@ -1747,7 +1745,7 @@ ul.mainnav {
     padding: 5px;
 }
 .navbar ul.mainnav {
-    height: 60px;
+    height: 65px;
 }
 .navbar #logo {
     margin-top: -10px;
@@ -1769,7 +1767,12 @@ ul.mainnav {
     width: 100%;
 }
 }
-
+@media only screen
+and (max-width : 669px) {
+    .portfolionav {
+    left: -120px !important;
+}
+}
 @media only screen
 and (min-width : 626px) and (max-width : 626px) {
 .navbar ul li a {
@@ -1830,11 +1833,10 @@ and (min-width : 700px) and (max-width : 768px) {
 
 @media only screen
 and (min-width : 700px) and (max-width : 830px) {
-    .navbar ul.mainnav li a {
-        margin-top: -10px;
-    }
+.navbar ul.portfolionav li a {
+    margin: -30px 30px !important;
 }
-
+}
 @media only screen 
 and (min-width : 708px) {
 	#id_7 textarea {
@@ -1888,7 +1890,12 @@ and (min-width : 625px) and (max-width : 950px) {
     left: -50px;
 }
 }
-
+@media only screen
+    and (min-width : 670px) and (max-width : 826px) {
+    .portfolionav {
+    left: -90px !important;
+}
+}
 @media only screen
 and (min-width : 600px) and (max-width : 826px) {
 .navbar ul.portfolionav li a {
@@ -1914,9 +1921,6 @@ and (min-width : 600px) and (max-width : 826px) {
 }
 .portfolionav .icon-print-menu:before, .portfolionav .icon-refresh-menu:before, .portfolionav .icon-laptop-menu:before, .portfolionav .icon-lightbulb-menu:before {
     font-size: 19px;
-}
-.portfolionav {
-    left: -65px !important;
 }
 }
 
@@ -2047,16 +2051,57 @@ and (min-width : 950px) and (max-width : 1024px) {
     margin-top: -50px !important;
 }
 }
-
+@media only screen
+ and (max-width : 626px) {
+    .navbar #logo {
+top: 35px !important;
+}
+}
+@media only screen
+ and (min-width : 627px) and (max-width : 1024px) {
+    .navbar #logo {
+top: 25px !important;
+}
+}
+@media only screen
+and (max-width : 624px) {
+.navbar ul li a {
+    letter-spacing: 0.03em;
+    margin-left: 0 auto;
+    padding: 15px 5px !important;
+    text-align: center;
+    color: #fff;
+        
+    width: 100%
+}
+.navbar ul {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-top: -10px !important;
+}
+}
+@media only screen
+and (min-width : 625px) and (max-width : 1024px) {
+.navbar ul li a {
+    letter-spacing: 0.03em;
+    margin-left: 15px;
+    padding: 15px 5px !important;
+    text-align: left;
+    color: #545454;
+}
+.navbar ul li {
+    margin: 10px -5px !important;
+}
+.navbar ul {
+    width: 1024px;
+}
+}
 @media only screen
 and (max-width : 1024px) {
     
 .portfolio {
     margin-left: 0;
     width: 100%;
-}
-.navbar #logo {
-top: 25px !important;
 }
 .box #stephen {
     height: 286px !important;
@@ -2071,14 +2116,10 @@ top: 25px !important;
 .navbar ul {
     display: inline-block;
     float: left;
-    width: 1024px !important;
     height: 55px;
     padding: 0;
     margin: 0;
     background: #fff;
-}
-.navbar ul li {
-    margin: 10px -5px !important;
 }
 .navbar {
     border-radius: 0px !important;
@@ -2136,13 +2177,6 @@ top: 25px !important;
     left: 730px;
     top: 4px;
 }
-.navbar ul li a {
-    letter-spacing: 0.03em;
-    margin-left: 15px;
-    padding: 15px 5px !important;
-    text-align: left;
-    color: #545454;
-}
 .navbar ul.portfolionav {
     position: absolute !important;
     top: 85px;
@@ -2171,15 +2205,33 @@ top: 25px !important;
     width: 190px !important;
 }
 }
-
 @media only screen 
-and (min-width : 100px) {
+and (max-width : 480px) {
+    
+	.navbar ul {
+    margin-top: -13px !important;  
+}
+#navbtn {
+    top: 50px !important;
+}
+.navbar #logo {
+    top: 45px !important;
+}
+}
+@media only screen 
+and (min-width : 481px) and (max-width : 550px) {
+    
+	.navbar ul {
+    margin-top: -22px !important;  
+}
+}
+@media only screen 
+and (min-width : 551px) {
     
 	.navbar ul {
     margin-top: -10px !important;  
 }
 }
-
 @media only screen 
 and (max-width : 1022px) {
     
@@ -2196,16 +2248,16 @@ and (max-width : 1022px) {
   line-height: 1.7em !important;
 }
 @media only screen
-    and (min-width : 768px) and (max-width : 825px) {
+    and (min-width : 568px) and (max-width : 825px) {
     .navbar ul.portfolionav li a {
-    line-height: 1.2em !important;
+    line-height: 1.7em !important;
     }
 }
 @media only screen
     and (min-width : 952px) and (max-width : 1024px) {
 .navbar ul.portfolionav li a {
-    margin: -40px 42px !important;
-    line-height: .6em !important;
+    margin: -42px 42px !important;
+    line-height: 1.7em !important;
     }
 .navbar ul.portfolionav li a {
     line-height: 1em !important;
@@ -2273,10 +2325,6 @@ and (max-width : 1024px) {
 .navbar #logo {
     width: 200px;
 }
-.navbar ul li {
-   padding: 0;
-    margin: -5px;
-}
 }
 
 @media only screen
@@ -2309,7 +2357,6 @@ and (min-width : 1226px) {
 and (min-width : 321px) and (max-width : 379px) {
 .navbar ul li .link {
     color: #FFFFFF;
-    margin-left: 10px !important;
     text-align: center;
 }
 }
@@ -2318,7 +2365,6 @@ and (min-width : 321px) and (max-width : 379px) {
 and (min-width : 380px) and (max-width : 429px) {
 .navbar ul li .link {
     color: #FFFFFF;
-    margin-left: 30px !important;
     text-align: center;
 }
 }
@@ -2327,7 +2373,6 @@ and (min-width : 380px) and (max-width : 429px) {
 and (min-width : 430px) and (max-width : 474px) {
 .navbar ul li .link {
     color: #FFFFFF;
-    margin-left: 50px !important;
     text-align: center;
 }
 }
