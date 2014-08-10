@@ -1,5 +1,4 @@
 /*
-	99Lime.com HTML KickStart by Joshua Gatcke
 	style.css
 
 */
@@ -54,7 +53,7 @@ font-family: 'primeregular', sans-serif;
 font-weight:normal;
 }
 
-thead th,
+/*thead th,
 tbody th{
     font-family: "Arimo", arial, verdana, sans-serif;
 }
@@ -80,7 +79,7 @@ input[type="tel"] {
 blockquote{
     font-family: "Arimo", arial, verdana, sans-serif;
 }
-
+*/
 /*---------------------------------
 	LAYOUT
 -----------------------------------*/
@@ -136,7 +135,6 @@ body{
 .navbar ul li a:active {
     background: #E9BA00;
     color: #fff;
-    height: 20px;
 }
 .navbar ul li a:hover {
     background: #cccccc;
@@ -322,7 +320,10 @@ and (min-width : 481px) {
 .portfolio-section h1 {
     line-height: 1.2em;
     color: #fff;
-    font-size: 1.8em !important;
+    font-size: 2.2em !important;
+    font-family: 'primelight', 'Helvetica Neue', helvetica, arial, sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 .portfolio-section h3 {
     font-size: 1.1em;
@@ -461,7 +462,6 @@ p.project-info {
 .portfolionav .icon-lightbulb-menu:before {
     clear: both;
     left: 11px !important;
-    color: #bababa;
     font-size: 17pt;
     margin: 0;
     padding: 1px 0 0 15px;
@@ -592,9 +592,9 @@ p.ptitle {
 }
 #skills .icon:hover {
     background: none !important;
-    border: 4px solid #ffffff;
+    border: 4px solid #e9ba00;
     opacity: .8;
-    color: #ffffff;
+    color: #e9ba00;
 }
 .firstnav {
     margin-top: 20px;
@@ -663,6 +663,9 @@ p.ptitle {
 .white {
     color: #ffffff !important;
 }
+.yellow {
+    color: #e9ba00 !important;
+}
 .icon1 {
    left: 0;
     padding: 10em;
@@ -682,11 +685,14 @@ p.ptitle {
 .icon3 p {
     left: 340px;
 }
-#skills p {
+.iconworks:hover {
+    color: #ffffff !important;
+}
+#skills p.printtext, #skills p.webtext, #skills p.markettext {
     color: #6B5373;
     font-family: 'primeregular';
     font-size: 1.15em;
-    font-style: italic;
+    font-style: lighter;
     line-height: 1em;
     padding: 10px 5px;
     text-align: center;
@@ -770,12 +776,26 @@ p.ptitle {
     transition: transform .2s ease-in-out;
 }
 .selected2:after, .selected3:after {
-    content: '<';
-    padding: 5px;
-    font-weight: bold;
+     content: "____________";
     font-family: 'primeregular';
+    font-weight: bold;
+    letter-spacing: -1em;
+    margin-left: -15px;
+    padding: 5px;
+    position: absolute;
+    top: 19px;
 }
-.selected3 {
+.selected4:after {
+     content: "____________________";
+    font-family: 'primeregular';
+    font-weight: bold;
+    letter-spacing: -1em;
+    margin-left: -10px;
+    padding: 5px;
+    position: absolute;
+    top: 19px;
+}
+.selected3, .selected4 {
     background: #e0e0e0;
     opacity: .8;
     color: #444444;
@@ -854,7 +874,7 @@ margin-top: -35px;
 .availabilitybox {
     background: #fff;
     color: #fff;
-    width: 350px;
+    width: 70%;
     height: 120px;
     padding: 10px;
     margin-right: 90px;
@@ -870,25 +890,59 @@ margin-top: -35px;
     font-family: 'primelight';
     color: #999;
     clear: both;
+    padding-top: 15px;
+    margin-left: 20px;
     font-size: 13pt;
-    padding: 0 15px 15px 0;
     list-style: none;
+     width: 100px;
+    letter-spacing: .08em;
+}
+.avlabels li.first {
+    margin-bottom: 10px;
+}
+.avfields li {
+    display: inline;
+    background: #ececec;
+
+}
+.avfields li.first {
+    float: left;
+    margin-left: 10px;
+    width: 180px;
+    border: 1px solid #b5b5b5;
+    border-radius: 4px;
+    color: #909090;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 4px;
+    text-align: center;
+    width: 180px;
 }
 .avfields {
     color: #999;
-    clear: both:
-    padding: 10px;
+    padding: 15px 0px;
     list-style: none;
+    width: 200px;
+    float: right;
 }
 .avfields a {
     text-decoration: none;
     border: 2px solid #E9BA00;
-    padding: 3px;
+    padding: 7px 13px;
     font-size: 10pt;
+    margin: 5px;
+    line-height: 1em;
+    text-align: center;
     color: #E9BA00;
+    float: left;
      border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
+}
+.avfields a:hover {
+    background: #E9BA00;
+    color: #ffffff;
 }
 .webicon {
     font-family:'web_symbolsregular';
@@ -915,6 +969,7 @@ margin-top: -35px;
     top: 3px;
     color: #fff;
 }
+
 /* PAGES */
 /* PAGES - HOME*/
 #introheading {
@@ -939,7 +994,7 @@ margin-top: -35px;
 .socialcontainer a {
 	color: #494949;
 	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
-	opacity: .7;
+	opacity: 1;
 	margin-left: 8px;
 	padding-right: 15px;
     text-decoration: none;
@@ -966,6 +1021,9 @@ margin-top: -35px;
     padding: 0px;
     padding-left: 20px !important;
     width: 490px;
+}
+.wotiflogo.resumelogo {
+    margin-top: 20px;
 }
 .companyname {
     color: #7C6783;
@@ -1043,6 +1101,40 @@ ul.resume li {
 .resume li {
     color: #494949 !important;
 }
+/*Form input styling*/
+ul.form-section .form-label-left {
+    padding: 7px 13px 0 0;
+    color: #898989;
+    font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
+    letter-spacing: .07em;
+}
+.form-line {
+    padding: 15px !important;
+}
+.form-submit-button, .form-submit-reset, .form-submit-print, .form-screen-button {
+    padding: 20px 80px !important;
+    background: #7c6783;
+    left: -155px;
+    color: #ffffff;
+    font-family: 'primelight', 'Helvetica Neue', helvetica, arial, sans-serif;
+    font-size: 15pt;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    font-weight: 200;
+}
+.form-submit-button:hover {
+    background: #E9BA00;
+    color: #ffffff;
+}
+.form-header {
+    padding-left: 10px; 
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    font-family:  'primelight', 'Helvetica Neue', helvetica, arial, sans-serif;
+}
+.form-header-group {
+    padding: 4px !important;
+}
 .form-all input[type="text"], .form-all input[type="email"] {
      font-size: 1.6em;
      border-radius: 3px;
@@ -1050,62 +1142,64 @@ ul.resume li {
 #input_9 {
     width: 260px !important;
 }
+div.download_btn p {
+    text-decoration: underline;
+    color: #7c6783;
+    margin: 0 !important;
+    padding-top: 10px;
+}
 .download_btn {
 	width: 180px;
-	height: 46px;
+	height: 60px;
 	margin-top: 220px;
-	padding-top: 4px;
+	padding-top: 0px;
+    padding-bottom: 0;
 	padding-right: 10px;
+    margin-right: 10px;
     padding-left: 47px;
 	float: right;
 	text-align: center;
 	position: relative;
-    line-height: 1.2em;
-	color: #ffffff;
+    line-height: 1em;
 	font-size: 11pt;
-	font-family:'primeregular', sans-serif;
-	text-shadow: 2px 2px 0px rgba(49, 35, 62, 1);
-	background: #877d93; /* Old browsers */
-	background: -moz-linear-gradient(top,  #877d93 0%, #877d93 52%, #594b64 53%, #594b64 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#877d93), color-stop(52%,#877d93), color-stop(53%,#594b64), color-stop(100%,#594b64)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #877d93 0%,#877d93 52%,#594b64 53%,#594b64 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #877d93 0%,#877d93 52%,#594b64 53%,#594b64 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #877d93 0%,#877d93 52%,#594b64 53%,#594b64 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #877d93 0%,#877d93 52%,#594b64 53%,#594b64 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#877d93', endColorstr='#594b64',GradientType=0 ); /* IE6-9 */
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: 0 -1px 0 0 #EEEDDF, 0 2px 0 0 #836387 inset, 0 -1px 0 0 #3a1164 inset;
+	font-family: 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 .download_btn sub {
-    margin-top: -37px;
     font-size: 8pt;
+    text-decoration: none;
+    color: #ccc;
 }
 .download_btn:hover {
-	background: #877d93; /* Old browsers */
-	background: -moz-linear-gradient(top,  #878091 0%, #878091 52%, #6e617a 53%, #6e617a 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#878091), color-stop(52%,#878091), color-stop(53%,#6e617a), color-stop(100%,#6e617a)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #878091 0%,#878091 52%,#6e617a 53%,#6e617a 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #878091 0%,#878091 52%,#6e617a 53%,#6e617a 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #878091 0%,#878091 52%,#6e617a 53%,#6e617a 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #878091 0%,#878091 52%,#6e617a 53%,#6e617a 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#878091', endColorstr='#6e617a',GradientType=0 ); /* IE6-9 */
+
 	
 }
 .download_btn:active {
 	background: #675d75;
 }
-.download_btn:after {
+.pdfdownload:after {
 	content: '';
-	background: url(images/pdf.png);
-	height: 42px;
+    background: url("images/pdf.png") repeat scroll 0 0 / 50px auto rgba(0, 0, 0, 0);
+	height: 52px;
 	width: 42px;
 	position: absolute;
-	left: 3px;
+	left: 0px;
 	top: 0px;
 }
-
+.docdownload:after {
+	content: '';
+    background: url("images/doc.png") repeat scroll 0 0 / 50px auto rgba(0, 0, 0, 0);
+	height: 52px;
+	width: 42px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.skillsboxicon-1line {
+    font-size: 47pt; margin-top: 40px; margin-bottom: -25px; line-height: 0px; color: #563c5f; 
+}
+.skillsboxicon-2line {
+    font-size: 47pt; margin-top: 40px; margin-bottom: -45px; line-height: 0px; color: #563c5f;
+}
 /***********  M E D I A   Q U E R I E S  ************/
 
 /*****************  100 px - 320 px    **************/
@@ -1351,9 +1445,11 @@ and (min-width : 321px) and (max-width : 480px) {
       width: 500px !important;
       border-radius: 0 !important;
 }
-.portfolio-section h1{
+.portfolio-section h1 {
     width: 295px !important;
     margin-left: -20px !important;
+    font-weight: 100;
+    font-family: 'primelight', 'Helvetica Neue', helvetica, arial, sans-serif;
 }
 .resumelogo {
     box-shadow: none !important;
@@ -1788,10 +1884,26 @@ and (min-width : 626px) and (max-width : 626px) {
 }
 }
 @media only screen 
-and (max-width: 650px) {
+and (max-width: 640px) {
 .flexslider {
         display: none !important;
     }
+ul.form-section .form-label-left {
+    margin-top: -30px;
+    padding-top: 5px;
+}
+.form-input, .form-all input[type="text"], .form-all input[type="email"] {
+    width: 100% !important;
+    height: 35px
+    padding: 10px;
+}
+.jotform-form {
+    margin-left: -40px;
+    margin-right: -20px;
+}
+#id_1 {
+    margin-top: 20px;
+}
 }
 @media only screen 
 and (min-width: 650px) {
@@ -1837,12 +1949,6 @@ and (min-width : 700px) and (max-width : 830px) {
     margin: -30px 30px !important;
 }
 }
-@media only screen 
-and (min-width : 708px) {
-	#id_7 textarea {
-    width: 500px; 
-}
-}
 
 @media only screen 
 and (max-width : 758px) {
@@ -1857,11 +1963,18 @@ and (max-width : 758px) {
 }
 
 @media only screen 
-and (max-width : 777px) {
+and (max-width : 1219px) {
 	#id_7 textarea {
-    width: auto; 
+    width: 100%; 
 }
 }
+@media only screen 
+and (min-width : 1220px) {
+	#id_7 textarea {
+    width: 520px; 
+}
+}
+
 
 /*****************  765 px - 900 px    **************/
 @media only screen
@@ -1909,7 +2022,7 @@ and (min-width : 600px) and (max-width : 826px) {
     top: 5px;
 }
 .portfolionav .icon-print-menu:before {
-    left: 515px !important;
+    left: 510px !important;
     top: 3px;
 }
 .portfolionav .icon-laptop-menu:before {
@@ -2106,10 +2219,10 @@ and (max-width : 1024px) {
 .box #stephen {
     height: 286px !important;
 }
-.selected2:after, .selected3:after {
+.selected2:after, .selected3:after, .selected4:after {
     margin-right: -20px;
 }
-.selected2, .selected3 {
+.selected2, .selected3, .selected4 {
     background: none !important;
     color: #E9BA00 !important;
 }
@@ -2256,14 +2369,14 @@ and (max-width : 1022px) {
 @media only screen
     and (min-width : 952px) and (max-width : 1024px) {
 .navbar ul.portfolionav li a {
-    margin: -42px 42px !important;
+    margin: -42px 43px !important;
     line-height: 1.7em !important;
     }
 .navbar ul.portfolionav li a {
     line-height: 1em !important;
 }
 .portfolionav .icon-lightbulb-menu:before {
-    left: 760px !important;
+    left: 767px !important;
 }
 .portfolionav .icon-laptop-menu:before {
     left: 638px;
@@ -2298,6 +2411,12 @@ and (min-width : 1025px) {
       margin-bottom: -10px;	
 	  padding-bottom: 10px;
 	  margin-left: -10px; 			
+}
+.selected2:after, .selected3:after, .selected4:after {
+    content: '' !important;
+}
+div.form-header-group {
+    margin-left: -10px !important;
 }
 }
 
@@ -2381,7 +2500,7 @@ and (min-width : 430px) and (max-width : 474px) {
 and (min-width : 321px) and (max-width : 1236px) {
     
     .jobinfo {
-        width: 110% !important;
+        width: 100% !important;
 }
 }
 
@@ -2391,14 +2510,6 @@ and (max-width : 1352px) {
         margin-left: 295px;
     }
 
-}
-
-@media only screen
-and (min-width : 1400px) {
-    
-    #id_7 textarea {
-        width: 600px;
-}
 }
 
 
@@ -2434,12 +2545,54 @@ and (min-width : 1400px) {
 
 }
 @font-face {
-    font-family: 'entypo-social';
-    src: url('fonts/entypo-social.eot');
-         url('fonts/entypo-social.woff') format('woff'),
-         url('fonts/entypo-social.ttf') format('truetype'),
-         url('fonts/entypo-social.svg#entypo-social') format('svg');
+    font-family: 'socicon';
+    src: url('fonts/socicon-webfont.eot');
+    src: url('fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socicon-webfont.woff') format('woff'),
+         url('fonts/socicon-webfont.ttf') format('truetype'),
+         url('fonts/socicon-webfont.svg#sociconregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'icon-worksregular';
+    src: url('fonts/icon-works-webfont.eot');
+    src: url('fonts/icon-works-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/icon-works-webfont.woff') format('woff'),
+         url('fonts/icon-works-webfont.ttf') format('truetype'),
+         url('fonts/icon-works-webfont.svg#icon-worksregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.socicon {
+ font-family: 'socicon';
+font-size: 28pt;
+}
+.iconworks, #skills p.iconworks {
+    font-family: 'icon-worksregular';
+    font-size: 52pt;
+}
+.socicon {
+    color: #7c6783;
+}
+.socicon:hover {
+    opacity: 1;
+    color: #5a4461;
+
+}
+#skills p.iconworks:hover {
+    color: #ffffff;
+     position: absolute;
+}
+#skills p.iconworks {
+   padding: 80px;
+    position: absolute;
+    top: -40px !important;
+    left: -40px !important;
+}
+
+p.markettext, p.printtext, p.webtext {
+    margin-top: 110px !important;
 }
 
